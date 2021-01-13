@@ -1,6 +1,30 @@
-@import "helpers/variable"; //variables toujours en 1st
-@import "helpers/reset";
+/* HELPERS */
+
+@import "helpers/variables"; //variables toujours en 1st
+@import "helpers/reset"; // helpers/_reset.scss
 @import "helpers/typo";
-@import "component/menu";
-@import "component/structure";
+
+// Extends
+
+%flex-column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+%flex-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* STRUCTURE */
+
+@import "structure/nav";
+@import "structure/body";
+@import "structure/footer";
+
+/* COMPONENTS */
+
+@import "components/button";
 @import "component/cards";

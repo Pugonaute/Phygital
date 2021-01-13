@@ -1,0 +1,6 @@
+/* Footer */
+	footer{
+		@extend %flex-column;
+		justify-content: center;
+		height: $margin_3;
+	}
