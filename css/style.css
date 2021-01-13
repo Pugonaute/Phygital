@@ -22,23 +22,16 @@ h2 {
 h3 {
   font-size: 20px; }
 
-nav, nav aside, footer {
+footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 /* STRUCTURE */
 /* Nav */
-nav {
-  justify-content: space-between;
+header nav {
   position: fixed;
-  z-index: 1;
-  box-sizing: border-box;
-  width: 70px;
-  height: 100vh;
-  padding: 10px 0; }
-  nav aside a {
-    margin-top: 10px; }
+  z-index: 1; }
 
 /* Body */
 /* Footer */
