@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <img src="img/logo-ethiquette.svg" alt="logo">
         <nav>
+            <img src="img/logo-ethiquette-blanc.svg" alt="logo">
             <ul>
                 <li><a href="">Application</a></li>
                 <li><a href="">Devenir partenaire</a></li>
