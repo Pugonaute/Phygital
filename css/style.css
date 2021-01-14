@@ -22,7 +22,7 @@ h2 {
 h3 {
   font-size: 20px; }
 
-header nav, header nav ul {
+header, header nav, header nav ul {
   display: flex;
   flex-direction: row; }
 
@@ -30,11 +30,16 @@ header nav, header nav ul {
 /* Nav */
 header {
   background: #00012E;
-  padding: 16px; }
+  height: 88px;
+  justify-content: center; }
   header nav {
+    width: 100%;
     justify-content: space-between; }
     header nav img {
       max-width: 250px; }
+    header nav hr {
+      color: #FFFFFF;
+      border: 2px dashed; }
     header nav ul {
       width: 60%;
       align-items: center;
@@ -50,5 +55,8 @@ header {
 /* Footer */
 /* COMPONENTS */
 /* Button */
+button {
+  border: 0;
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

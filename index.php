@@ -10,6 +10,7 @@
     <header>
         <nav>
             <img src="img/logo-ethiquette-blanc.svg" alt="logo">
+            <hr>
             <ul>
                 <li><a href="">Application</a></li>
                 <li><a href="">Devenir partenaire</a></li>
