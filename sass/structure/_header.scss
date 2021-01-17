@@ -1,0 +1,44 @@
+/* Nav */
+
+header{
+    background: $blue;
+    height: 88px;
+    @extend %flex-row;
+    justify-content: center;
+    padding: 0 $margin_2;
+
+
+    
+    nav{
+        width: 100%;
+        @extend %flex-row;
+        justify-content: space-between;
+
+
+        img{
+            max-width: 250px;
+        }
+
+        hr{
+            color: $white;
+            border: 2px dashed;
+        }
+
+        ul{
+            width: 60%;
+            @extend %flex-row;
+            align-items: center;
+            justify-content: space-around;
+
+            li{
+                list-style: none;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+}
