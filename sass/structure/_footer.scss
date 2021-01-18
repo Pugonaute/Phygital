@@ -13,18 +13,13 @@ footer{
 	width: 100%;
 	color: $white;
 
-	@extend %flex-column;
-	justify-content: center;
+	@extend %flex-column-center;
 	//	text-align: center;
 	//	align-items: center;
 
-	//	padding: 0 $margin_2;
-
-
 	div:first-child{
-		@extend %flex-row;
+		@extend %flex-row-center;
 		justify-content: space-around;
-		align-items: center;
 //		background: yellow;
 		height: 100%;
 
@@ -65,8 +60,7 @@ footer{
 			}
 			
 			ul{
-				@extend %flex-row;
-				align-items: center;
+				@extend %flex-row-center;
 				justify-content: space-around;
 
 				display:table-row;
@@ -102,8 +96,7 @@ footer{
 	}
 
 	div:last-child{
-		@extend %flex-column;
-		justify-content: center;
+		@extend %flex-column-center;
 		height: 68px;
 		text-align: center;
 		font-size: $paragraphe1;
