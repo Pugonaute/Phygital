@@ -1,28 +1,90 @@
 /* HELPERS */
-/* Reset */
+/* Resetk */
 * {
   margin: 0px;
   padding: 0px; }
 
+a {
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent; }
+
 /* Typo */
-body {
-  font-family: 'Lato', sans-serif;
+/* FontFace Gilroy */
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("/fonts/Gilroy/Gilroy-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Gilroy-RegularItalic";
+  src: url("/fonts/Gilroy/Gilroy-RegularItalic.otf") format("otf");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("/fonts/Gilroy/Gilroy-Semibold.otf") format("otf");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Gilroy-SemiboldItalic";
+  src: url("/fonts/Gilroy/Gilroy-SemiboldItalic.otf") format("otf");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/fonts/Gilroy/Gilroy-Light.otf") format("otf");
   font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Gilroy-LightItalic";
+  src: url("/fonts/Gilroy/Gilroy-LightItalic.otf") format("otf");
+  font-weight: 300;
+  font-style: italic; }
+/* FontFace Recoleta */
+@font-face {
+  font-family: "Recoleta-SemiBold";
+  src: url("/fonts/Recoleta/Recoleta-SemiBold.otf") format("otf");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Recoleta-Bold";
+  src: url("/fonts/Recoleta/Recoleta-Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal; }
+body {
+  font-family: 'Gilroy-Regular', 'Gilroy', sans-serif;
+  font-weight: 400;
   font-size: 24px; }
 
 strong {
-  font-weight: 700; }
+  font-weight: 600; }
 
 h1 {
+  font-family: 'Recoleta-Bold', 'Recoleta', serif;
+  font-weight: 700;
   font-size: 56px; }
 
 h2 {
+  font-family: 'Recoleta-SemiBold', 'Recoleta', serif;
+  font-weight: 600;
   font-size: 40px; }
 
 h3 {
+  font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 32px; }
+
+h4 {
+  font-family: 'Gilroy-Light', 'Gilroy', sans-serif;
+  font-weight: 300;
   font-size: 20px; }
 
-header, header nav, header nav ul {
+footer, footer div:first-child div, footer div:last-child {
+  display: flex;
+  flex-direction: column; }
+
+header, header nav, header nav ul, footer div:first-child, footer div:first-child nav, footer div:first-child nav ul {
   display: flex;
   flex-direction: row; }
 
@@ -54,6 +116,60 @@ header {
 
 /* Body */
 /* Footer */
+footer {
+  box-sizing: border-box;
+  background: #00012E;
+  height: 400px;
+  width: 100%;
+  color: #FFFFFF;
+  justify-content: center; }
+  footer div:first-child {
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+    footer div:first-child div {
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      max-width: calc(100vw / 3);
+      max-height: 200px;
+      margin: 0 30px; }
+      footer div:first-child div div:first-child {
+        width: 100%; }
+        footer div:first-child div div:first-child img {
+          max-width: 330px; }
+    footer div:first-child nav {
+      justify-content: space-around;
+      width: 100%;
+      max-width: calc((100vw / 3) * 2);
+      margin: 0 30px; }
+      footer div:first-child nav hr {
+        color: #FFFFFF;
+        border: 1px auto; }
+      footer div:first-child nav li {
+        padding-top: 10px; }
+      footer div:first-child nav ul {
+        align-items: center;
+        justify-content: space-around;
+        display: table-row; }
+        footer div:first-child nav ul li {
+          list-style: none;
+          font-family: "Recoleta-SemiBold", serif;
+          font-size: 32px; }
+          footer div:first-child nav ul li a {
+            text-decoration: inherit;
+            font-size: inherit; }
+          footer div:first-child nav ul li a:hover {
+            text-decoration: underline; }
+          footer div:first-child nav ul li ul li {
+            font-size: 20px;
+            font-family: "Gilroy-Semibold", sans-serif; }
+  footer div:last-child {
+    justify-content: center;
+    height: 68px;
+    text-align: center;
+    font-size: 20px; }
+
 /* COMPONENTS */
 /* Button */
 button {

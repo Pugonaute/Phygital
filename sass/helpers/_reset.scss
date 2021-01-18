@@ -1,5 +1,14 @@
-/* Reset */
+/* Resetk */
 *{
-    margin: 0px;
-    padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
+
+a {
+	color: inherit;
+//	text-decoration: inherit;
+	font-size: inherit;
+	background-color: transparent;
+}
+
+
