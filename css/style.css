@@ -80,7 +80,7 @@ h4 {
   font-weight: 300;
   font-size: 20px; }
 
-footer div:first-child div {
+#hero .conteneur, #presentation .conteneur, footer div:first-child div {
   display: flex;
   flex-direction: column; }
 
@@ -98,7 +98,16 @@ footer div:first-child, footer div:first-child nav ul {
   flex-direction: row;
   align-items: center; }
 
+#hero, #presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 /* STRUCTURE */
+/* Body */
+.conteneur {
+  width: 1200px; }
+
 /* Nav */
 header {
   background: #00012E;
@@ -114,7 +123,7 @@ header {
       color: #FFFFFF;
       border: 2px dashed; }
     header nav ul {
-      width: 60%;
+      width: 50%;
       align-items: center;
       justify-content: space-around; }
       header nav ul li {
@@ -124,7 +133,35 @@ header {
           text-decoration: none;
           font-size: 18px; }
 
-/* Body */
+/* Main */
+#hero {
+  padding: 80px 0px;
+  box-sizing: border-box; }
+  #hero .conteneur {
+    align-items: center; }
+    #hero .conteneur h1 {
+      font-size: 64px;
+      width: 65%;
+      text-align: center; }
+    #hero .conteneur h2 {
+      margin-top: 40px; }
+    #hero .conteneur p {
+      margin-top: 16px;
+      width: 65%;
+      text-align: center; }
+    #hero .conteneur .button {
+      margin-top: 24px; }
+
+#presentation {
+  background: #FFDCC9;
+  padding: 80px 0px; }
+  #presentation .conteneur {
+    align-items: center; }
+    #presentation .conteneur .video {
+      width: 100%;
+      height: 600px;
+      background-color: #00012E; }
+
 /* Footer */
 footer {
   box-sizing: border-box;
@@ -178,6 +215,52 @@ footer {
 
 /* COMPONENTS */
 /* Button */
+.button {
+  /*Button Text Style*/
+  font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
+  font-size: inherit;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  /*Button Color & Border*/
+  border: 4px solid #00012E;
+  color: #00012E;
+  background: #fff;
+  outline: none;
+  /*Position, Display, Size*/
+  position: relative;
+  display: inline-block;
+  padding: 15px 10px 14px;
+  cursor: pointer;
+  width: auto; }
+
+.button:after {
+  /*Make a:after be as big as button*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*Give a:after Border & Background color*/
+  border: 4px solid #00012E;
+  background-color: #00012E;
+  /*Decide Location of a:after..this gives a           bottom right shadow*/
+  left: 4px;
+  top: 4px;
+  /*Place a:after behind button*/
+  z-index: -1;
+  content: '';
+  /*Animation/Transition Speed*/
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s; }
+
+.button:hover {
+  top: 2px;
+  left: 4px; }
+
+.button:hover:after {
+  top: -2px;
+  left: -2px; }
+
 button {
   border: 0;
   margin: 0; }

@@ -1,5 +1,57 @@
 /* Button */
 
+    .button {
+        /*Button Text Style*/
+        font-family:'Gilroy-Semibold', 'Gilroy', sans-serif;
+        font-size: inherit;
+        text-align: center;
+        font-weight: bold;
+        text-decoration:none;
+        /*Button Color & Border*/
+        border: 4px solid $blue ;
+        color: $blue;
+        background: #fff;
+        outline: none;
+        /*Position, Display, Size*/
+        position: relative;
+        display: inline-block;
+        padding: 15px 10px 14px;
+        cursor: pointer;
+        width: auto;
+            }
+.button:after {
+        /*Make a:after be as big as button*/
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /*Give a:after Border & Background color*/
+        border: 4px solid $blue;
+        background-color: $blue;
+        /*Decide Location of a:after..this gives a           bottom right shadow*/
+        left: 4px;
+        top: 4px;
+        /*Place a:after behind button*/
+        z-index: -1;
+        content: '';
+        /*Animation/Transition Speed*/
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        
+         }
+.button:hover {
+          top:2px;
+          left:4px;
+            }
+ .button:hover:after   {
+         top: -2px;
+         left: -2px;
+            }
+
+
+
+
+
 button {
 
 	border: 0;
