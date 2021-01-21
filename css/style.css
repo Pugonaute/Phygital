@@ -101,7 +101,7 @@ footer, footer div:last-child {
   flex-direction: column;
   justify-content: center; }
 
-header, header nav, header nav ul, #detail .conteneur .mosaique, #detail .conteneur .action, footer div:first-child nav {
+header, header nav, header nav ul, #detail .conteneur .scannez .mosaique, #detail .conteneur .participez .mosaique, #detail .conteneur .scannez .action, #detail .conteneur .participez .action, #detail .conteneur .comparez .mosaique, #detail .conteneur .action, footer div:first-child nav {
   display: flex;
   flex-direction: row; }
 
@@ -182,26 +182,49 @@ header {
   padding: 80px 0px; }
   #detail .conteneur {
     align-items: center; }
-    #detail .conteneur .mosaique {
+    #detail .conteneur .scannez .mosaique, #detail .conteneur .participez .mosaique {
       border: solid #00012E 4px; }
-      #detail .conteneur .mosaique .texte {
+      #detail .conteneur .scannez .mosaique .texte, #detail .conteneur .participez .mosaique .texte {
         width: 60%; }
-        #detail .conteneur .mosaique .texte .h2 {
+        #detail .conteneur .scannez .mosaique .texte .h2, #detail .conteneur .participez .mosaique .texte .h2 {
           background: #C0FFE7;
           border-bottom: solid #00012E 4px; }
-        #detail .conteneur .mosaique .texte div {
+        #detail .conteneur .scannez .mosaique .texte div, #detail .conteneur .participez .mosaique .texte div {
           padding: 32px 40px; }
-          #detail .conteneur .mosaique .texte div h4 {
+          #detail .conteneur .scannez .mosaique .texte div h4, #detail .conteneur .participez .mosaique .texte div h4 {
             margin-bottom: 16px; }
-      #detail .conteneur .mosaique .image {
+      #detail .conteneur .scannez .mosaique .image, #detail .conteneur .participez .mosaique .image {
         width: 40%;
         border-left: solid #00012E 4px;
         height: 600px;
         background: center/cover no-repeat url("../img/penderie.png"); }
-    #detail .conteneur .action {
+    #detail .conteneur .scannez .action, #detail .conteneur .participez .action {
       width: 100%;
       height: 80px;
       justify-content: flex-end; }
+    #detail .conteneur .comparez {
+      margin: 40px 0px; }
+      #detail .conteneur .comparez .mosaique {
+        border: solid #00012E 4px;
+        flex-direction: row-reverse; }
+        #detail .conteneur .comparez .mosaique .texte {
+          width: 60%; }
+          #detail .conteneur .comparez .mosaique .texte .h2 {
+            background: #C0FFE7;
+            border-bottom: solid #00012E 4px; }
+          #detail .conteneur .comparez .mosaique .texte div {
+            padding: 32px 40px; }
+            #detail .conteneur .comparez .mosaique .texte div h4 {
+              margin-bottom: 16px; }
+        #detail .conteneur .comparez .mosaique .image {
+          width: 40%;
+          border-right: solid #00012E 4px;
+          height: 600px;
+          background: center/cover no-repeat url("../img/penderie.png"); }
+    #detail .conteneur .action {
+      width: 100%;
+      height: 80px;
+      justify-content: flex-start; }
 
 /* Footer */
 footer {
