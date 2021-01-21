@@ -1,5 +1,8 @@
 /* Body */
+body{
+    border: solid $blue 4px;
 
-.conteneur{
-    width: 1200px;
+    .conteneur{
+        width: 1100px;
+    }
 }

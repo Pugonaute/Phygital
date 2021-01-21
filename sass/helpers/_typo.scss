@@ -63,6 +63,7 @@ body{
 	font-family: 'Gilroy-Regular', 'Gilroy', sans-serif;
 	font-weight: 400;
 	font-size: $courant;
+	color:$blue;
 }
 
 strong{
@@ -73,22 +74,34 @@ h1{
 	font-family: 'Recoleta-Bold', 'Recoleta', serif;
 	font-weight: 700;
 	font-size: $titre1;
+	color:$blue;
 }
 
 h2{
 	font-family: 'Recoleta-SemiBold', 'Recoleta', serif;
 	font-weight: 600;
 	font-size: $titre2;
+	color:$blue;
 }
 
 h3{
 	font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
 	font-weight: 600;
 	font-size: $titre3;
+	color:$blue;
 }
 
 h4{
 	font-family: 'Gilroy-Light', 'Gilroy', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: $titre4;
+	text-transform: uppercase;
+	color:$blue;
+}
+
+p{
+	font-size: $courant;
+	line-height: 40px;
+	font-weight: 30000;
+	color:$blue;
 }

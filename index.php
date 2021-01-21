@@ -35,7 +35,66 @@
 				<h2>Découvrez notre application</h2>
 				<div class="video"></div>
 			</div>
-		</section>
+        </section>
+        <section id="detail" >
+            <div class="conteneur">
+                <article class="scannez">
+                    <section class="mosaique">
+                        <article class="texte">
+                            <div class="h2">
+                                <h2>Scannez et évaluez vos vêtements</h2>
+                            </div>
+                            <div>
+                                <h4>En un clin d'oeil !</h4>
+                                <p>Connaissez-vous vraiment l’origine, la composition et les différentes étapes qui on servit à produire vos vêtements ? Grâce à nous, oui ! <br> Avec notre application, vous pouvez simplement scanner les etiquettes pour obtenir dans la seconde la note et le détail de vos vêtements !</p>
+                            </div>
+                        </article>
+                        <article class="image">
+                        </article>
+                    </section>
+                    <section class="action">
+                        <a href="" class="button2">En savoir plus</a>
+                    </section>
+                </article>
+                <article class="comparez">
+                    <section class="mosaique">
+                        <article class="texte">
+                            <div class="h2">
+                                <h2>Comparez des milliers de vêtements et obtennez des recommandations</h2>
+                            </div>
+                            <div>
+                                <h4>Faites le bon choix !</h4>
+                                <p>Avec l’ethiquette vous ne pourrez plus vous tromper ! 
+                                Pour chaque produits scannés mauvais, nous vous recommanderons nos produits préférés, plus éthiques et meilleurs pour la planète.</p>
+                            </div>
+                        </article>
+                        <article class="image">
+                        </article>
+                    </section>
+                    <section class="action">
+                        <a href="" class="button2">En savoir plus</a>
+                    </section>
+                </article>
+                <article class="participez">
+                    <section class="mosaique">
+                        <article class="texte">
+                            <div class="h2">
+                                <h2>Participez au commerce de proximité dans nos boutiques partenaires locales</h2>
+                            </div>
+                            <div>
+                                <h4>Click&collect</h4>
+                                <p>Connaissez-vous vraiment l’origine, la composition et les différentes étapes qui on servit à produire vos vêtements ? Grâce à nous, oui ! Avec notre application, vous pouvez simplement scanner les etiquettes pour obtenir dans la seconde la note et le detail de vos vêtements !</p>
+                            </div>
+                        </article>
+                        <article class="image">
+                        </article>
+                    </section>
+                    <section class="action">
+                        <a href="" class="button2">En savoir plus</a>
+                    </section>
+                </article>
+            </div>
+        </section>
 		<footer>
 			<div>
 				<div>	
