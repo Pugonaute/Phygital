@@ -119,3 +119,23 @@
         }
     }
 }
+
+#valeur{
+    @extend %flex-row-justify-center;
+    padding: $margin_4 0px;
+    .conteneur{
+        @extend %flex-row;
+        justify-content:space-between;
+        article{
+            text-align:  center;
+            width: calc((100% - 160px) / 3);
+
+            img{
+                max-width: 140px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}

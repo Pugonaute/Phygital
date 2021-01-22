@@ -95,6 +95,25 @@
                 </article>
             </div>
         </section>
+        <section id="valeur">
+            <div class="conteneur">
+                <article>
+                    <img src="img/ethique.svg" alt="">
+                    <h3>Ethique</h3>
+                    <p>Une analyse des vêtements et des marques basé sur les 4 grandes thématiques éthiques : écologie, social, santé et animaux.</p>
+                </article>
+                <article>
+                    <img src="img/transparent.svg" alt="">
+                    <h3>Transparent</h3>
+                    <p>Nos données sont libres et accessibles à tou·te·s, elles sont récoltées à partir des données fournies par les marques et par nos utilisateurs.</p>
+                </article>
+                <article>
+                    <img src="img/independant.svg" alt="">
+                    <h3>Indépendant</h3>
+                    <p>L’objectivité de nos analyses et l’absences de tout conflits d’interêts est garanti grâce à un financement éthique qui ne dépend d’aucunes marques.</p>
+                </article>
+            </div>
+        </section>
 		<footer>
 			<div>
 				<div>	
