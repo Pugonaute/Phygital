@@ -55,7 +55,7 @@ a {
 body {
   font-family: 'Gilroy-Regular', 'Gilroy', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   color: #00012E; }
 
 strong {
@@ -64,35 +64,35 @@ strong {
 h1 {
   font-family: 'Recoleta-Bold', 'Recoleta', serif;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 48px;
   color: #00012E; }
 
 h2 {
   font-family: 'Recoleta-SemiBold', 'Recoleta', serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 32px;
   color: #00012E; }
 
 h3 {
   font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 24px;
   color: #00012E; }
 
 h4 {
   font-family: 'Gilroy-Light', 'Gilroy', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #00012E; }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2em;
   font-weight: 30000;
   color: #00012E; }
 
-#hero .conteneur, #presentation .conteneur, #detail .conteneur, footer div:first-child div {
+#hero .conteneur, #presentation .conteneur, #detail .conteneur, #marques .conteneur, footer div:first-child div {
   display: flex;
   flex-direction: column; }
 
@@ -105,12 +105,12 @@ header, header nav, header nav ul, #detail .conteneur .scannez .mosaique, #detai
   display: flex;
   flex-direction: row; }
 
-footer div:first-child, footer div:first-child nav ul {
+#marques .conteneur .carroussel-marques, footer div:first-child, footer div:first-child nav ul {
   display: flex;
   flex-direction: row;
   align-items: center; }
 
-#hero, #presentation, #detail, #valeur {
+#hero, #presentation, #detail, #valeur, #marques {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -154,8 +154,8 @@ header {
   #hero .conteneur {
     align-items: center; }
     #hero .conteneur h1 {
-      font-size: 64px;
-      width: 75%;
+      font-size: 56px;
+      width: 65%;
       text-align: center; }
     #hero .conteneur h2 {
       margin-top: 32px; }
@@ -181,7 +181,8 @@ header {
 #detail {
   padding: 80px 0px; }
   #detail .conteneur {
-    align-items: center; }
+    align-items: center;
+    width: 1000px; }
     #detail .conteneur .scannez .mosaique, #detail .conteneur .participez .mosaique {
       border: solid #00012E 4px; }
       #detail .conteneur .scannez .mosaique .texte, #detail .conteneur .participez .mosaique .texte {
@@ -196,7 +197,7 @@ header {
       #detail .conteneur .scannez .mosaique .image, #detail .conteneur .participez .mosaique .image {
         width: 40%;
         border-left: solid #00012E 4px;
-        height: 600px;
+        height: 500px;
         background: center/cover no-repeat url("../img/penderie.png"); }
     #detail .conteneur .scannez .action, #detail .conteneur .participez .action {
       width: 100%;
@@ -235,8 +236,24 @@ header {
       width: calc((100% - 160px) / 3); }
       #valeur .conteneur article img {
         max-width: 140px; }
+      #valeur .conteneur article h3 {
+        margin: 16px 0px; }
       #valeur .conteneur article p {
-        font-size: 18px; }
+        font-size: 16px; }
+
+#marques {
+  padding: 80px 0px; }
+  #marques .conteneur {
+    align-items: center;
+    width: 1000px; }
+    #marques .conteneur p {
+      margin-top: 16px;
+      text-align: center; }
+    #marques .conteneur .carroussel-marques div {
+      margin: 10px;
+      height: 75px;
+      width: 200px;
+      background-color: lightsteelblue; }
 
 /* Footer */
 footer {
@@ -275,7 +292,7 @@ footer {
         footer div:first-child nav ul li {
           list-style: none;
           font-family: "Recoleta-SemiBold", serif;
-          font-size: 32px; }
+          font-size: 24px; }
           footer div:first-child nav ul li a {
             text-decoration: inherit;
             font-size: inherit; }
@@ -345,7 +362,7 @@ footer {
   text-align: center;
   padding: 24px;
   box-sizing: border-box;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600; }
 
 button {

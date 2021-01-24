@@ -8,8 +8,8 @@
         @extend %flex-column;
         align-items: center;
         h1{
-            font-size: 64px;
-            width: 75%;
+            font-size: 56px;
+            width: 65%;
             text-align: center;
         }
         h2{
@@ -49,6 +49,7 @@
     .conteneur{
         @extend %flex-column;
         align-items: center;
+        width: 1000px;
 
         .scannez, .participez {
             .mosaique{
@@ -71,7 +72,7 @@
                 .image{
                     width: 40%;
                     border-left: solid $blue 4px;
-                    height: 600px;
+                    height: 500px;
                     background: center / cover no-repeat url("../img/penderie.png");
                 }
             }
@@ -133,9 +134,37 @@
             img{
                 max-width: 140px;
             }
+            h3{
+                margin: $margin_1 0px;
+            }
             p{
-                font-size: 18px;
+                font-size: $paragraphe1;
             }
         }
+    }
+}
+
+#marques{
+    @extend %flex-row-justify-center;
+    padding: $margin_max 0px;
+    .conteneur{
+        @extend %flex-column;
+        align-items: center;
+        width: 1000px;
+        p{
+            margin-top: $margin_1;
+            text-align: center;
+        }
+        .carroussel-marques{
+            @extend %flex-row-center;
+            
+            div{
+                margin:10px;
+                height: 75px;
+                width: 200px;
+                background-color: lightsteelblue;
+            }
+        }
+
     }
 }

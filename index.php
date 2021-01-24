@@ -114,6 +114,22 @@
                 </article>
             </div>
         </section>
+        <section id="marques">
+            <div class="conteneur">
+                <h2>Plus de 50 marques contribuent à notre projet</h2>
+                <p>Nos actions et la mobilisation de nos clients ont influencé les marques de textiles et de prêt-à-porter à avoir une démarche plus transparente vis à vis des pratiques de fabrications de leurs vêtements.</p>
+                <article class="carroussel-marques">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </article>
+            </div>
+
+        </section>
 		<footer>
 			<div>
 				<div>	
