@@ -77,8 +77,5 @@
 				<div>© L’Éthiquette - 2021</div>
 			</div>
 		</footer>
-		<script src="js/jquery.js"></script>
-    	<script src="js/splide.min.js"></script>
-    	<script src="js/script.js"></script>
 	</body>
 </html>

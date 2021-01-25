@@ -173,6 +173,9 @@ include "php/inc/header.inc.php";
         </div>
 
     </section>
+    <script src="js/jquery.js"></script>
+	<script src="js/splide.min.js"></script>
+    <script src="js/script.js"></script>
     <?php
 		include 'php/inc/footer.inc.php';
 	?>
