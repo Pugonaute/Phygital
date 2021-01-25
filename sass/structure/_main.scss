@@ -151,20 +151,57 @@
         @extend %flex-column;
         align-items: center;
         width: 1000px;
+
         p{
             margin-top: $margin_1;
             text-align: center;
         }
-        .carroussel-marques{
-            @extend %flex-row-center;
-            
-            div{
-                margin:10px;
-                height: 75px;
-                width: 200px;
-                background-color: lightsteelblue;
+        #image-slider{  
+            position: relative;
+            max-width: 1000px;
+            .splide__arrows{
+                .splide__arrow{
+                    fill: $blue;
+                    position: absolute;
+                    top: 25%;
+                    outline-style:none;
+                    background: transparent;
+
+                }
+                .splide__arrow--prev{
+                left: -3.5rem;
+                transform: scaleX(-1);
+                }
+                .splide__arrow--next{
+                    right: -3.5rem;
+                    outline-style:none;
+                    }
+                
+            }
+            .splide__pagination{
+                // bottom:-2rem;
+                // left:50%
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    line-height: 1;
+                    margin: 0;
+                    .splide__pagination__page{
+                        // padding: 0;
+                        // width: 10px;
+                        // height: 10px;
+                        // border-radius: 50%;
+                        // margin: 1rem;
+                        // background: $blue;
+                        // cursor: pointer;
+                        // display: block;
+
+                    }
+                
+
+                }
             }
         }
-
     }
 }
+

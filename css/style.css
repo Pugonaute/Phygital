@@ -105,7 +105,7 @@ header, header nav, header nav ul, #detail .conteneur .scannez .mosaique, #detai
   display: flex;
   flex-direction: row; }
 
-#marques .conteneur .carroussel-marques, footer div:first-child, footer div:first-child nav ul {
+footer div:first-child, footer div:first-child nav ul {
   display: flex;
   flex-direction: row;
   align-items: center; }
@@ -249,11 +249,26 @@ header {
     #marques .conteneur p {
       margin-top: 16px;
       text-align: center; }
-    #marques .conteneur .carroussel-marques div {
-      margin: 10px;
-      height: 75px;
-      width: 200px;
-      background-color: lightsteelblue; }
+    #marques .conteneur #image-slider {
+      position: relative;
+      max-width: 1000px; }
+      #marques .conteneur #image-slider .splide__arrows .splide__arrow {
+        fill: #00012E;
+        position: absolute;
+        top: 25%;
+        outline-style: none;
+        background: transparent; }
+      #marques .conteneur #image-slider .splide__arrows .splide__arrow--prev {
+        left: -3.5rem;
+        transform: scaleX(-1); }
+      #marques .conteneur #image-slider .splide__arrows .splide__arrow--next {
+        right: -3.5rem;
+        outline-style: none; }
+      #marques .conteneur #image-slider .splide__pagination li {
+        list-style: none;
+        display: inline-block;
+        line-height: 1;
+        margin: 0; }
 
 /* Footer */
 footer {
