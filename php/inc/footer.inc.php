@@ -12,7 +12,7 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href="<?= $root ?>php/pages/about.php">À propos</a>
+						<li>À propos
 							<ul>
 								<li>
 									<a href="<?= $root ?>php/pages/about.php#">Manifest</a>
