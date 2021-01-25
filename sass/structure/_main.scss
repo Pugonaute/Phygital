@@ -4,6 +4,11 @@
     padding: $margin_max 0px;
     box-sizing: border-box;
     @extend %flex-row-justify-center;
+    background-image:url("../img/fond-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
     .conteneur{
         @extend %flex-column;
         align-items: center;
@@ -195,6 +200,7 @@
                         // background: $blue;
                         // cursor: pointer;
                         // display: block;
+
 
                     }
                 
