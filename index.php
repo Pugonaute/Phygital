@@ -148,16 +148,19 @@
                                 <img src="img/logo-veja.png">
                             </li>
                             <li class="splide__slide">
-                                <img src="img/logo-ateliergagneur.png">
+                                <img src="img/logo-atelierlegagneur.png">
                             </li>
                             <li class="splide__slide">
                                 <img src="img/logo-bhallot.png">
                             </li>
                             <li class="splide__slide">
+                                <img src="img/logo-hopaal.png">
+                            </li>
+                            <li class="splide__slide">
                                 <img src="img/logo-maisonizard.png">
                             </li>
                             <li class="splide__slide">
-                                <img src="img/logo-manifest011.png">
+                                <img src="img/logo-vega.png">
                             </li>
                             <li class="splide__slide">
                                 <img src="img/logo-nudiejeans.png">
