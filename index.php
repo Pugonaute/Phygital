@@ -1,13 +1,12 @@
 <?php
-// Title à remplir
-$title = 'Accueil';
+	// Title à remplir
+	$title = 'Accueil';
 
-// TO DO : description à faire
-$desc = '';
+	// TO DO : description à faire
+	$desc = '';
 
-include "php/inc/header.inc.php";
+	include "php/inc/header.inc.php";
 ?>
-
     <section id="hero">
         <div class="conteneur">
             <h1>Habillez vous éthique, devenez acteur pour la planète</h1>
@@ -174,8 +173,8 @@ include "php/inc/header.inc.php";
 
     </section>
     <script src="js/jquery.js"></script>
-	<script src="js/splide.min.js"></script>
+    <script src="js/splide.min.js"></script>
     <script src="js/script.js"></script>
-    <?php
-		include 'php/inc/footer.inc.php';
-	?>
+<?php
+	include 'php/inc/footer.inc.php';
+?>
