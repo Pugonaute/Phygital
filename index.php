@@ -27,6 +27,10 @@
     <section id="hero">
         <div class="conteneur">
             <h1>Habillez vous éthique, devenez acteur pour la planète</h1>
+            <article class="vignettes">
+                <a href="https://www.apple.com/fr/ios/app-store/" title="app store"><img src="img/telecharger-appstore.svg" alt="bouton app store"></a>
+                <a href="https://play.google.com/store" title="play store"><img src="img/telecharger-playstore.svg" alt="bouton play store"></a>
+            </article>
             <h2>Il vous suffit de scanner !</h2>
             <p>L’ethiquette, l’application mobile qui vous permet de décrypter la composition de vos vêtements pour évaluer leur impact sur la planète et ainsi agir pour une mode plus responsable et locale.</p>
 
@@ -187,7 +191,23 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section id="rejoignez-nous">
+        <div class="conteneur">
+            <article class="infos-commercant">
+                <h3>"Plus de 3000 boutiques partenaires"</h3>
+                <img src="img/commercant.png" alt="commerçant">
+                <h2>Une solution parfaite pour les commerçants textiles et les créateurs</h2>
+                <h4>Rejoignez l'aventure</h4>
+                <p>Vous êtes un commerçant de vêtement indépendant et vous êtes interessé par notre projet ? Découvrez les nombreux avantages dont vous bénéficierez en faisant partie de notre réseau éthique.</p>
+            </article>
+            <article>
+                <a href="" class="button">En savoir plus</a>
+                <a href="" class="button">Contactez-nous</a>
+            </article>
 
+
+        </div>
     </section>
     <footer>
         <div>
