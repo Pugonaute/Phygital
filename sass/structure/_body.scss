@@ -2,7 +2,14 @@
 body{
     border: solid $blue 4px;
 
+    #hero,#presentation,#detail,#marques,#valeur,#rejoignez-nous,#en-tete,#chiffre{
+        @extend %flex-row-justify-center;
+
+    }
     .conteneur{
         width: 1100px;
+        .bigicon{
+            max-width: 120px;
+        }
     }
 }

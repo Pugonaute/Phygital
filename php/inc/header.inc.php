@@ -1,4 +1,3 @@
-<?php $root = '/Phygital/'; ?>
 
 <!DOCTYPE html>
 <html lang="fr">

@@ -1,9 +1,13 @@
+
 <?php
+
+    $root = ''; 
+
 	// Title à remplir
 	$title = 'Accueil';
 
 	// TO DO : description à faire
-	$desc = '';
+    $desc = '';
 
 	include "php/inc/header.inc.php";
 ?>
@@ -55,7 +59,7 @@
                         <div>
                             <h4>Faites le bon choix !</h4>
                             <p>Avec l’ethiquette vous ne pourrez plus vous tromper !
-                                Pour chaque produits scannés mauvais, nous vous recommanderons nos produits préférés, plus éthiques et meilleurs pour la planète.</p>
+                            Pour chaque produits scannés mauvais, nous vous recommanderons nos produits préférés, plus éthiques et meilleurs pour la planète.</p>
                         </div>
                     </article>
                     <article class="image">
@@ -88,17 +92,17 @@
     <section id="valeur">
         <div class="conteneur">
             <article>
-                <img src="img/ethique.svg" alt="">
+                <img src="img/ethique.svg" alt="éthique" class="bigicon">
                 <h3>Ethique</h3>
                 <p>Une analyse des vêtements et des marques basé sur les 4 grandes thématiques éthiques : écologie, social, santé et animaux.</p>
             </article>
             <article>
-                <img src="img/transparent.svg" alt="">
+                <img src="img/transparent.svg" alt="transparent" class="bigicon">
                 <h3>Transparent</h3>
                 <p>Nos données sont libres et accessibles à tou·te·s, elles sont récoltées à partir des données fournies par les marques et par nos utilisateurs.</p>
             </article>
             <article>
-                <img src="img/independant.svg" alt="">
+                <img src="img/independant.svg" alt="indépendant" class="bigicon">
                 <h3>Indépendant</h3>
                 <p>L’objectivité de nos analyses et l’absences de tout conflits d’interêts est garanti grâce à un financement éthique qui ne dépend d’aucunes marques.</p>
             </article>
@@ -167,10 +171,6 @@
 
                         </ul>
                     </div>
-                    <!-- <div class="splide__progress">
-                        <div class="splide__progress__bar">
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
