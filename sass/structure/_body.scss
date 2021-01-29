@@ -2,7 +2,7 @@
 body{
     border: solid $blue 4px;
 
-    #hero,#presentation,#detail,#marques,#valeur,#rejoignez-nous,#en-tete,#chiffre{
+    #hero,#presentation,#detail,#marques,#valeur,#rejoignez-nous,#en-tete,#chiffre,#manifest,#equipe,#methode{
         @extend %flex-row-justify-center;
 
     }
