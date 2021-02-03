@@ -1,6 +1,7 @@
 /* Main */
 
 #hero{
+    @extend %section;
     padding: 100px 0px;
     box-sizing: border-box;
     background-image:url("../img/fond-hero.svg");
@@ -16,15 +17,7 @@
             width: 65%;
             text-align: center;
         }
-        .vignettes{
-            @extend %flex-row;
-            justify-content: space-around;
-            width: 30%;
-            img{
-                margin: $margin_2;
-                height: 50px;
-            }
-        }
+
         h2{
             margin-top: $margin_max;
         }
@@ -40,6 +33,7 @@
 }
 
 #presentation{
+    @extend %section;
     background: $pink;
     border-top: dashed $blue 4px;
     border-bottom: dashed $blue 4px;
@@ -57,81 +51,16 @@
 
 #detail{
     padding: $margin_max 0px;
+    @extend %section;
     .conteneur{
         @extend %flex-column;
         align-items: center;
         width: 1000px;
-
-        .scannez, .participez {
-            .mosaique{
-                border: solid $blue 4px;
-                @extend %flex-row;
-                .texte{
-                    width: 60%;
-                    .h2{
-                        background: $green;
-                        border-bottom: solid $blue 4px;
-                    }
-                    div{
-                        padding: $margin_3 $margin_4;
-                        h4{
-                            margin-bottom: $margin_1;
-                        }
-                    }
-                }
-                .image{
-                    width: 40%;
-                    border-left: solid $blue 4px;
-                    height: 500px;
-                    background: center / cover no-repeat url("../img/participez.png");
-                }
-            }
-            .action{
-                width: 100%;
-                height: 80px;
-                @extend %flex-row;
-                justify-content: flex-end;
-            }
-        }
-
-        .comparez{
-            margin: $margin_4 0px;
-            .mosaique{
-                border: solid $blue 4px;
-                @extend %flex-row;
-                flex-direction: row-reverse;
-    
-                .texte{
-                    width: 60%;
-                    .h2{
-                        background: $green;
-                        border-bottom: solid $blue 4px;
-                    }
-                    div{
-                        padding: $margin_3 $margin_4;
-                        h4{
-                            margin-bottom: $margin_1;
-                        }
-                    }
-                }
-                .image{
-                    width: 40%;
-                    border-right: solid $blue 4px;
-                    height: 600px;
-                    background: center / cover no-repeat url("../img/comparez.png");
-                }
-            }
-        }
-        .action{
-            width: 100%;
-            height: 80px;
-            @extend %flex-row;
-            justify-content: flex-start;
-        }
     }
 }
 
 #valeur{
+    @extend %section;
     padding: $margin_4 0px;
     .conteneur{
         @extend %flex-row;
@@ -152,6 +81,7 @@
 }
 
 #marques{
+    @extend %section;
     padding: $margin_max 0px;
     .conteneur{
         @extend %flex-column;
@@ -184,7 +114,6 @@
                     right: -3.5rem;
                     outline-style:none;
                     }
-                
             }
             .splide__pagination{
                 li{
@@ -210,6 +139,7 @@
 }
 
 #rejoignez-nous{
+    @extend %section;
     padding: $margin_max 0px;
     background: $pink;
     border-top: dashed $blue 4px;
@@ -253,6 +183,7 @@
 }
 
 #en-tete{
+    @extend %section;
     background-color: $green;
     padding: 160px 0px;
     border-bottom: dashed $blue 4px;
@@ -271,6 +202,7 @@
 }
 
 #chiffre{
+    @extend %section;
     padding: $margin_max 0px;
     
     .conteneur{
@@ -317,6 +249,7 @@
 }
 
 #manifest{
+    @extend %section;
     padding-bottom: $margin_max;
     h4{
         margin-top: $margin_1;
@@ -330,6 +263,7 @@
 }
 
 #equipe{
+    @extend %section;
     padding: $margin_max 0px;
     background: $pink;
     border-top: dashed $blue 4px;
@@ -365,6 +299,7 @@
     }
 }
 #methode{
+    @extend %section;
     padding: $margin_max 0px;
     .conteneur{
         @extend %flex-column;
@@ -382,6 +317,128 @@
         }
         
     }
+}
+
+#articles{
+    @extend %section;
+    padding: $margin_max 0px;
+    .conteneur{
+        @extend %flex-column;
+        align-items: center;
+        width: 900px;
+        #article1 .image{
+            background-image: url(../img/article1.png);
+        }
+        #article2 .image{
+            background-image: url(../img/article2.png);
+        }
+        #article3 .image{
+            background-image: url(../img/article3.png);
+        }
+        #article4 .image{
+            background-image: url(../img/article4.png);
+        }
+    }
+}
+
+#formulaire{
+    @extend %section;
+    padding: $margin_max 0px;
+    background: $pink;
+    .conteneur{
+        @extend %flex-column;
+        align-items: center;
+        text-align: center;
+        h4{
+            margin-top: $margin_1;
+        }
+        article{
+            border-left: solid $blue 4px;
+            border-bottom: solid $blue 4px;
+            margin-top: $margin_4;
+            width: 100%;
+            background: white;
+
+            li{
+                list-style: none;
+                padding: 24px;
+                border-top: solid $blue 4px;
+                border-right: solid $blue 4px;
+            }
+
+            >:nth-child(1){
+                @extend %flex-row;
+                li{
+                    width: calc(100% / 3);
+                    padding: 48px;
+                    display: block;
+                    font-size: $titre4;
+                    font-weight: 600;
+                    text-decoration: underline;
+                    transition: 0.3s ease;
+                }
+                li:hover{
+                    background-color: $blue;
+                    color: white;
+                }
+            }
+            >:nth-child(2){
+                li{
+                    text-align: left;
+                    
+                }
+            }
+
+            >:nth-child(3){
+                @extend %flex-row;
+                li{
+                    width: calc(100% / 2);
+                    text-align: left;
+                }
+            }
+
+            >:nth-child(4){
+                li{
+                    text-align: left;
+                }
+            }
+
+            >:nth-child(5){
+                li{
+                    text-align: left;
+                    height: 120px;
+                }
+            }
+
+            >:nth-child(6){
+                @extend %flex-row;
+                
+                >:nth-child(1){
+                    width: 20%;
+                    min-width: 200px;
+                    background-color: $blue;
+                    color: white;
+                    font-size: $titre4;
+                    font-weight: 600;
+                    color: white;
+                    text-decoration: underline;
+                    transition: 0.3s ease;
+                }
+                >:nth-child(2){
+                    width: 80%;
+                    text-align: left;
+                }
+                >:nth-child(1):hover{
+                    background-color: $blue;
+                    opacity: 0.8;
+                    color: white;
+
+                }
+            }
+
+        }
+    }
+
 }
 
 

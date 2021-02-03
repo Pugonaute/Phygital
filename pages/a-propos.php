@@ -13,7 +13,7 @@
 
     <section id="en-tete">
         <div class="conteneur">
-            <h1>Un mouvement éthique et solidaire</h1>
+            <h1>Un mouvement éthique <br> et solidaire</h1>
             <p>L’objectif de l’éthiquette est d’améliorer l’impact de nos vêtement sur la planète et de revenir à une mode plus ethique et locale.</p>
         </div>
     </section>
@@ -66,31 +66,31 @@
             </div>
             <div class="row1">
                 <article>
-                    <img src="../img/johannes.png" alt="">
-                    <h3>Annaëlle</h3>
-                    <p>Web Designer</p>
+                    <img src="../img/anaelle.png" alt="Anaelle notre Web Designeuse">
+                    <h3>Anaëlle</h3>
+                    <p>Web Designeuse</p>
                 </article>
                 <article>
-                    <img src="../img/johannes.png" alt="">
+                    <img src="../img/emilie.png" alt="Emilie notre Motion Designeuse">
                     <h3>Emilie</h3>
-                    <p>Motion Designer</p>
+                    <p>Motion Designeuse</p>
                 </article>
                 <article>
-                    <img src="../img/johannes.png" alt="">
+                    <img src="../img/johannes.png" alt="Johannes notre Developpeur Front">
                     <h3>Johannes</h3>
                     <p>Developpeur Front</p>
                 </article>
             </div>
             <div class="row2">
                 <article>
-                    <img src="../img/johannes.png" alt="">
+                    <img src="../img/alex.png" alt="Alex notre Developpeur Back">
                     <h3>Alex</h3>
                     <p>Developpeur Back</p>
                 </article>
                 <article>
-                    <img src="../img/johannes.png" alt="">
-                    <h3>Jeremy</h3>
-                    <p>CEO</p>
+                    <img src="../img/mascotte.png" alt="Frolic notre Happyness Manager">
+                    <h3>Frolic</h3>
+                    <p>Happyness Manager</p>
                 </article>
             </div>
         </div>
