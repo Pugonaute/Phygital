@@ -15,16 +15,16 @@
 						<li>À propos
 							<ul>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php#">Manifest</a>
+									<a href="<?= $root ?>php/pages/a-propos.php#">Manifest</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php#">Nos méthodes</a>
+									<a href="<?= $root ?>php/pages/a-propos.php#">Nos méthodes</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php#">L'équipe</a>
+									<a href="<?= $root ?>php/pages/a-propos.php#">L'équipe</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php#">Marques partenaires</a>
+									<a href="<?= $root ?>php/pages/a-propos.php#">Marques partenaires</a>
 								</li>
 							</ul>
 						</li>

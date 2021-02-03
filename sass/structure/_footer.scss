@@ -16,20 +16,20 @@ footer{
 	div:first-child{
 		@extend %flex-row-center;
 		justify-content: space-around;
-//		background: yellow;
+		//		background: yellow;
 		height: 100%;
 
 		div{
-//			background: green;
+			//			background: green;
 			@extend %flex-column;
 			justify-content: space-between;
 			align-items: flex-start;
 			width: 100%;
 			max-width: calc(100vw / 3);
 			max-height: 200px;
-			
+
 			margin: 0 30px;
-			
+
 			div:first-child{
 				width: 100%;
 				img{
@@ -39,7 +39,7 @@ footer{
 		}
 
 		nav{
-//			background: red;
+			//			background: red;
 			@extend %flex-row;
 			justify-content: space-around;
 			width: 100%;
@@ -50,11 +50,19 @@ footer{
 				color: $white;
 				border: 1px auto;
 			}
-			
+
 			li{
 				padding-top: 10px;
+
+				a{
+					text-decoration: inherit;
+					font-size: inherit;
+				}
+				a:hover{
+					text-decoration: underline;
+				}
 			}
-			
+
 			ul{
 				@extend %flex-row-center;
 				justify-content: space-around;
@@ -62,29 +70,23 @@ footer{
 				display:table-row;
 
 				li{
-//					display: table-row;
+					//					display: table-row;
 					list-style: none;
 					font-family: "Recoleta-SemiBold", serif;
 					font-size: $titre3;
-					
-					a{
-						text-decoration: inherit;
-						font-size: inherit;
-					}
-					a:hover{
-						text-decoration: underline;
-					}
-					
-					
+
+
+
+
 					ul{
 						li{
-						font-size: $paragraphe1;
-						font-family: "Gilroy-Semibold", sans-serif;
+							font-size: $paragraphe1;
+							font-family: "Gilroy-Semibold", sans-serif;
 						}
-						
-//						a{
-//							font-size: $paragraphe1;
-//						}
+
+						//						a{
+						//							font-size: $paragraphe1;
+						//						}
 					}
 				}
 			}

@@ -1,11 +1,13 @@
 <?php
-// Title à remplir
-$title = 'Découvrir l\'application';
+    $root = '../../';
 
-// TO DO : description à faire
-$desc = '';
+	// Title à remplir
+	$title = 'Découvrir l\'application';
 
-include "../inc/header.inc.php";
+	// TO DO : description à faire
+    $desc = '';
+
+	include $root."php/inc/header.inc.php";
 ?>
 <main>
 	<h1><?= $title ?></h1>
@@ -14,5 +16,5 @@ include "../inc/header.inc.php";
 	</section>
 </main>
 <?php
-include '../inc/footer.inc.php';
+include $root.'php/inc/footer.inc.php';
 ?>
