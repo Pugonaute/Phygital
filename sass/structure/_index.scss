@@ -174,13 +174,15 @@
 					margin-top: $margin_1;
 				}
 			}
-
-			article{
-				margin-top: $margin_2;
+			>div{
+				@extend %flex-row;
+				justify-content: space-between;
 				a{
-					margin: 0px $margin_2;
+					margin: $margin_4;
 				}
+
 			}
+
 		}
 	}
 

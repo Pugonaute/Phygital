@@ -51,7 +51,9 @@
 					<a href="" class="button2">Lire l'article</a>
 				</div>
 			</article>
-			<a href="" class="button">Voir plus</a>
+			<a href="" class="button1">
+				<div><span>Voir plus</div></span>
+			</a>
 		</div>
 	</section>
 </main>

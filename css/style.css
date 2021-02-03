@@ -9,7 +9,7 @@ footer, footer div:last-child, .en-tete .conteneur {
   flex-direction: column;
   justify-content: center; }
 
-#index #valeur .conteneur, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #partenaire #service .conteneur .capsule-left .mosaique, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), header, header nav, header nav ul, footer div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
+#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #partenaire #service .conteneur .capsule-left .mosaique, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), header, header nav, header nav ul, footer div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
   display: flex;
   flex-direction: row; }
 
@@ -231,10 +231,10 @@ body {
       #index #rejoignez-nous .conteneur .infos-commercant p {
         width: 80%;
         margin-top: 16px; }
-    #index #rejoignez-nous .conteneur article {
-      margin-top: 24px; }
-      #index #rejoignez-nous .conteneur article a {
-        margin: 0px 24px; }
+    #index #rejoignez-nous .conteneur > div {
+      justify-content: space-between; }
+      #index #rejoignez-nous .conteneur > div a {
+        margin: 40px; }
 
 /* Partenaire */
 #partenaire .en-tete {
@@ -731,53 +731,6 @@ footer {
 
 /* COMPONENTS */
 /* Button */
-.button {
-  /*Button Text Style*/
-  font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
-  font-size: inherit;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  min-width: 160px;
-  /*Button Color & Border*/
-  border: 4px solid #00012E;
-  color: #00012E;
-  background: #fff;
-  outline: none;
-  /*Position, Display, Size*/
-  position: relative;
-  display: inline-block;
-  padding: 15px 10px 14px;
-  cursor: pointer;
-  width: auto; }
-
-.button:after {
-  /*Make a:after be as big as button*/
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  /*Give a:after Border & Background color*/
-  border: 4px solid #00012E;
-  background-color: #00012E;
-  /*Decide Location of a:after..this gives a           bottom right shadow*/
-  left: 4px;
-  top: 4px;
-  /*Place a:after behind button*/
-  z-index: -1;
-  content: '';
-  /*Animation/Transition Speed*/
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s; }
-
-.button:hover {
-  top: 2px;
-  left: 4px; }
-
-.button:hover:after {
-  top: -2px;
-  left: -2px; }
-
 .button2 {
   color: white;
   background: #00012E;
@@ -788,6 +741,36 @@ footer {
   font-size: 20px;
   font-weight: 600;
   display: block; }
+
+.button1 {
+  margin: 32px 0px;
+  position: relative;
+  background-color: #00012E;
+  text-decoration: none;
+  height: 64px;
+  width: 250px;
+  border: 4px solid #00012E; }
+  .button1 div {
+    position: absolute;
+    display: block;
+    border: 4px solid #00012E;
+    background: white;
+    min-width: 160px;
+    font-weight: bold;
+    height: 64px;
+    width: 250px;
+    top: -14px;
+    left: -14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    z-index: 10; }
+
+.button1:hover div {
+  top: -4px;
+  left: -4px; }
 
 button {
   border: 0;

@@ -51,6 +51,9 @@
                     <li>Aucune pièce-jointe</li>
                 </ul>
             </article>
+            <a href="" class="button1">
+                <div><span>Envoyer le message</div></span>
+            </a>
             
         </div>
     </section>

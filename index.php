@@ -21,7 +21,9 @@ include $root.'php/inc/header.inc.php';
 			</div>
 			<h2>Il vous suffit de scanner !</h2>
 			<p>L’ethiquette, l’application mobile qui vous permet de décrypter la composition de vos vêtements pour évaluer leur impact sur la planète et ainsi agir pour une mode plus responsable et locale.</p>
-			<a class="button" href="">Regarder la vidéo</a>
+			<a href="" class="button1">
+                <div><span>Regarder la vidéo</div></span>
+            </a>
 		</div>
 	</section>
 	<section id="presentation">
@@ -188,10 +190,16 @@ include $root.'php/inc/header.inc.php';
 				<h4>Rejoignez l'aventure</h4>
 				<p>Vous êtes un commerçant de vêtement indépendant et vous êtes interessé par notre projet ? Découvrez les nombreux avantages dont vous bénéficierez en faisant partie de notre réseau éthique.</p>
 			</article>
-			<article>
-				<a href="" class="button">En savoir plus</a>
-				<a href="" class="button">Contactez-nous</a>
-			</article>
+			<div>
+				<a href="" class="button1">
+					<div><span>En savoir plus</div></span>
+				</a>
+				<a href="" class="button1">
+					<div><span>Contactez-nous</div></span>
+				</a>
+			</div>
+
+			
 
 
 		</div>
