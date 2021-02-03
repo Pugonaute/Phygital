@@ -21,7 +21,7 @@
 		<div class="conteneur">
 			<h2>L'industrie de la mode en quelques chiffres</h2>
 			<div class="row">
-				<img src="../img/ethique.svg" alt="icon pollution" class="bigicon">
+				<img src="../img/pollution.svg" alt="icon pollution" class="bigicon">
 				<h3>Chaque année, la mode emet <span>+ d’1,2 milliards</span> de tonnes de CO2.</h3>
 			</div>
 			<div class="column">
