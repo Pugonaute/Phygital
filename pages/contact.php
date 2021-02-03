@@ -11,6 +11,7 @@
         include $root."/php/inc/header.inc.php";
     ?>
 
+<main id="contact">
     <section id="formulaire">
         <div class="conteneur">
             <h1>Vous souhaitez<br>nous contacter ?</h1>
@@ -53,6 +54,7 @@
             
         </div>
     </section>
+</main>
 
     <?php   
         include '../php/inc/footer.inc.php';

@@ -14,11 +14,22 @@ header{
         width: 100%;
         @extend %flex-row;
         justify-content: space-between;
-
-
-        img{
-            max-width: 250px;
-        }
+		
+		color: $white;
+		
+//		a{
+////			display: block;
+//			height: auto;
+//			width: auto;
+//			img{
+//				width: 100%;
+//				max-width: 250px;
+//			}
+//		}
+		img{
+//				width: 100%;
+				max-width: 250px;
+			}
 
         hr{
             color: $white;
@@ -34,10 +45,15 @@ header{
             li{
                 list-style: none;
                 a{
-                    color: $white;
-                    text-decoration: none;
                     font-size: 18px;
-                }
+					text-decoration: inherit;
+					font-size: inherit;
+				}
+				a:hover{
+					text-decoration: underline;
+				}
+				
+				
             }
         }
 

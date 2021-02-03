@@ -3,7 +3,7 @@
 @import "helpers/variables"; //variables toujours en 1st
 @import "helpers/reset"; // helpers/_reset.scss
 @import "helpers/typo";
-@import "components/card";
+
 // Extends
 
 %flex-column{
@@ -34,17 +34,16 @@
     justify-content: center;
 }
 
-
-
 /* STRUCTURE */
-
 
 @import "structure/body";
 @import "structure/header";
 @import "structure/main";
 @import "structure/footer";
+@import "structure/contact";
 
 /* COMPONENTS */
 
 @import "components/button";
-//@import "component/cards";
+@import "components/card";
+@import "components/parts";

@@ -15,16 +15,16 @@
 						<li>À propos
 							<ul>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php#">Manifest</a>
+									<a href="<?= $root ?>pages/a-propos.php#">Manifest</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php#">Nos méthodes</a>
+									<a href="<?= $root ?>pages/a-propos.php#">Nos méthodes</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php#">L'équipe</a>
+									<a href="<?= $root ?>pages/a-propos.php#">L'équipe</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php#">Marques partenaires</a>
+									<a href="<?= $root ?>pages/a-propos.php#">Marques partenaires</a>
 								</li>
 							</ul>
 						</li>
@@ -34,13 +34,13 @@
 						<li>Nos services
 							<ul>
 								<li>
-									<a href="<?= $root ?>php/pages/application.php">Application</a>
+									<a href="<?= $root ?>pages/application.php">Application</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/application.php#">Fonctionnalités</a>
+									<a href="<?= $root ?>pages/application.php#">Fonctionnalités</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/partenaire.php">Devenir partenaire</a>
+									<a href="<?= $root ?>pages/partenaire.php">Devenir partenaire</a>
 								</li>
 								<li>
 									<a href="">Stratégie</a>
@@ -56,13 +56,13 @@
 									<a href="">Besoin d'aide ?</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/contact.php">Nous contacter</a>
+									<a href="<?= $root ?>pages/contact.php">Nous contacter</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/blog.php">Blog</a>
+									<a href="<?= $root ?>pages/blog.php">Blog</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>php/pages/about.php">CGU CGV</a>
+									<a href="#">CGU CGV</a>
 								</li>
 								<li>
 									<a href="#">Réseaux</a>
