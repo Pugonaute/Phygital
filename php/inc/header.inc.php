@@ -19,8 +19,8 @@
 					<li><a href="<?= $root ?>php/pages/application.php">Application</a></li>
 					<li><a href="<?= $root ?>php/pages/partenaire.php">Devenir partenaire</a></li>
 					<li><a href="<?= $root ?>pages/a-propos.php">A propos</a></li>
-					<li><a href="<?= $root ?>php/pages/blog.php">Blog</a></li>
-					<li><a href="<?= $root ?>php/pages/contact.php">Contactez-nous</a></li>
+					<li><a href="<?= $root ?>pages/blog.php">Blog</a></li>
+					<li><a href="<?= $root ?>pages/contact.php">Contactez-nous</a></li>
 				</ul>
 			</nav>
 		</header>
