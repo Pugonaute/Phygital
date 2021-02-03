@@ -13,7 +13,7 @@
 
     <section id="formulaire">
         <div class="conteneur">
-            <h1>Vous souhaitez nous contacter ?</h1>
+            <h1>Vous souhaitez<br>nous contacter ?</h1>
             <h4>Nous sommes là pour vous !</h4>
             <article>
                 <ul>
@@ -22,7 +22,18 @@
                     <li>Je suis un utilisateur</li>
                 </ul>
                 <ul>
-                    <li>Raison de votre prise de contact</li>
+                    <li>Raison de votre prise de contact
+                        <ul>
+                            <li>J'ai besoin d'aide sur l'application</li>
+                            <li>Je veux transmettre les données de mes vêtements</li>
+                            <li>J'ai un problème avec ma commande</li>
+                            <li>Comment récupérer ma commande</li>
+                            <li>Je veux devenir partenaire</li>
+                            <li>Je veux devenir "Ethique First"</li>
+                            <li>Autre</li>
+                        </ul>
+                    </li>
+                    <div></div>
                 </ul>
                 <ul>
                     <li>Nom</li>
@@ -35,8 +46,8 @@
                     <li>Message</li>
                 </ul>
                 <ul>
-                    <li>choisir un fichier</li>
-                    <li>Insérez un pièce-jointe</li>
+                    <li>Choisir un fichier</li>
+                    <li>Aucune pièce-jointe</li>
                 </ul>
             </article>
             
