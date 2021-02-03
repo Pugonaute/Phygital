@@ -1,4 +1,28 @@
+@charset "UTF-8";
 /* HELPERS */
+#index #hero .conteneur, #index #presentation .conteneur, #index #detail .conteneur, #index #marques .conteneur, #index #rejoignez-nous .conteneur, #index #rejoignez-nous .conteneur .infos-commercant, #partenaire #scheme .conteneur, #partenaire #valeurs .conteneur, #partenaire #service .conteneur, #partenaire #service .conteneur > div, #a-propos #chiffre .conteneur, #a-propos #equipe .conteneur, #a-propos #equipe .conteneur .presentation-equipe, #a-propos #methode .conteneur, #blog #articles .conteneur, #contact #formulaire .conteneur, footer div:first-child div {
+  display: flex;
+  flex-direction: column; }
+
+footer, footer div:last-child, .en-tete .conteneur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#index #valeur .conteneur, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #partenaire #service .conteneur .capsule-left .mosaique, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), header, header nav, header nav ul, footer div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
+  display: flex;
+  flex-direction: row; }
+
+#partenaire #service .conteneur .capsule-right .mosaique, footer div:first-child, footer div:first-child nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+body #index #hero, #index body #hero, body #index #presentation, #index body #presentation, body #index #detail, #index body #detail, body #index #valeur, #index body #valeur, body #index #marques, #index body #marques, body #index #rejoignez-nous, #index body #rejoignez-nous, body #a-propos #chiffre, #a-propos body #chiffre, body #a-propos #manifest, #a-propos body #manifest, body #a-propos #equipe, #a-propos body #equipe, body #a-propos #methode, #a-propos body #methode, body #blog #articles, #blog body #articles, body #contact #formulaire, #contact body #formulaire, body .en-tete, #partenaire #scheme, #partenaire #valeurs, #partenaire #service {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 /* Resetk */
 * {
   margin: 0px;
@@ -92,29 +116,6 @@ p {
   font-weight: 300;
   color: #00012E; }
 
-#hero .conteneur, #presentation .conteneur, #detail .conteneur, #marques .conteneur, #rejoignez-nous .conteneur, #rejoignez-nous .conteneur .infos-commercant, #chiffre .conteneur, #a-propos #equipe .conteneur, #a-propos #equipe .conteneur .presentation-equipe, #a-propos #methode .conteneur, #articles .conteneur, #partenaire #scheme .conteneur, #partenaire #valeurs .conteneur, #partenaire #service .conteneur, #partenaire #service .conteneur > div, footer div:first-child div, #contact #formulaire .conteneur {
-  display: flex;
-  flex-direction: column; }
-
-footer, footer div:last-child, .en-tete .conteneur {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-header, header nav, header nav ul, #valeur .conteneur, #chiffre .conteneur .row, #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #partenaire #service .conteneur .capsule-left .mosaique, footer div:first-child nav, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
-  display: flex;
-  flex-direction: row; }
-
-#partenaire #service .conteneur .capsule-right .mosaique, footer div:first-child, footer div:first-child nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-body #hero, body #presentation, body #detail, body #valeur, body #marques, body #rejoignez-nous, body #chiffre, body #a-propos #manifest, #a-propos body #manifest, body #a-propos #equipe, #a-propos body #equipe, body #a-propos #methode, #a-propos body #methode, body #articles, body #contact #formulaire, #contact body #formulaire, body .en-tete, #partenaire #scheme, #partenaire #valeurs, #partenaire #service {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 /* STRUCTURE */
 /* Body */
 body {
@@ -124,235 +125,118 @@ body {
     body .conteneur .bigicon {
       max-width: 120px; }
 
-/* Nav */
-header {
-  background: #00012E;
-  height: 80px;
-  justify-content: center;
-  padding: 0 24px; }
-  header nav {
-    width: 100%;
-    justify-content: space-between;
-    color: #FFFFFF; }
-    header nav img {
-      max-width: 250px; }
-    header nav hr {
-      color: #FFFFFF;
-      border: 2px dashed; }
-    header nav ul {
-      width: 50%;
-      align-items: center;
-      justify-content: space-around; }
-      header nav ul li {
-        list-style: none; }
-        header nav ul li a {
-          font-size: 18px;
-          text-decoration: inherit;
-          font-size: inherit; }
-        header nav ul li a:hover {
-          text-decoration: underline; }
-
 /* Main */
-#hero {
+/* Pages */
+/* Index */
+#index #hero {
   padding: 100px 0px;
   box-sizing: border-box;
   background-image: url("../img/fond-hero.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
-  #hero .conteneur {
+  #index #hero .conteneur {
     align-items: center; }
-    #hero .conteneur h1 {
+    #index #hero .conteneur h1 {
       font-size: 56px;
       width: 65%;
       text-align: center; }
-    #hero .conteneur h2 {
+    #index #hero .conteneur h2 {
       margin-top: 80px; }
-    #hero .conteneur p {
+    #index #hero .conteneur p {
       margin-top: 16px;
       width: 65%;
       text-align: center; }
-    #hero .conteneur .button {
+    #index #hero .conteneur .button {
       margin-top: 24px; }
-
-#presentation {
+#index #presentation {
   background: #FFDCC9;
   border-top: dashed #00012E 4px;
   border-bottom: dashed #00012E 4px;
   padding: 80px 0px; }
-  #presentation .conteneur {
+  #index #presentation .conteneur {
     align-items: center; }
-    #presentation .conteneur .video {
+    #index #presentation .conteneur .video {
       width: 100%;
       height: 600px;
       background-color: #00012E; }
-
-#detail {
+#index #detail {
   padding: 80px 0px; }
-  #detail .conteneur {
+  #index #detail .conteneur {
     align-items: center;
     width: 1000px; }
-
-#valeur {
+#index #valeur {
   padding: 40px 0px; }
-  #valeur .conteneur {
+  #index #valeur .conteneur {
     justify-content: space-between; }
-    #valeur .conteneur article {
+    #index #valeur .conteneur article {
       text-align: center;
       width: calc((100% - 160px) / 3); }
-      #valeur .conteneur article h3 {
+      #index #valeur .conteneur article h3 {
         margin: 16px 0px; }
-      #valeur .conteneur article p {
+      #index #valeur .conteneur article p {
         font-size: 16px;
         line-height: 1.5em; }
-
-#marques {
+#index #marques {
   padding: 80px 0px; }
-  #marques .conteneur {
+  #index #marques .conteneur {
     align-items: center;
     width: 1000px; }
-    #marques .conteneur p {
+    #index #marques .conteneur p {
       margin-top: 16px;
       text-align: center; }
-    #marques .conteneur #image-slider {
+    #index #marques .conteneur #image-slider {
       margin-top: 40px;
       position: relative;
       max-width: 1000px; }
-      #marques .conteneur #image-slider .splide__arrows .splide__arrow {
+      #index #marques .conteneur #image-slider .splide__arrows .splide__arrow {
         fill: #00012E;
         position: absolute;
         top: 25%;
         outline-style: none;
         background: transparent; }
-      #marques .conteneur #image-slider .splide__arrows .splide__arrow--prev {
+      #index #marques .conteneur #image-slider .splide__arrows .splide__arrow--prev {
         left: -3.5rem;
         transform: scaleX(-1); }
-      #marques .conteneur #image-slider .splide__arrows .splide__arrow--next {
+      #index #marques .conteneur #image-slider .splide__arrows .splide__arrow--next {
         right: -3.5rem;
         outline-style: none; }
-      #marques .conteneur #image-slider .splide__pagination li {
+      #index #marques .conteneur #image-slider .splide__pagination li {
         list-style: none;
         display: inline-block;
         line-height: 1;
         margin: 0; }
-
-#rejoignez-nous {
+#index #rejoignez-nous {
   padding: 80px 0px;
   background: #FFDCC9;
   border-top: dashed #00012E 4px; }
-  #rejoignez-nous .conteneur {
+  #index #rejoignez-nous .conteneur {
     align-items: center;
     text-align: center; }
-    #rejoignez-nous .conteneur .infos-commercant {
+    #index #rejoignez-nous .conteneur .infos-commercant {
       align-items: center; }
-      #rejoignez-nous .conteneur .infos-commercant h3 {
+      #index #rejoignez-nous .conteneur .infos-commercant h3 {
         margin-bottom: 24px; }
-      #rejoignez-nous .conteneur .infos-commercant img {
+      #index #rejoignez-nous .conteneur .infos-commercant img {
         margin: auto;
         display: block;
         max-width: 100%;
         width: 640px;
         border: solid #00012E 4px; }
-      #rejoignez-nous .conteneur .infos-commercant h2 {
+      #index #rejoignez-nous .conteneur .infos-commercant h2 {
         width: 65%;
         margin-top: 40px; }
-      #rejoignez-nous .conteneur .infos-commercant h4 {
+      #index #rejoignez-nous .conteneur .infos-commercant h4 {
         margin-top: 16px; }
-      #rejoignez-nous .conteneur .infos-commercant p {
+      #index #rejoignez-nous .conteneur .infos-commercant p {
         width: 80%;
         margin-top: 16px; }
-    #rejoignez-nous .conteneur article {
+    #index #rejoignez-nous .conteneur article {
       margin-top: 24px; }
-      #rejoignez-nous .conteneur article a {
+      #index #rejoignez-nous .conteneur article a {
         margin: 0px 24px; }
 
-#chiffre {
-  padding: 80px 0px; }
-  #chiffre .conteneur {
-    align-items: center; }
-    #chiffre .conteneur h2 {
-      margin-bottom: 24px; }
-    #chiffre .conteneur .row {
-      margin-bottom: 40px;
-      align-items: center;
-      justify-content: center; }
-      #chiffre .conteneur .row h3 {
-        width: 25%; }
-      #chiffre .conteneur .row img {
-        margin: 0px 40px; }
-      #chiffre .conteneur .row span {
-        background: #C0FFE7; }
-    #chiffre .conteneur .column {
-      justify-content: space-between;
-      width: 80%; }
-      #chiffre .conteneur .column article {
-        text-align: center;
-        width: calc((100% - 160px) / 3); }
-        #chiffre .conteneur .column article h3 {
-          background-color: #C0FFE7;
-          display: inline; }
-        #chiffre .conteneur .column article p {
-          font-size: 16px;
-          line-height: 1.5em; }
-
-#a-propos #manifest {
-  padding-bottom: 80px; }
-  #a-propos #manifest h4 {
-    margin-top: 16px; }
-  #a-propos #manifest p {
-    margin-top: 16px; }
-  #a-propos #manifest span {
-    font-weight: bold; }
-#a-propos #equipe {
-  padding: 80px 0px;
-  background: #FFDCC9;
-  border-top: dashed #00012E 4px;
-  border-bottom: dashed #00012E 4px; }
-  #a-propos #equipe .conteneur {
-    align-items: center;
-    text-align: center; }
-    #a-propos #equipe .conteneur img {
-      border: solid #00012E 4px;
-      border-radius: 100%; }
-    #a-propos #equipe .conteneur .presentation-equipe {
-      align-items: center;
-      text-align: center;
-      width: 65%;
-      margin-bottom: 32px; }
-      #a-propos #equipe .conteneur .presentation-equipe p {
-        margin-top: 16px; }
-    #a-propos #equipe .conteneur .row1 {
-      justify-content: space-between;
-      width: 80%; }
-    #a-propos #equipe .conteneur .row2 {
-      justify-content: space-between;
-      width: 50%; }
-#a-propos #methode {
-  padding: 80px 0px; }
-  #a-propos #methode .conteneur {
-    align-items: center;
-    text-align: center; }
-    #a-propos #methode .conteneur p {
-      width: 80%;
-      margin-top: 16px; }
-    #a-propos #methode .conteneur img {
-      margin-top: 16px;
-      border: solid #00012E 4px; }
-
-#articles {
-  padding: 80px 0px; }
-  #articles .conteneur {
-    align-items: center;
-    width: 900px; }
-    #articles .conteneur #article1 .image {
-      background-image: url(../img/article1.png); }
-    #articles .conteneur #article2 .image {
-      background-image: url(../img/article2.png); }
-    #articles .conteneur #article3 .image {
-      background-image: url(../img/article3.png); }
-    #articles .conteneur #article4 .image {
-      background-image: url(../img/article4.png); }
-
+/* Partenaire */
 #partenaire .en-tete {
   background-color: #FFDCC9; }
 #partenaire #scheme {
@@ -470,6 +354,226 @@ header {
     margin-top: 16px; }
   #partenaire #manifest span {
     font-weight: bold; }
+
+/* À propos */
+#a-propos #chiffre {
+  padding: 80px 0px; }
+  #a-propos #chiffre .conteneur {
+    align-items: center; }
+    #a-propos #chiffre .conteneur h2 {
+      margin-bottom: 24px; }
+    #a-propos #chiffre .conteneur .row {
+      margin-bottom: 40px;
+      align-items: center;
+      justify-content: center; }
+      #a-propos #chiffre .conteneur .row h3 {
+        width: 25%; }
+      #a-propos #chiffre .conteneur .row img {
+        margin: 0px 40px; }
+      #a-propos #chiffre .conteneur .row span {
+        background: #C0FFE7; }
+    #a-propos #chiffre .conteneur .column {
+      justify-content: space-between;
+      width: 80%; }
+      #a-propos #chiffre .conteneur .column article {
+        text-align: center;
+        width: calc((100% - 160px) / 3); }
+        #a-propos #chiffre .conteneur .column article h3 {
+          background-color: #C0FFE7;
+          display: inline; }
+        #a-propos #chiffre .conteneur .column article p {
+          font-size: 16px;
+          line-height: 1.5em; }
+#a-propos #manifest {
+  padding-bottom: 80px; }
+  #a-propos #manifest h4 {
+    margin-top: 16px; }
+  #a-propos #manifest p {
+    margin-top: 16px; }
+  #a-propos #manifest span {
+    font-weight: bold; }
+#a-propos #equipe {
+  padding: 80px 0px;
+  background: #FFDCC9;
+  border-top: dashed #00012E 4px;
+  border-bottom: dashed #00012E 4px; }
+  #a-propos #equipe .conteneur {
+    align-items: center;
+    text-align: center; }
+    #a-propos #equipe .conteneur img {
+      border: solid #00012E 4px;
+      border-radius: 100%; }
+    #a-propos #equipe .conteneur .presentation-equipe {
+      align-items: center;
+      text-align: center;
+      width: 65%;
+      margin-bottom: 32px; }
+      #a-propos #equipe .conteneur .presentation-equipe p {
+        margin-top: 16px; }
+    #a-propos #equipe .conteneur .row1 {
+      justify-content: space-between;
+      width: 80%; }
+    #a-propos #equipe .conteneur .row2 {
+      justify-content: space-between;
+      width: 50%; }
+#a-propos #methode {
+  padding: 80px 0px; }
+  #a-propos #methode .conteneur {
+    align-items: center;
+    text-align: center; }
+    #a-propos #methode .conteneur p {
+      width: 80%;
+      margin-top: 16px; }
+    #a-propos #methode .conteneur img {
+      margin-top: 16px;
+      border: solid #00012E 4px; }
+
+/* Blog */
+#blog #articles {
+  padding: 80px 0px; }
+  #blog #articles .conteneur {
+    align-items: center;
+    width: 900px; }
+    #blog #articles .conteneur #article1 .image {
+      background-image: url(../img/article1.png); }
+    #blog #articles .conteneur #article2 .image {
+      background-image: url(../img/article2.png); }
+    #blog #articles .conteneur #article3 .image {
+      background-image: url(../img/article3.png); }
+    #blog #articles .conteneur #article4 .image {
+      background-image: url(../img/article4.png); }
+
+#contact #formulaire {
+  padding: 80px 0px;
+  background: #FFDCC9; }
+  #contact #formulaire .conteneur {
+    align-items: center;
+    text-align: center; }
+    #contact #formulaire .conteneur h4 {
+      margin-top: 16px; }
+    #contact #formulaire .conteneur article {
+      border-left: solid #00012E 4px;
+      border-bottom: solid #00012E 4px;
+      margin-top: 40px;
+      width: 100%;
+      background: white; }
+      #contact #formulaire .conteneur article li {
+        list-style: none;
+        padding: 24px;
+        border-top: solid #00012E 4px;
+        border-right: solid #00012E 4px; }
+      #contact #formulaire .conteneur article > :nth-child(1) li {
+        width: calc(100% / 3);
+        padding: 48px;
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: underline;
+        transition: 0.3s ease;
+        cursor: pointer; }
+      #contact #formulaire .conteneur article > :nth-child(1) li:hover {
+        background-color: #00012E;
+        color: white; }
+      #contact #formulaire .conteneur article > :nth-child(2) {
+        border-top: solid #00012E 4px;
+        border-right: solid #00012E 4px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer; }
+        #contact #formulaire .conteneur article > :nth-child(2) > li {
+          text-align: left;
+          position: relative;
+          font-size: 20px;
+          font-weight: 600;
+          border: 0px; }
+          #contact #formulaire .conteneur article > :nth-child(2) > li ul {
+            display: none;
+            box-shadow: 0px 1px 2px #CCC;
+            background-color: white;
+            position: absolute;
+            width: 600px;
+            border-left: solid #00012E 4px;
+            border-bottom: solid #00012E 4px; }
+            #contact #formulaire .conteneur article > :nth-child(2) > li ul li {
+              color: #00012E;
+              padding: 18px;
+              font-size: 18px; }
+            #contact #formulaire .conteneur article > :nth-child(2) > li ul li:hover {
+              background-color: #00012E;
+              color: white; }
+        #contact #formulaire .conteneur article > :nth-child(2) div {
+          margin: 24px;
+          width: 16px;
+          height: 16px;
+          transform: rotate(45deg);
+          border-right: solid #00012E 4px;
+          border-bottom: solid #00012E 4px; }
+      #contact #formulaire .conteneur article > :nth-child(2):hover {
+        background-color: #00012E;
+        color: white; }
+        #contact #formulaire .conteneur article > :nth-child(2):hover div {
+          border-right: solid white 4px;
+          border-bottom: solid white 4px; }
+        #contact #formulaire .conteneur article > :nth-child(2):hover ul {
+          display: block; }
+      #contact #formulaire .conteneur article > :nth-child(3) li {
+        width: calc(100% / 2);
+        text-align: left;
+        color: #808097; }
+      #contact #formulaire .conteneur article > :nth-child(4) li {
+        text-align: left;
+        color: #808097; }
+      #contact #formulaire .conteneur article > :nth-child(5) li {
+        text-align: left;
+        height: 120px;
+        color: #808097; }
+      #contact #formulaire .conteneur article > :nth-child(6) > :nth-child(1) {
+        width: 20%;
+        min-width: 200px;
+        background-color: #00012E;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        text-decoration: underline;
+        transition: 0.3s ease;
+        cursor: pointer; }
+      #contact #formulaire .conteneur article > :nth-child(6) > :nth-child(2) {
+        width: 80%;
+        text-align: left; }
+      #contact #formulaire .conteneur article > :nth-child(6) > :nth-child(1):hover {
+        background-color: #00012E;
+        opacity: 0.8;
+        color: white; }
+
+/* Includes */
+/* Nav */
+header {
+  background: #00012E;
+  height: 80px;
+  justify-content: center;
+  padding: 0 24px; }
+  header nav {
+    width: 100%;
+    justify-content: space-between;
+    color: #FFFFFF; }
+    header nav img {
+      max-width: 250px; }
+    header nav hr {
+      color: #FFFFFF;
+      border: 2px dashed; }
+    header nav ul {
+      width: 50%;
+      align-items: center;
+      justify-content: space-around; }
+      header nav ul li {
+        list-style: none; }
+        header nav ul li a {
+          font-size: 18px;
+          text-decoration: inherit;
+          font-size: inherit; }
+        header nav ul li a:hover {
+          text-decoration: underline; }
 
 /* Footer */
 footer {

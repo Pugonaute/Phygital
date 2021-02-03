@@ -1,44 +1,26 @@
 /* HELPERS */
 
 @import "helpers/variables"; //variables toujours en 1st
+@import "helpers/extends";
 @import "helpers/reset"; // helpers/_reset.scss
 @import "helpers/typo";
-
-// Extends
-
-%flex-column{
-	display: flex;
-	flex-direction: column;
-}
-
-%flex-column-center{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-%flex-row{
-	display: flex;
-	flex-direction: row;
-}
-
-%flex-row-center{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-
-%flex-row-justify-center{
-	display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 /* STRUCTURE */
 
 @import "structure/body";
-@import "structure/header";
 @import "structure/main";
+
+/* Pages */
+
+@import "structure/index";
+@import "structure/partenaire";
+@import "structure/a-propos";
+@import "structure/blog";
+@import "structure/contact";
+
+/* Includes */
+
+@import "structure/header";
 @import "structure/footer";
 @import "structure/contact";
 

@@ -1,0 +1,150 @@
+/* À propos */
+
+#a-propos{
+
+	.en-tete{
+		//	@extend %section;
+		//	background-color: $green;
+		//	
+		////	padding: 80px 0px;
+		//	border-bottom: dashed $blue 4px;
+		//	
+		//	min-height: 320px;
+		//	
+		//	.conteneur{
+		//		@extend %flex-column-center;
+		//		align-items: center;
+		//		text-align: center;
+		//		
+		//		margin: 80px 0;
+		//		
+		//		h1{
+		//			width: 65%;
+		//			margin-bottom: $margin_1;
+		//		}
+		//		p{
+		//			width: 65%;
+		//		}
+		//	}
+	}
+
+	#chiffre{
+		@extend %section;
+		padding: $margin_max 0px;
+
+		.conteneur{
+			@extend %flex-column;
+			align-items: center;
+			h2{
+				margin-bottom: $margin_2;
+			}
+			.row{
+				margin-bottom: $margin_4;
+				@extend %flex-row;
+				align-items: center;  
+				justify-content: center;
+				h3{
+					width:25%;
+				}
+				img{
+					margin:0px $margin_4
+				}
+				span{
+					background: $green;
+				}
+			}
+
+			.column{
+				@extend %flex-row;
+				justify-content:space-between;
+				width: 80%;
+				article{
+					text-align:  center;
+					width: calc((100% - 160px) / 3);
+
+					h3{
+						background-color: $green;
+						display: inline;
+					}
+					p{
+						font-size: $paragraphe1;
+						line-height: 1.5em;
+					}
+				}
+			}
+		}
+	}
+
+	#manifest{
+		@extend %section;
+		padding-bottom: $margin_max;
+		h4{
+			margin-top: $margin_1;
+		}
+		p{
+			margin-top: $margin_1;
+		}
+		span{
+			font-weight: bold;
+		}
+	}
+
+	#equipe{
+		@extend %section;
+		padding: $margin_max 0px;
+		background: $pink;
+		border-top: dashed $blue 4px;
+		border-bottom: dashed $blue 4px;
+		.conteneur{
+			@extend %flex-column;
+			align-items: center;
+			text-align: center;
+			img{
+				border: solid $blue 4px;
+				border-radius: 100%
+			}
+			.presentation-equipe{
+				@extend %flex-column;
+				align-items: center;
+				text-align: center;
+				width: 65%;
+				margin-bottom: $margin_3;
+				p{
+					margin-top: $margin_1;
+				}
+			}
+			.row1{
+				@extend %flex-row;
+				justify-content: space-between;
+				width: 80%;
+			}
+			.row2{
+				@extend %flex-row;
+				justify-content: space-between;
+				width: 50%;
+			}
+		}
+	}
+
+	#methode{
+		@extend %section;
+		padding: $margin_max 0px;
+		.conteneur{
+			@extend %flex-column;
+			align-items: center;
+			text-align: center;
+
+			p{
+				width: 80%;
+				margin-top: $margin_1;
+			}
+
+			img{
+				margin-top: $margin_1;
+				border: solid $blue 4px;
+			}
+
+		}
+	}
+
+}
