@@ -92,84 +92,16 @@ p {
   font-weight: 300;
   color: #00012E; }
 
-/* Card */
-#detail .conteneur > article:nth-child(odd) > :nth-child(1) {
-  border: solid #00012E 4px; }
-  #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(1) {
-    width: 60%; }
-    #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(1) div {
-      padding: 32px 40px; }
-    #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
-      background: #C0FFE7;
-      border-bottom: solid #00012E 4px; }
-    #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(1) > :nth-child(2) h4 {
-      margin-bottom: 16px; }
-  #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(2) {
-    width: 40%;
-    border-left: solid #00012E 4px;
-    height: 500px;
-    background: center/cover no-repeat url("../img/participez.png"); }
-#detail .conteneur > article:nth-child(odd) > :nth-child(2) {
-  width: 100%;
-  height: 80px;
-  justify-content: flex-end; }
-#detail .conteneur > article:nth-child(even) {
-  margin: 40px 0px; }
-  #detail .conteneur > article:nth-child(even) > :nth-child(1) {
-    border: solid #00012E 4px;
-    display: flex;
-    flex-direction: row-reverse; }
-    #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) {
-      width: 60%; }
-      #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) div {
-        padding: 32px 40px; }
-      #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
-        background: #C0FFE7;
-        border-bottom: solid #00012E 4px; }
-      #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
-        padding: 32px 40px; }
-        #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) > :nth-child(2) h4 {
-          margin-bottom: 16px; }
-    #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(2) {
-      width: 40%;
-      border-right: solid #00012E 4px;
-      height: 600px;
-      background: center/cover no-repeat url("../img/comparez.png"); }
-  #detail .conteneur > article:nth-child(even) > :nth-child(2) {
-    width: 100%;
-    height: 80px;
-    justify-content: flex-start; }
-
-#articles article {
-  display: flex;
-  flex-direction: row;
-  border: solid #00012E 4px;
-  width: 100%;
-  margin-bottom: 40px; }
-  #articles article .image {
-    min-width: 50%;
-    height: 340px;
-    background-size: cover;
-    border-right: solid #00012E 4px;
-    background-position: center; }
-  #articles article .detail {
-    padding: 40px;
-    box-sizing: border-box; }
-    #articles article .detail h4 {
-      margin-top: 16px; }
-    #articles article .detail a {
-      margin-top: 16px; }
-
-#hero .conteneur, #presentation .conteneur, #detail .conteneur, #marques .conteneur, #rejoignez-nous .conteneur, #rejoignez-nous .conteneur .infos-commercant, #en-tete .conteneur, #chiffre .conteneur, #equipe .conteneur, #equipe .conteneur .presentation-equipe, #methode .conteneur, #articles .conteneur, #formulaire .conteneur, #partenaire #scheme .conteneur, #partenaire #valeurs .conteneur, #partenaire #service .conteneur, #partenaire #service .conteneur > div, footer div:first-child div {
+#hero .conteneur, #presentation .conteneur, #detail .conteneur, #marques .conteneur, #rejoignez-nous .conteneur, #rejoignez-nous .conteneur .infos-commercant, #chiffre .conteneur, #a-propos #equipe .conteneur, #a-propos #equipe .conteneur .presentation-equipe, #a-propos #methode .conteneur, #articles .conteneur, #formulaire .conteneur, #partenaire #scheme .conteneur, #partenaire #valeurs .conteneur, #partenaire #service .conteneur, #partenaire #service .conteneur > div, footer div:first-child div {
   display: flex;
   flex-direction: column; }
 
-#partenaire #en-tete .conteneur, footer, footer div:last-child {
+footer, footer div:last-child, .en-tete .conteneur {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-#detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2), header, header nav, header nav ul, #valeur .conteneur, #chiffre .conteneur .row, #chiffre .conteneur .column, #equipe .conteneur .row1, #equipe .conteneur .row2, #formulaire .conteneur article > :nth-child(1), #formulaire .conteneur article > :nth-child(3), #formulaire .conteneur article > :nth-child(6), #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #partenaire #service .conteneur .capsule-left .mosaique, footer div:first-child nav, .vignettes-stores {
+header, header nav, header nav ul, #valeur .conteneur, #chiffre .conteneur .row, #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #formulaire .conteneur article > :nth-child(1), #formulaire .conteneur article > :nth-child(3), #formulaire .conteneur article > :nth-child(6), #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #partenaire #service .conteneur .capsule-left .mosaique, footer div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
   display: flex;
   flex-direction: row; }
 
@@ -178,7 +110,7 @@ p {
   flex-direction: row;
   align-items: center; }
 
-body #hero, body #presentation, body #detail, body #valeur, body #marques, body #rejoignez-nous, body #en-tete, body #chiffre, body #manifest, body #equipe, body #methode, body #articles, body #formulaire, #partenaire #en-tete, #partenaire #scheme, #partenaire #valeurs, #partenaire #service {
+body #hero, body #presentation, body #detail, body #valeur, body #marques, body #rejoignez-nous, body #chiffre, body #a-propos #manifest, #a-propos body #manifest, body #a-propos #equipe, #a-propos body #equipe, body #a-propos #methode, #a-propos body #methode, body #articles, body #formulaire, body .en-tete, #partenaire #scheme, #partenaire #valeurs, #partenaire #service {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -334,19 +266,6 @@ header {
       #rejoignez-nous .conteneur article a {
         margin: 0px 24px; }
 
-#en-tete {
-  background-color: #C0FFE7;
-  padding: 160px 0px;
-  border-bottom: dashed #00012E 4px; }
-  #en-tete .conteneur {
-    align-items: center;
-    text-align: center; }
-    #en-tete .conteneur h1 {
-      width: 65%;
-      margin-bottom: 16px; }
-    #en-tete .conteneur p {
-      width: 65%; }
-
 #chiffre {
   padding: 80px 0px; }
   #chiffre .conteneur {
@@ -376,49 +295,47 @@ header {
           font-size: 16px;
           line-height: 1.5em; }
 
-#manifest {
+#a-propos #manifest {
   padding-bottom: 80px; }
-  #manifest h4 {
+  #a-propos #manifest h4 {
     margin-top: 16px; }
-  #manifest p {
+  #a-propos #manifest p {
     margin-top: 16px; }
-  #manifest span {
+  #a-propos #manifest span {
     font-weight: bold; }
-
-#equipe {
+#a-propos #equipe {
   padding: 80px 0px;
   background: #FFDCC9;
   border-top: dashed #00012E 4px;
   border-bottom: dashed #00012E 4px; }
-  #equipe .conteneur {
+  #a-propos #equipe .conteneur {
     align-items: center;
     text-align: center; }
-    #equipe .conteneur img {
+    #a-propos #equipe .conteneur img {
       border: solid #00012E 4px;
       border-radius: 100%; }
-    #equipe .conteneur .presentation-equipe {
+    #a-propos #equipe .conteneur .presentation-equipe {
       align-items: center;
       text-align: center;
       width: 65%;
       margin-bottom: 32px; }
-      #equipe .conteneur .presentation-equipe p {
+      #a-propos #equipe .conteneur .presentation-equipe p {
         margin-top: 16px; }
-    #equipe .conteneur .row1 {
+    #a-propos #equipe .conteneur .row1 {
       justify-content: space-between;
       width: 80%; }
-    #equipe .conteneur .row2 {
+    #a-propos #equipe .conteneur .row2 {
       justify-content: space-between;
       width: 50%; }
-
-#methode {
+#a-propos #methode {
   padding: 80px 0px; }
-  #methode .conteneur {
+  #a-propos #methode .conteneur {
     align-items: center;
     text-align: center; }
-    #methode .conteneur p {
+    #a-propos #methode .conteneur p {
       width: 80%;
       margin-top: 16px; }
-    #methode .conteneur img {
+    #a-propos #methode .conteneur img {
       margin-top: 16px;
       border: solid #00012E 4px; }
 
@@ -494,15 +411,8 @@ header {
         opacity: 0.8;
         color: white; }
 
-#partenaire #en-tete {
-  background-color: #FFDCC9;
-  padding: 0 0;
-  border-bottom: dashed #00012E 4px;
-  height: 300px; }
-  #partenaire #en-tete .conteneur {
-    text-align: center; }
-    #partenaire #en-tete .conteneur h1 {
-      margin-bottom: 16px; }
+#partenaire .en-tete {
+  background-color: #FFDCC9; }
 #partenaire #scheme {
   padding: 80px 0px; }
   #partenaire #scheme .conteneur {
@@ -740,5 +650,87 @@ button {
   .vignettes-stores img {
     margin: 24px;
     height: 50px; }
+
+/* Card */
+#detail .conteneur > article:nth-child(odd) > :nth-child(1) {
+  border: solid #00012E 4px; }
+  #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(1) {
+    width: 60%; }
+    #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(1) div {
+      padding: 32px 40px; }
+    #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+      background: #C0FFE7;
+      border-bottom: solid #00012E 4px; }
+    #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(1) > :nth-child(2) h4 {
+      margin-bottom: 16px; }
+  #detail .conteneur > article:nth-child(odd) > :nth-child(1) > :nth-child(2) {
+    width: 40%;
+    border-left: solid #00012E 4px;
+    height: 500px;
+    background: center/cover no-repeat url("../img/participez.png"); }
+#detail .conteneur > article:nth-child(odd) > :nth-child(2) {
+  width: 100%;
+  height: 80px;
+  justify-content: flex-end; }
+#detail .conteneur > article:nth-child(even) {
+  margin: 40px 0px; }
+  #detail .conteneur > article:nth-child(even) > :nth-child(1) {
+    border: solid #00012E 4px;
+    display: flex;
+    flex-direction: row-reverse; }
+    #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) {
+      width: 60%; }
+      #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) div {
+        padding: 32px 40px; }
+      #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+        background: #C0FFE7;
+        border-bottom: solid #00012E 4px; }
+      #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+        padding: 32px 40px; }
+        #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(1) > :nth-child(2) h4 {
+          margin-bottom: 16px; }
+    #detail .conteneur > article:nth-child(even) > :nth-child(1) > :nth-child(2) {
+      width: 40%;
+      border-right: solid #00012E 4px;
+      height: 600px;
+      background: center/cover no-repeat url("../img/comparez.png"); }
+  #detail .conteneur > article:nth-child(even) > :nth-child(2) {
+    width: 100%;
+    height: 80px;
+    justify-content: flex-start; }
+
+#articles article {
+  display: flex;
+  flex-direction: row;
+  border: solid #00012E 4px;
+  width: 100%;
+  margin-bottom: 40px; }
+  #articles article .image {
+    min-width: 50%;
+    height: 340px;
+    background-size: cover;
+    border-right: solid #00012E 4px;
+    background-position: center; }
+  #articles article .detail {
+    padding: 40px;
+    box-sizing: border-box; }
+    #articles article .detail h4 {
+      margin-top: 16px; }
+    #articles article .detail a {
+      margin-top: 16px; }
+
+.en-tete {
+  background-color: #C0FFE7;
+  border-bottom: dashed #00012E 4px;
+  min-height: 320px; }
+  .en-tete .conteneur {
+    align-items: center;
+    text-align: center;
+    margin: 80px 0; }
+    .en-tete .conteneur h1 {
+      width: 65%;
+      margin-bottom: 16px; }
+    .en-tete .conteneur p {
+      width: 65%; }
 
 /*# sourceMappingURL=style.css.map */

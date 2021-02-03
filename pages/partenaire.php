@@ -10,7 +10,7 @@ $desc = '';
 include $root."php/inc/header.inc.php";
 ?>
 <main id="partenaire">
-	<section id="en-tete">
+	<section class="en-tete">
 		<div class="conteneur">
 			<h1>Vendez éthique, rejoignez le réseau Éthiquette !</h1>
 		</div>
