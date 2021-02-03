@@ -1,5 +1,5 @@
 <?php
-    $root = '../../';
+    $root = '../';
 
 	// Title à remplir
 	$title = 'Découvrir l\'application';

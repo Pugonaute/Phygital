@@ -62,7 +62,7 @@
 									<a href="<?= $root ?>pages/blog.php">Blog</a>
 								</li>
 								<li>
-									<a href="<?= $root ?>pages/about.php">CGU CGV</a>
+									<a href="#">CGU CGV</a>
 								</li>
 								<li>
 									<a href="#">Réseaux</a>

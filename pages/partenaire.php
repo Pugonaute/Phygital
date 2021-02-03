@@ -1,5 +1,5 @@
 <?php
-$root = '../../';
+$root = '../';
 
 // Title à remplir
 $title = 'Devenir partenaire';
