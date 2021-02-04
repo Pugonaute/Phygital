@@ -9,11 +9,13 @@
 
 	include $root."php/inc/header.inc.php";
 ?>
-<main>
-	<h1><?= $title ?></h1>
-	<section>
+<main id="application">
+	<div class="conteneur">
+		<h1><?= $title ?></h1>
+		<section>
 
-	</section>
+		</section>
+	</div>
 </main>
 <?php
 include $root.'php/inc/footer.inc.php';
