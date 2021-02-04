@@ -2,29 +2,29 @@
 
 #partenaire{
 	.en-tete{
-//		@extend %section;
+		//		@extend %section;
 		background-color: $pink;
-//
-//	//	padding: 80px 0px;
-//		border-bottom: dashed $blue 4px;
-//
-//		min-height: 320px;
-//
-//		.conteneur{
-//			@extend %flex-column-center;
-//			align-items: center;
-//			text-align: center;
-//
-//			margin: 80px 0;
-//
-//			h1{
-//				width: 65%;
-//				margin-bottom: $margin_1;
-//			}
-//			p{
-//				width: 65%;
-//			}
-//		}
+		//
+		//	//	padding: 80px 0px;
+		//		border-bottom: dashed $blue 4px;
+		//
+		//		min-height: 320px;
+		//
+		//		.conteneur{
+		//			@extend %flex-column-center;
+		//			align-items: center;
+		//			text-align: center;
+		//
+		//			margin: 80px 0;
+		//
+		//			h1{
+		//				width: 65%;
+		//				margin-bottom: $margin_1;
+		//			}
+		//			p{
+		//				width: 65%;
+		//			}
+		//		}
 	}
 
 	#scheme{
@@ -153,12 +153,12 @@
 
 		.conteneur{
 			@extend %flex-column;
-
+			justify-content: flex-start;
 			align-items: center;
 			text-align: center;
 			//			background: blue;
 
-			>div{
+			>div:first-child{
 				@extend %flex-column;
 
 				align-items: center;
@@ -171,59 +171,71 @@
 					margin-top: $margin_1;
 				}
 			}
+			>div:last-child{
+				
+				width: 90%;
+				@extend %flex-column-center;
+				align-items: flex-start;
 
-			.capsule-left {
+				.capsule-left {
 
-				//				background: red;
-				width: 100%;
+					//				background: red;
+					width: 500px;
 
-				.mosaique{
-					@extend %flex-row;
+					.mosaique{
+						@extend %flex-row-center;
 
-					width: 50%;
-					border: solid $blue 4px;
+						width: inherit;
+						border: solid $blue 4px;
 
-					margin-left: 50px;
-					.texte{
-						background: white;
-						width: 100%;
+						//					padding-left: 200px 0px;
+						.texte{
+							background: white;
+							width: inherit;
 
-						.h2{
-							border-bottom: solid $blue 4px;
-						}
+							.h2{
+								border-bottom: solid $blue 4px;
+							}
 
-						div{
-							padding: $margin_3 $margin_4;
+							div{
+								padding: $margin_3 $margin_4;
+							}
 						}
 					}
 				}
-			}
 
-			.capsule-left:last-child{
-				margin-left: 250px;
-			}
+				.capsule-left:last-child{
+					//				margin-left: 0px;
+				}
 
-			.capsule-right{
-				//				background: green;
+				.capsule-right{
+					//				background: green;
+					width: 500px;
+					
+//					display: block;
+					margin:  $margin_4 0px;
+					margin-right: 100px;
+//					padding-right: 100px;
 
-				margin:  $margin_4 0px;
+					align-self: flex-end;
 
-				.mosaique{
-					@extend %flex-row-center;
+					.mosaique{
+						@extend %flex-row-center;
 
-					border: solid $blue 4px;
-					width: 50%;
+						border: solid $blue 4px;
+						width: inherit;
 
-					margin-left: 450px;
-					.texte{
-						width: 100%;
-						background: white;
+						//					margin-left: 350px;
+						.texte{
+							width: 100%;
+							background: white;
 
-						.h2{
-							border-bottom: solid $blue 4px;
-						}
-						div{
-							padding: $margin_3 $margin_4;
+							.h2{
+								border-bottom: solid $blue 4px;
+							}
+							div{
+								padding: $margin_3 $margin_4;
+							}
 						}
 					}
 				}
@@ -243,6 +255,64 @@
 		}
 		span{
 			font-weight: bold;
+		}
+	}
+
+	#marques{
+		@extend %section;
+		padding: $margin_max 0px;
+		.conteneur{
+			@extend %flex-column;
+			align-items: center;
+			width: 1000px;
+
+			p{
+				margin-top: $margin_1;
+				text-align: center;
+
+			}
+			#image-slider{  
+				margin-top: $margin_4;
+				position: relative;
+				max-width: 1000px;
+				.splide__arrows{
+					.splide__arrow{
+						fill: $blue;
+						position: absolute;
+						top: 25%;
+						outline-style:none;
+						background: transparent;
+
+					}
+					.splide__arrow--prev{
+						left: -3.5rem;
+						transform: scaleX(-1);
+					}
+					.splide__arrow--next{
+						right: -3.5rem;
+						outline-style:none;
+					}
+				}
+				.splide__pagination{
+					li{
+						list-style: none;
+						display: inline-block;
+						line-height: 1;
+						margin: 0;
+						// .splide__pagination__page{
+						//     padding: 0;
+						//     width: 10px;
+						//     height: 10px;
+						//     border-radius: 50%;
+						//     margin: 1rem;
+						//     background: $blue;
+						//     cursor: pointer;
+						//     display: block;
+						// }
+
+					}
+				}
+			}
 		}
 	}
 }
