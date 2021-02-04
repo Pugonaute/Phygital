@@ -21,7 +21,7 @@ include $root."php/inc/header.inc.php";
 			<h2>Qu’est ce qu’un commerce de vêtements<br> indépendant et éthique ?</h2>
 			<p class=subtitles>Notre système de notation se base sur 5 catégories principales</p>
 			<div>
-			
+
 				<article>
 					<p>Le respect des droits internationaux des travailleurs et l'engagement contre l'exploitation humaine.
 					</p>
@@ -98,126 +98,129 @@ include $root."php/inc/header.inc.php";
 				<p>L'Éthiquette, ce n'est pas qu'une appli, c'est aussi une agence web et une équipe de consulting prête à vous accompagner dans votre projet de transformation vers l'équitable, ou pour la création d’une nouvelle boutique.</p>
 			</div>
 
-			<article class="capsule-left">
-				<div class="mosaique">
-					<article class="texte">
-						<div class="h2">
-							<h2>Agence stratégie web</h2>
-						</div>
-						<div>
-							<p>
-								Notre agence de stratégie web peut élaborer ou améliorer votre vitrine numérique, indispensable ajourd'hui pour recruter de nouveaux clients et amplifier le bouche à oreille.
-							</p>
-						</div>
-					</article>
-				</div>
-			</article>
+			<div>
+				<article class="capsule-left">
+					<div class="mosaique">
+						<article class="texte">
+							<div class="h2">
+								<h2>Agence stratégie web</h2>
+							</div>
+							<div>
+								<p>
+									Notre agence de stratégie web peut élaborer ou améliorer votre vitrine numérique, indispensable ajourd'hui pour recruter de nouveaux clients et amplifier le bouche à oreille.
+								</p>
+							</div>
+						</article>
+					</div>
+				</article>
 
-			<article class="capsule-right">
-				<div class="mosaique">
-					<article class="texte">
-						<div class="h2">
-							<h2>Réaménagement et <br>
-								rebranding
-							</h2>
-						</div>
-						<div>
-							<p>
-								Végétalisation de vos espaces commerciaux, réaméagement et redisgn de votre identité par nos designers.
-							</p>
-						</div>
-					</article>
-				</div>
-			</article>
+				<article class="capsule-right">
+					<div class="mosaique">
+						<article class="texte">
+							<div class="h2">
+								<h2>Réaménagement et <br>
+									rebranding
+								</h2>
+							</div>
+							<div>
+								<p>
+									Végétalisation de vos espaces commerciaux, réaméagement et redisgn de votre identité par nos designers.
+								</p>
+							</div>
+						</article>
+					</div>
+				</article>
 
-			<article class="capsule-left">
-				<div class="mosaique">
-					<article class="texte">
-						<div class="h2">
-							<h2>Consulting transition<br>
-								éthique
-							</h2>
-						</div>
-						<div>
-							<p>
-								Notre service de consulting vous accompagne dans votre projet de transformation vers l'équitable, des fournisseurs jusqu’à vos étalage.
-							</p>
-						</div>
-					</article>
-				</div>
-			</article>
+				<article class="capsule-left">
+					<div class="mosaique">
+						<article class="texte">
+							<div class="h2">
+								<h2>Consulting transition<br>
+									éthique
+								</h2>
+							</div>
+							<div>
+								<p>
+									Notre service de consulting vous accompagne dans votre projet de transformation vers l'équitable, des fournisseurs jusqu’à vos étalage.
+								</p>
+							</div>
+						</article>
+					</div>
+				</article>
+
+			</div>
 		</div>
 	</section>
 	<section id="marques">
-        <div class="conteneur">
-            <h2>Ces commerces nous on fait confiance</h2>
-            <p>Visitez notre portfolio pour voir les magasins que nous avons déjà transformés.</p>
-            
-            <div id="image-slider" class="splide">
-                <div class="splide__slider">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="img/logo-ecoalf.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-filbert.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-peopletree.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-pinqponq.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-thinkingmu.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-knowledgecottonapparel.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-veja.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-atelierlegagneur.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-bhallot.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-hopaal.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-maisonizard.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-vega.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-nudiejeans.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-manifest011.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-saola.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-thought.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="img/logo-wilo.png">
-                            </li>
+		<div class="conteneur">
+			<h2>Ces commerces nous on fait confiance</h2>
+			<p>Visitez notre portfolio pour voir les magasins que nous avons déjà transformés.</p>
 
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="js/jquery.js"></script>
-    <script src="js/splide.min.js"></script>
-    <script src="js/script.js"></script>
+			<div id="image-slider" class="splide">
+				<div class="splide__slider">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<img src="img/logo-ecoalf.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-filbert.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-peopletree.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-pinqponq.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-thinkingmu.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-knowledgecottonapparel.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-veja.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-atelierlegagneur.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-bhallot.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-hopaal.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-maisonizard.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-vega.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-nudiejeans.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-manifest011.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-saola.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-thought.png">
+							</li>
+							<li class="splide__slide">
+								<img src="img/logo-wilo.png">
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/jquery.js"></script>
+	<script src="js/splide.min.js"></script>
+	<script src="js/script.js"></script>
 </main>
 <?php
 include $root.'php/inc/footer.inc.php';

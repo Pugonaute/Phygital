@@ -24,7 +24,7 @@
 				<div class="detail">
 					<h2>Consigne: le nouveau pari des marques de mode éthique</h2>
 					<h4>20 NOVEMBRE 2020</h4>
-					<a href="" class="button2">Lire l'article</a>
+					<a href="<?= $root;?>pages/articles/consigne-ethique.php" class="button2">Lire l'article</a>
 				</div>
 			</article>
 			<article id="article2">
