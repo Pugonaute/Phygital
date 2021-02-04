@@ -18,7 +18,7 @@ footer, footer div:last-child, .en-tete .conteneur {
   flex-direction: row;
   align-items: center; }
 
-body #index #hero, #index body #hero, body #index #presentation, #index body #presentation, body #index #detail, #index body #detail, body #index #valeur, #index body #valeur, body #index #marques, #index body #marques, body #index #rejoignez-nous, #index body #rejoignez-nous, body #a-propos #chiffre, #a-propos body #chiffre, body #a-propos #manifest, #a-propos body #manifest, body #a-propos #equipe, #a-propos body #equipe, body #a-propos #methode, #a-propos body #methode, body #blog #articles, #blog body #articles, body #contact #formulaire, #contact body #formulaire, body .en-tete, #partenaire #scheme, #partenaire #valeurs, #partenaire #service {
+body #index #hero, #index body #hero, body #index #presentation, #index body #presentation, body #index #detail, #index body #detail, body #index #valeur, #index body #valeur, body #index #marques, #index body #marques, body #index #rejoignez-nous, #index body #rejoignez-nous, body #a-propos #chiffre, #a-propos body #chiffre, body #a-propos #manifest, #a-propos body #manifest, body #a-propos #equipe, #a-propos body #equipe, body #a-propos #methode, #a-propos body #methode, body #blog #articles, #blog body #articles, body #contact #formulaire, #contact body #formulaire, body #application #hero, #application body #hero, body .en-tete, #partenaire #scheme, #partenaire #valeurs, #partenaire #service {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -141,6 +141,8 @@ body {
       font-size: 56px;
       width: 65%;
       text-align: center; }
+    #index #hero .conteneur .vignettes-stores {
+      justify-content: center; }
     #index #hero .conteneur h2 {
       margin-top: 80px; }
     #index #hero .conteneur p {
@@ -546,6 +548,9 @@ body {
         opacity: 0.8;
         color: white; }
 
+#application #hero {
+  padding: 80px 0px; }
+
 /* Includes */
 /* Nav */
 header {
@@ -777,10 +782,10 @@ button {
   margin: 0; }
 
 .vignettes-stores {
-  justify-content: space-around;
-  width: 40%; }
+  margin-top: 24px; }
+  .vignettes-stores > :nth-child(1) {
+    margin-right: 32px; }
   .vignettes-stores img {
-    margin: 24px;
     height: 50px; }
 
 /* Card */

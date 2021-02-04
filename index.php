@@ -16,13 +16,13 @@ include $root.'php/inc/header.inc.php';
 		<div class="conteneur">
 			<h1>Habillez vous éthique, devenez acteur pour la planète</h1>
 			<div class="vignettes-stores">
-				<a href="https://www.apple.com/fr/ios/app-store/" title="app store"><img src="img/telecharger-appstore.svg" alt="bouton app store"></a>
-				<a href="https://play.google.com/store" title="play store"><img src="img/telecharger-playstore.svg" alt="bouton play store"></a>
+				<a href="https://www.apple.com/fr/ios/app-store/" title="Accéder à l'app store"><img src="img/telecharger-appstore.svg" alt="bouton app store"></a>
+				<a href="https://play.google.com/store" title="Accéder au play store"><img src="img/telecharger-playstore.svg" alt="bouton play store"></a>
 			</div>
 			<h2>Il vous suffit de scanner !</h2>
 			<p>L’ethiquette, l’application mobile qui vous permet de décrypter la composition de vos vêtements pour évaluer leur impact sur la planète et ainsi agir pour une mode plus responsable et locale.</p>
-			<a href="" class="button1">
-                <div><span>Regarder la vidéo</div></span>
+			<a href="" title="Voir la vidéo de présentation de l'application" class="button1">
+                <div><span>Voir la vidéo</div></span>
             </a>
 		</div>
 	</section>
