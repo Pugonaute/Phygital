@@ -4,13 +4,17 @@
 .button2{
 	color: white;
 	background: $blue;
-	width: 40%;
+	width: 200px;
 	text-align: center;
 	padding: 24px;
 	box-sizing: border-box;
 	font-size: $titre4;
     font-weight: 600;
     display: block;
+    transition: 0.3s ease;
+}
+.button2:hover{
+    opacity: 0.5;
 }
 
 .button1{
@@ -92,7 +96,14 @@ button {
     >:nth-child(1){
         margin-right: $margin_3;
     }
+    a{
+        transition: 0.3s ease;
+    }
+    a:hover{
+        opacity: 0.5;
+    }
     img{
         height: 50px;
     }
+
 }

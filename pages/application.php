@@ -58,7 +58,7 @@
 							Dans le cas où ton vêtement n’est pas reconnu, l’application te permet d’ajouter manuellement les détails de composition de tes vêtements afin de pouvoir les scorer.</p>
 						</div>
 						<div class="capture-app">
-							<img src="../img/test-app.png" alt="">
+							<img src="../img/test-app.png" alt="Capture de la page scan">
 						</div>
 					</div>	
 					<div class="action">
@@ -73,7 +73,7 @@
 							<p>L'éthiquette recueille les informations de tes vêtements ainsi que de ceux que tu peux trouver dans les commerces de prêt-à-porter afin d'évaluer leur empreinte éthique. Ce calcul se base sur des critères d'évaluation dont nos experts vérifient chaque jour la conformité ( ADEME ) ainsi que l'indépendance.</p>
 						</div>
 						<div class="capture-app">
-							<img src="../img/test-app.png" alt="">
+							<img src="../img/test-app.png" alt="Capture de la page évaluation">
 						</div>
 					</div>	
 					<div class="action">
@@ -88,7 +88,7 @@
 							<p>L'éthiquette compare les vêtements scannés par l'utilisateur avec les ceux déjà évalués dans notre base donnée afin de recommander un vêtement identique provenant d'une production local et plus respectueuse de la planète. </p>
 						</div>
 						<div class="capture-app">
-							<img src="../img/test-app.png" alt="">
+							<img src="../img/test-app.png" alt="Capture de la page recommandation">
 						</div>
 					</div>
 					<div class="action">
@@ -104,7 +104,7 @@
 							<p>L'éthiquette propose l'achat de vêtements éthique avec une solution de click&collect permettant aux utilisateurs de récupérer leurs vêtements chez les commerçants de prêt-à-porter éthiques et de proximité.</p>
 						</div>
 						<div class="capture-app">
-							<img src="../img/test-app.png" alt="">
+							<img src="../img/test-app.png" alt="Capture de la page shop">
 						</div>
 					</div>	
 					<div class="action">
@@ -125,29 +125,29 @@
 					<img src="../img/app-historique.png" alt="">
 				</div>
 				<div class="content">
-					<div class="active" data="../img/app-historique.png">
-						<img src="../img/historique.svg" alt="">
+					<div class="active" data-src="../img/app-historique.png"  data-alt="Capture de la page historique">
+						<img src="../img/historique.svg" alt="icon historique">
 						<div>
 							<h3>Historique</h3>
 							<p>L’éthiquette permet à ses utilisateurs d’accéder à un historique de tous les produits scannés sur lesquelles on peut identifier leurs impacts.</p>
 						</div>
 					</div>
-					<div data="../img/app-favoris.png">
-						<img src="../img/favoris.svg" alt="">
+					<div data-src="../img/app-favoris.png"  data-alt="Capture de la page favoris">
+						<img src="../img/favoris.svg" alt="icon favoris">
 						<div>
 							<h3>Favoris</h3>
 							<p>L’éthiquette permet à ses utilisateurs d’ajouter les produits préférés dans la section des favoris afin de ne jamais les oublier.</p>
 						</div>
 					</div>
-					<div data="../img/app-actualite.png">
-						<img src="../img/actualite.svg" alt="">
+					<div data-src="../img/app-actualite.png" data-alt="Capture de la page actualité">
+						<img src="../img/actualite.svg" alt="icon actualité">
 						<div>
 							<h3>Actualité</h3>
 							<p>L’éthiquette présente les dernières actualités liées à la mode : dons, trocs, association, écologies, initiatives des marques, pétitions ...</p>
 						</div>
 					</div>
-					<div data="../img/app-analyse.png">
-						<img src="../img/analyse.svg" alt="">
+					<div data-src="../img/app-analyse.png"  data-alt="Capture de la page analyse">
+						<img src="../img/analyse.svg" alt="icon analyse">
 						<div>
 							<h3>Analyse</h3>
 							<p>L’éthiquette analyse les produits vestimentaires et présente l’évaluation des produits à l’aide d’une fiche détaillée.</p>

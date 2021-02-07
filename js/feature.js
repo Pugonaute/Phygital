@@ -1,12 +1,15 @@
 
 $(document).ready(
     function(){
-        var data;
+        var src;
+        var alt;
 
         $('#fonctionnalité .content >div').click(
             function(){
-                data = $(this).attr('data');
-                $('#fonctionnalité .capture-app img').attr('src',data)
+                src = $(this).attr('data-src');
+                alt = $(this).attr('data-alt');
+                $('#fonctionnalité .capture-app img').attr('src',src)
+                $('#fonctionnalité .capture-app img').attr('alt',alt)
                 $('#fonctionnalité .content >div').removeClass('active');
                 $(this).addClass('active');
             }

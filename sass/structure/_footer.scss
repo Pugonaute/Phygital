@@ -5,24 +5,25 @@ footer{
 	//	position: absolute;
 	//	bottom: 0;
 	background: $blue;
-	height: 400px;
 	width: 100%;
 	color: $white;
-
-	@extend %flex-column-center;
+	
+	
+	@extend %flex-column;
 	//	text-align: center;
 	//	align-items: center;
 
-	div:first-child{
-		@extend %flex-row-center;
+	>div:first-child{
+		margin: 64px 0px;
+		@extend %flex-row;
 		justify-content: space-around;
 		//		background: yellow;
-		height: 100%;
+		
 
-		div{
+		>div{
+			
 			//			background: green;
 			@extend %flex-column;
-			justify-content: space-between;
 			align-items: flex-start;
 			width: 100%;
 			max-width: calc(100vw / 3);
@@ -93,10 +94,11 @@ footer{
 		}
 	}
 
-	div:last-child{
+	>div:last-child{
 		@extend %flex-column-center;
 		height: 68px;
 		text-align: center;
 		font-size: $paragraphe1;
 	}
+
 }

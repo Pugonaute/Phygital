@@ -26,10 +26,16 @@ header{
 //				max-width: 250px;
 //			}
 //		}
-		img{
-//				width: 100%;
-				max-width: 250px;
+        >a{
+            @extend %flex-row;
+            align-items: center;
+            max-width: 250px;
+            img{
+                width: 100%;
+                display: block;
 			}
+        }
+
 
         hr{
             color: $white;

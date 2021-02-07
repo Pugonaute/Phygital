@@ -1,19 +1,19 @@
 @charset "UTF-8";
 /* HELPERS */
-#index #hero .conteneur, #index #presentation .conteneur, #index #detail .conteneur, #index #marques .conteneur, #index #rejoignez-nous .conteneur, #index #rejoignez-nous .conteneur .infos-commercant, #partenaire #scheme .conteneur, #partenaire #valeurs .conteneur, #partenaire #service .conteneur, #partenaire #service .conteneur > div:first-child, #partenaire #marques .conteneur, #a-propos #chiffre .conteneur, #a-propos #equipe .conteneur, #a-propos #equipe .conteneur .presentation-equipe, #a-propos #methode .conteneur, #blog #articles .conteneur, #contact #formulaire .conteneur, #application #étapes .conteneur, #application #étapes .conteneur #progress-bar .step, #application #étapes .conteneur #parts .part, #application #fonctionnalité .conteneur, #application #en-savoir-plus .conteneur, #article-001 .conteneur, footer div:first-child div {
+#index #hero .conteneur, #index #presentation .conteneur, #index #detail .conteneur, #index #marques .conteneur, #index #rejoignez-nous .conteneur, #index #rejoignez-nous .conteneur .infos-commercant, #partenaire #scheme .conteneur, #partenaire #valeurs .conteneur, #partenaire #service .conteneur, #partenaire #service .conteneur > div:first-child, #partenaire #marques .conteneur, #a-propos #chiffre .conteneur, #a-propos #equipe .conteneur, #a-propos #equipe .conteneur .presentation-equipe, #a-propos #methode .conteneur, #blog #articles .conteneur, #contact #formulaire .conteneur, #application #étapes .conteneur, #application #étapes .conteneur #progress-bar .step, #application #étapes .conteneur #parts .part, #application #fonctionnalité .conteneur, #application #en-savoir-plus .conteneur, #article-001 .conteneur, footer, footer > div:first-child > div {
   display: flex;
   flex-direction: column; }
 
-#partenaire #service .conteneur > div:last-child, #article-001 .conteneur .article article, footer, footer div:last-child, .en-tete .conteneur {
+#partenaire #service .conteneur > div:last-child, #article-001 .conteneur .article article, footer > div:last-child, .en-tete .conteneur {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), #application #hero .conteneur, #application #hero .conteneur > :nth-child(2), #application #étapes .conteneur #progress-bar, #application #étapes .conteneur #parts, #application #étapes .conteneur #parts .part .content, #application #étapes .conteneur #parts .part .content .capture-app, #application #étapes .conteneur #parts .part .action, #application #fonctionnalité .conteneur article, #application #fonctionnalité .conteneur article .capture-app, #application #fonctionnalité .conteneur article .content > div, header, header nav, header nav ul, footer div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
+#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), #application #hero .conteneur, #application #hero .conteneur > :nth-child(2), #application #étapes .conteneur #progress-bar, #application #étapes .conteneur #parts, #application #étapes .conteneur #parts .part .content, #application #étapes .conteneur #parts .part .content .capture-app, #application #étapes .conteneur #parts .part .action, #application #fonctionnalité .conteneur article, #application #fonctionnalité .conteneur article .capture-app, #application #fonctionnalité .conteneur article .content > div, header, header nav, header nav > a, header nav ul, footer > div:first-child, footer > div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
   display: flex;
   flex-direction: row; }
 
-#partenaire #service .conteneur > div:last-child .capsule-left .mosaique, #partenaire #service .conteneur > div:last-child .capsule-right .mosaique, #article-001 .conteneur .article .info, #article-001 .conteneur .article .like, footer div:first-child, footer div:first-child nav ul {
+#partenaire #service .conteneur > div:last-child .capsule-left .mosaique, #partenaire #service .conteneur > div:last-child .capsule-right .mosaique, #article-001 .conteneur .article .info, #article-001 .conteneur .article .like, footer > div:first-child nav ul {
   display: flex;
   flex-direction: row;
   align-items: center; }
@@ -806,8 +806,12 @@ header {
     width: 100%;
     justify-content: space-between;
     color: #FFFFFF; }
-    header nav img {
+    header nav > a {
+      align-items: center;
       max-width: 250px; }
+      header nav > a img {
+        width: 100%;
+        display: block; }
     header nav hr {
       color: #FFFFFF;
       border: 2px dashed; }
@@ -828,49 +832,47 @@ header {
 footer {
   box-sizing: border-box;
   background: #00012E;
-  height: 400px;
   width: 100%;
   color: #FFFFFF; }
-  footer div:first-child {
-    justify-content: space-around;
-    height: 100%; }
-    footer div:first-child div {
-      justify-content: space-between;
+  footer > div:first-child {
+    margin: 64px 0px;
+    justify-content: space-around; }
+    footer > div:first-child > div {
       align-items: flex-start;
       width: 100%;
       max-width: calc(100vw / 3);
       max-height: 200px;
       margin: 0 30px; }
-      footer div:first-child div div:first-child {
+      footer > div:first-child > div div:first-child {
         width: 100%; }
-        footer div:first-child div div:first-child img {
+        footer > div:first-child > div div:first-child img {
           max-width: 330px; }
-    footer div:first-child nav {
+    footer > div:first-child nav {
       justify-content: space-around;
       width: 100%;
       max-width: calc((100vw / 3) * 2);
       margin: 0 30px; }
-      footer div:first-child nav hr {
+      footer > div:first-child nav hr {
         color: #FFFFFF;
         border: 1px auto; }
-      footer div:first-child nav li {
+      footer > div:first-child nav li {
         padding-top: 10px; }
-        footer div:first-child nav li a {
+        footer > div:first-child nav li a {
           text-decoration: inherit;
           font-size: inherit; }
-        footer div:first-child nav li a:hover {
+        footer > div:first-child nav li a:hover {
           text-decoration: underline; }
-      footer div:first-child nav ul {
+      footer > div:first-child nav ul {
         justify-content: space-around;
         display: table-row; }
-        footer div:first-child nav ul li {
+        footer > div:first-child nav ul li {
           list-style: none;
           font-family: "Recoleta-SemiBold", serif;
           font-size: 24px; }
-          footer div:first-child nav ul li ul li {
+          footer > div:first-child nav ul li ul li {
             font-size: 16px;
             font-family: "Gilroy-Semibold", sans-serif; }
-  footer div:last-child {
+  footer > div:last-child {
     height: 68px;
     text-align: center;
     font-size: 16px; }
@@ -880,13 +882,17 @@ footer {
 .button2 {
   color: white;
   background: #00012E;
-  width: 40%;
+  width: 200px;
   text-align: center;
   padding: 24px;
   box-sizing: border-box;
   font-size: 20px;
   font-weight: 600;
-  display: block; }
+  display: block;
+  transition: 0.3s ease; }
+
+.button2:hover {
+  opacity: 0.5; }
 
 .button1 {
   margin: 32px 0px;
@@ -926,6 +932,10 @@ button {
   margin-top: 24px; }
   .vignettes-stores > :nth-child(1) {
     margin-right: 32px; }
+  .vignettes-stores a {
+    transition: 0.3s ease; }
+  .vignettes-stores a:hover {
+    opacity: 0.5; }
   .vignettes-stores img {
     height: 50px; }
 

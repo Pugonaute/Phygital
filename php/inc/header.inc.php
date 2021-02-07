@@ -13,7 +13,8 @@
 	<body>
 		<header>
 			<nav>
-				<img src="<?= $root ?>img/logo-ethiquette-blanc.svg" alt="logo">
+				<a href="../index.php"><img src="<?= $root ?>img/logo-ethiquette-blanc.svg" alt="logo"></a>
+				
 				<hr>
 				<ul>
 					<li><a href="<?= $root ?>pages/application.php">Application</a></li>
