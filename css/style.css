@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* HELPERS */
-#index #hero .conteneur, #index #presentation .conteneur, #index #detail .conteneur, #index #marques .conteneur, #index #rejoignez-nous .conteneur, #index #rejoignez-nous .conteneur .infos-commercant, #partenaire #scheme .conteneur, #partenaire #valeurs .conteneur, #partenaire #service .conteneur, #partenaire #service .conteneur > div:first-child, #partenaire #marques .conteneur, #a-propos #chiffre .conteneur, #a-propos #equipe .conteneur, #a-propos #equipe .conteneur .presentation-equipe, #a-propos #methode .conteneur, #blog #articles .conteneur, #contact #formulaire .conteneur, #article-001 .conteneur, footer div:first-child div {
+#index #hero .conteneur, #index #presentation .conteneur, #index #detail .conteneur, #index #marques .conteneur, #index #rejoignez-nous .conteneur, #index #rejoignez-nous .conteneur .infos-commercant, #partenaire #scheme .conteneur, #partenaire #valeurs .conteneur, #partenaire #service .conteneur, #partenaire #service .conteneur > div:first-child, #partenaire #marques .conteneur, #a-propos #chiffre .conteneur, #a-propos #equipe .conteneur, #a-propos #equipe .conteneur .presentation-equipe, #a-propos #methode .conteneur, #blog #articles .conteneur, #contact #formulaire .conteneur, #application #étapes .conteneur, #application #étapes .conteneur #progress-bar .step, #application #étapes .conteneur #parts .part, #application #fonctionnalité .conteneur, #application #en-savoir-plus .conteneur, #article-001 .conteneur, footer div:first-child div {
   display: flex;
   flex-direction: column; }
 
@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center; }
 
-#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), header, header nav, header nav ul, footer div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
+#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), #application #hero .conteneur, #application #hero .conteneur > :nth-child(2), #application #étapes .conteneur #progress-bar, #application #étapes .conteneur #parts, #application #étapes .conteneur #parts .part .content, #application #étapes .conteneur #parts .part .content .capture-app, #application #étapes .conteneur #parts .part .action, #application #fonctionnalité .conteneur article, #application #fonctionnalité .conteneur article .capture-app, #application #fonctionnalité .conteneur article .content > div, header, header nav, header nav ul, footer div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
   display: flex;
   flex-direction: row; }
 
@@ -18,7 +18,7 @@
   flex-direction: row;
   align-items: center; }
 
-body #index #hero, #index body #hero, body #index #presentation, #index body #presentation, body #index #detail, #index body #detail, body #index #valeur, #index body #valeur, body #index #marques, #index body #marques, body #index #rejoignez-nous, #index body #rejoignez-nous, body #partenaire #marques, #partenaire body #marques, body #a-propos #chiffre, #a-propos body #chiffre, body #a-propos #manifest, #a-propos body #manifest, body #a-propos #equipe, #a-propos body #equipe, body #a-propos #methode, #a-propos body #methode, body #blog #articles, #blog body #articles, body #contact #formulaire, #contact body #formulaire, body #application #hero, #application body #hero, body #article-001, body .en-tete, #partenaire #scheme, #partenaire #valeurs, #partenaire #service {
+body #index #hero, #index body #hero, body #index #presentation, #index body #presentation, body #index #detail, #index body #detail, body #index #valeur, #index body #valeur, body #index #marques, #index body #marques, body #index #rejoignez-nous, #index body #rejoignez-nous, body #partenaire #marques, #partenaire body #marques, body #a-propos #chiffre, #a-propos body #chiffre, body #a-propos #manifest, #a-propos body #manifest, body #a-propos #equipe, #a-propos body #equipe, body #a-propos #methode, #a-propos body #methode, body #blog #articles, #blog body #articles, body #contact #formulaire, #contact body #formulaire, body #application #hero, #application body #hero, body #application #étapes, #application body #étapes, body #application #fonctionnalité, #application body #fonctionnalité, body #application #en-savoir-plus, #application body #en-savoir-plus, body #article-001, body .en-tete, #partenaire #scheme, #partenaire #valeurs, #partenaire #service {
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -585,6 +585,163 @@ body {
 
 #application #hero {
   padding: 80px 0px; }
+  #application #hero .conteneur {
+    position: relative; }
+    #application #hero .conteneur > div {
+      width: 50%; }
+    #application #hero .conteneur > :nth-child(1) h4 {
+      margin-top: 24px; }
+    #application #hero .conteneur > :nth-child(1) p {
+      margin-top: 24px; }
+    #application #hero .conteneur > :nth-child(2) {
+      justify-content: flex-end; }
+      #application #hero .conteneur > :nth-child(2) img {
+        height: 32rem; }
+    #application #hero .conteneur .fond-coloré {
+      position: absolute;
+      top: 64px;
+      right: -6rem;
+      width: 600px;
+      height: 400px;
+      background-color: #FFDCC9;
+      z-index: -1; }
+#application #étapes {
+  padding: 80px 0px;
+  border-top: #00012E dashed 4px; }
+  #application #étapes .conteneur {
+    align-items: center; }
+    #application #étapes .conteneur #progress-bar {
+      text-align: center;
+      margin-top: 32px;
+      justify-content: center; }
+      #application #étapes .conteneur #progress-bar .step {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        margin: 0px 40px;
+        cursor: pointer; }
+        #application #étapes .conteneur #progress-bar .step h3 {
+          font-family: 'Gilroy-Light', 'Gilroy', sans-serif;
+          font-weight: 500;
+          margin-bottom: 8px; }
+        #application #étapes .conteneur #progress-bar .step h3.active {
+          font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
+          transition: 0.2s linear; }
+        #application #étapes .conteneur #progress-bar .step .bullet {
+          width: 28px;
+          height: 28px;
+          border: solid 4px #00012E;
+          display: inline-block;
+          position: relative;
+          transition: 0.2s;
+          background: white; }
+        #application #étapes .conteneur #progress-bar .step .bullet.active {
+          border: solid 4px #00012E;
+          background-color: #00012E; }
+        #application #étapes .conteneur #progress-bar .step .bullet.active:after {
+          border: solid 2px #00012E;
+          background-color: #00012E;
+          transform: scaleX(0);
+          transform-origin: left;
+          animation: animate 0.3s linear forwards; }
+@keyframes animate {
+  100% {
+    transform: scaleX(1); } }
+        #application #étapes .conteneur #progress-bar .step .bullet:before,
+        #application #étapes .conteneur #progress-bar .step .bullet:after {
+          position: absolute;
+          content: '';
+          bottom: 12px;
+          right: 24px;
+          height: 4px;
+          width: 164px;
+          background: #00012E;
+          z-index: -1; }
+      #application #étapes .conteneur #progress-bar .step:first-child .bullet:before,
+      #application #étapes .conteneur #progress-bar .step:first-child .bullet:after {
+        display: none; }
+    #application #étapes .conteneur #parts {
+      width: 800px;
+      overflow: hidden; }
+      #application #étapes .conteneur #parts .part {
+        align-items: space-between;
+        margin-top: 32px;
+        width: 100%;
+        transition: margin-left 0.3s ease-in-out; }
+        #application #étapes .conteneur #parts .part .content {
+          width: 100%;
+          height: 440px; }
+          #application #étapes .conteneur #parts .part .content .detail {
+            border: 4px solid #00012E;
+            width: 64%; }
+            #application #étapes .conteneur #parts .part .content .detail h5 {
+              font-family: 'Recoleta-SemiBold', 'Recoleta', serif;
+              font-size: 24px;
+              color: #00012E;
+              border-bottom: 4px solid #00012E;
+              padding: 24px 40px;
+              font-weight: 100; }
+            #application #étapes .conteneur #parts .part .content .detail p {
+              padding: 24px 32px; }
+          #application #étapes .conteneur #parts .part .content .capture-app {
+            justify-content: flex-end;
+            width: 36%; }
+            #application #étapes .conteneur #parts .part .content .capture-app img {
+              height: 100%; }
+        #application #étapes .conteneur #parts .part .action {
+          margin-top: 24px;
+          justify-content: space-between; }
+          #application #étapes .conteneur #parts .part .action a {
+            display: block; }
+#application #fonctionnalité {
+  padding: 80px 0px;
+  border-top: #00012E dashed 4px; }
+  #application #fonctionnalité .conteneur {
+    align-items: center; }
+    #application #fonctionnalité .conteneur h2 {
+      text-align: center; }
+    #application #fonctionnalité .conteneur h4 {
+      margin-top: 16px;
+      text-align: center; }
+    #application #fonctionnalité .conteneur article {
+      margin-top: 40px;
+      width: 1000px; }
+      #application #fonctionnalité .conteneur article .capture-app {
+        width: 32%;
+        transition: ease 0.3s; }
+        #application #fonctionnalité .conteneur article .capture-app img {
+          width: 80%;
+          margin: auto;
+          transform: rotate(2deg); }
+      #application #fonctionnalité .conteneur article .content {
+        width: 68%; }
+        #application #fonctionnalité .conteneur article .content > div {
+          align-items: center;
+          justify-content: center;
+          margin-left: 8px;
+          opacity: 0.5;
+          padding: 14px;
+          transition: ease 0.3s;
+          border: 4px solid white;
+          cursor: pointer; }
+          #application #fonctionnalité .conteneur article .content > div img {
+            width: 64px;
+            margin-right: 24px; }
+          #application #fonctionnalité .conteneur article .content > div > div p {
+            font-size: 16px; }
+        #application #fonctionnalité .conteneur article .content > div.active {
+          opacity: 1;
+          border: 4px solid #00012E; }
+#application #en-savoir-plus {
+  padding: 80px 0px;
+  background-color: #FFDCC9;
+  border-top: 4px dashed #00012E; }
+  #application #en-savoir-plus .conteneur {
+    align-items: center;
+    text-align: center; }
+    #application #en-savoir-plus .conteneur a {
+      z-index: 1; }
 
 /* Article 001 */
 #article-001 .conteneur {
