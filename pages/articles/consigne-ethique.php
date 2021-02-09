@@ -22,11 +22,13 @@ include $root."php/inc/header.inc.php";
 				<div>
 					<p>Par John Doe - 20 NOVEMBRE 2020</p>
 				</div>
-				<div class=buttonIcon>
-					<p>Impression</p>
-				</div>
-				<div class=buttonIcon>
-					<p>Partager</p>
+				<div>
+					<div class=buttonIcon>
+						<a href="">Impression</a>
+					</div>
+					<div class=buttonIcon>
+						<a href="">Partager</a>
+					</div>
 				</div>
 			</div>
 			<article>
@@ -54,15 +56,20 @@ include $root."php/inc/header.inc.php";
 			</article>
 			<div class=like>
 				<div>
-					<p>Avez-vous aimez cet article ?<br>
-					189 utilisateurs ont aimé cet article.
+					<p>
+						Avez-vous aimez cet article ?
+					</p>
+					<p>
+						189 utilisateurs ont aimé cet article.
 					</p>
 				</div>
-				<div class=buttonIcon>
-					<p>Oui</p>
-				</div>
-				<div class=buttonIcon>
-					<p>Non</p>
+				<div>
+					<div class=buttonIcon>
+						<a href="">Oui</a>
+					</div>
+					<div class=buttonIcon>
+						<a href="">Non</a>
+					</div>
 				</div>
 			</div>
 		</section>
