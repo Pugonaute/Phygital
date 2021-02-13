@@ -207,7 +207,8 @@ include $root.'php/inc/header.inc.php';
 </main>
 <script src="js/jquery.js"></script>
 <script src="js/splide.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+
 <?php
 	include $root.'php/inc/footer.inc.php';
 ?>

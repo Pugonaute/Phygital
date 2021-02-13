@@ -827,6 +827,8 @@ header {
           font-size: inherit; }
         header nav ul li a:hover {
           text-decoration: underline; }
+        header nav ul li a.active {
+          font-weight: 600; }
 
 /* Footer */
 footer {

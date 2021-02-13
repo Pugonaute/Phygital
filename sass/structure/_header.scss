@@ -33,7 +33,8 @@ header{
             img{
                 width: 100%;
                 display: block;
-			}
+            }
+    
         }
 
 
@@ -54,11 +55,15 @@ header{
                     font-size: 18px;
 					text-decoration: inherit;
 					font-size: inherit;
-				}
+                }
+                
 				a:hover{
 					text-decoration: underline;
-				}
-				
+                }
+                
+				a.active{
+                    font-weight: 600;
+                }
 				
             }
         }
