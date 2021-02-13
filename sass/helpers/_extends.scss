@@ -24,6 +24,11 @@
 
 %flex-row-justify-center{
 	display: flex;
-    flex-direction: row;
-    justify-content: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+%border-solid{
+	border: solid $blue 4px;
+
 }
