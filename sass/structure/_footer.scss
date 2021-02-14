@@ -147,9 +147,8 @@ footer{
 			}
 
 			@include responsive(small){
-
 				//			background: red;
-				//				@extend %flex-row;
+//								@extend %flex-row;
 				display: flex;
 				flex-direction: column;
 				//				justify-content: center;

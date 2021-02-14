@@ -22,8 +22,8 @@ $widthTablet: 1000px;
 $widthPhone: 800px;
 
 $breakpoints: (
-'small': 800px,
-'medium': 1000px,
+'small': $widthPhone,
+'medium': $widthTablet,
 'large': 1200px	
 ) !default;
 
