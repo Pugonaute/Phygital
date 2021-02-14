@@ -12,7 +12,7 @@ include $root."php/inc/header.inc.php";
 <main id="partenaire">
 	<section class="en-tete">
 		<div class="conteneur">
-			<h1>Vendez éthique, rejoignez le réseau Éthiquette !</h1>
+			<h1>Vendez éthique, rejoignez le réseau Éthiquette !</h1>
 		</div>
 	</section>
 
