@@ -21,7 +21,8 @@
 			</div>
 
 			<nav>
-				<a href="<?= $root ?>index.php"><img src="<?= $root ?>img/logo-ethiquette-blanc.svg" alt="logo"></a>
+				<a href="<?= $root ?>"><img src="<?= $root ?>img/logo-ethiquette-blanc.svg" alt="logo"></a>
+				
 				<hr>
 				<ul>
 					<li><a href="<?= $root ?>pages/application.php">Application</a></li>

@@ -22,6 +22,12 @@ $white: #FFFFFF;
 $widthTablet: 1000px;
 $widthPhone: 800px;
 
+$breakpoints: (
+'small': $widthPhone,
+'medium': $widthTablet,
+'large': 1200px	
+) !default;
+
 // margins
 $margin_0: 8px;
 $margin_1: 16px;

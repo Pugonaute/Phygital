@@ -10,6 +10,14 @@ body{
         .bigicon{
             max-width: 120px;
         }
+		
+		@include responsive(medium){
+			
+			width: 100%;
+			.bigicon{
+            max-width: 100px;
+        }
+		}
     }
 
     @media (max-width: $widthPhone){

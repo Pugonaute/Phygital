@@ -32,3 +32,17 @@
 	border: solid $blue 4px;
 
 }
+
+%border-bottom-dashed{
+	border-bottom: dashed $blue 4px;
+}
+
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == medium {
+    @media (max-width: $widthTablet) { @content };
+  }
+  @if $breakpoint == small {
+    @media (max-width: $widthPhone) { @content };
+  }
+}
