@@ -4,12 +4,13 @@
 
 	#hero{
 		@extend %section;
-		padding: 100px 0px;
+		padding: $margin_max 0px;
 		box-sizing: border-box;
 		background-image:url("../img/fond-hero.svg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+
 
 		.conteneur{
 			@extend %flex-column;
@@ -24,14 +25,15 @@
 			}
 
 			h2{
-				margin-top: $margin_max;
+				text-align: center;
+				margin-top: $margin_6;
 			}
 			p{
-				margin-top: $margin_1;
+				margin-top: $margin_0;
 				width: 65%;
 				text-align: center;
 			}
-			.button{
+			.button1{
 				margin-top: $margin_2;
 			}
 		}
@@ -92,6 +94,9 @@
 			@extend %flex-column;
 			align-items: center;
 			width: 1000px;
+			h2{
+				text-align: center;
+			}
 
 			p{
 				margin-top: $margin_1;
@@ -183,10 +188,54 @@
 				a{
 					margin: $margin_4;
 				}
-
 			}
-
 		}
 	}
 
+	@media (max-width: $widthPhone){
+		#hero{
+			.conteneur{
+				width: 80%;
+				h1{
+					width: 100%;
+					font-size: 48px;
+				}
+				.vignettes-stores{
+					flex-direction: column;
+					align-items: center;
+					a{
+						margin: 8px;
+					}
+				}
+				h2{
+					margin-top: $margin_4;
+				}
+				p{
+					width: 100%;
+				}
+			}
+		}
+
+		#detail .conteneur{
+			margin: 0px $margin_0;
+		}
+
+		#valeur .conteneur{
+			flex-direction: column;
+			align-items: center;
+			article{
+				width: 80%;
+				margin: $margin_3;
+			}
+		}
+
+		#marque .conteneur{
+			width: 80%;
+			background-color: yellow;
+			h2{
+				width: 50%;
+				background-color: yellow;
+			}
+		}
+	}
 }

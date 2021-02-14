@@ -73,6 +73,45 @@
             justify-content: flex-start;
         }
     }
+
+
+    @media (max-width: $widthPhone){
+        >article:nth-child(odd){
+            >:nth-child(1){
+                flex-direction: column;
+                >:nth-child(1){
+                    width: 100%;
+                }
+                >:nth-child(2){
+                    width: 100%;
+                    border-top: solid $blue 4px;
+                    border-left: solid white 0px;
+                    height: 400px;
+                }
+            }
+            >:nth-child(2) a{
+                width: 100%;
+            }
+        }
+
+        >article:nth-child(even){
+            >:nth-child(1){
+                flex-direction: column;
+                >:nth-child(1){
+                    width: 100%;
+                }
+                >:nth-child(2){
+                    width: 100%;
+                    border-top: solid $blue 4px;
+                    border-right: solid white 0px;
+                    height: 400px;
+                }
+            }
+            >:nth-child(2) a{
+                width: 100%;
+            }
+        }
+    }
 }
 
 

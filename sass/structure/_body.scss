@@ -1,5 +1,6 @@
 /* Body */
 body{
+    padding-top: $margin_5;
     border: solid $blue 4px;
     %section{
         @extend %flex-row-justify-center;
@@ -9,5 +10,9 @@ body{
         .bigicon{
             max-width: 120px;
         }
+    }
+
+    @media (max-width: $widthPhone){
+        border: solid $white 0px;
     }
 }

@@ -6,8 +6,8 @@
 						<img src="<?= $root ?>img/logo-ethiquette-blanc.svg" alt="logo">
 					</div>
 					<div class="vignettes-stores">
-						<a href="https://www.apple.com/fr/ios/app-store/" title="app store"><img src="../img/telecharger-appstore.svg" alt="bouton app store"></a>
-						<a href="https://play.google.com/store" title="play store"><img src="../img/telecharger-playstore.svg" alt="bouton play store"></a>
+						<a href="https://www.apple.com/fr/ios/app-store/" title="app store"><img src="<?= $root ?>img/telecharger-appstore.svg" alt="bouton app store"></a>
+						<a href="https://play.google.com/store" title="play store"><img src="<?= $root ?>img/telecharger-playstore.svg" alt="bouton play store"></a>
 					</div>
 				</div>
 				<nav>
