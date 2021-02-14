@@ -13,7 +13,7 @@
 	<body>
 		<header>
 			<nav>
-				<a href="../index.php"><img src="<?= $root ?>img/logo-ethiquette-blanc.svg" alt="logo"></a>
+				<a href="<?= $root ?>"><img src="<?= $root ?>img/logo-ethiquette-blanc.svg" alt="logo"></a>
 				
 				<hr>
 				<ul>

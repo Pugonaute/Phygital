@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column; }
 
-#partenaire #service .conteneur > div:last-child, #article-001 .conteneur .article .info div:first-child, #article-001 .conteneur .article .info div:last-child .buttonIcon, #article-001 .conteneur .article article, #article-001 .conteneur .article .like > div:last-child .buttonIcon a, footer > div:last-child, .en-tete .conteneur {
+#partenaire #scheme .conteneur > div article, #partenaire #service .conteneur > div:last-child, #article-001 .conteneur .article .info div:first-child, #article-001 .conteneur .article .info div:last-child .buttonIcon, #article-001 .conteneur .article article, #article-001 .conteneur .article .like > div:last-child .buttonIcon a, footer > div:last-child, .en-tete .conteneur {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #partenaire #valeurs .conteneur .capsule-left .action, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), #application #hero .conteneur, #application #hero .conteneur > :nth-child(2), #application #étapes .conteneur #progress-bar, #application #étapes .conteneur #parts, #application #étapes .conteneur #parts .part .content, #application #étapes .conteneur #parts .part .content .capture-app, #application #étapes .conteneur #parts .part .action, #application #fonctionnalité .conteneur article, #application #fonctionnalité .conteneur article .capture-app, #application #fonctionnalité .conteneur article .content > div, #article-001 .conteneur .article .info, #article-001 .conteneur .article .info div:last-child, #article-001 .conteneur .article .like, #article-001 .conteneur .article .like > div:last-child, header, header nav, header nav > a, header nav ul, footer > div:first-child, footer > div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
+#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #partenaire #valeurs .conteneur .capsule-right .mosaique, #partenaire #valeurs .conteneur .capsule-left .mosaique, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), #application #hero .conteneur, #application #hero .conteneur > :nth-child(2), #application #étapes .conteneur #progress-bar, #application #étapes .conteneur #parts, #application #étapes .conteneur #parts .part .content, #application #étapes .conteneur #parts .part .content .capture-app, #application #étapes .conteneur #parts .part .action, #application #fonctionnalité .conteneur article, #application #fonctionnalité .conteneur article .capture-app, #application #fonctionnalité .conteneur article .content > div, #article-001 .conteneur .article .info, #article-001 .conteneur .article .info div:last-child, #article-001 .conteneur .article .like, #article-001 .conteneur .article .like > div:last-child, header, header nav, header nav > a, header nav ul, footer > div:first-child, footer > div:first-child nav, .vignettes-stores, #detail .conteneur > article:nth-child(odd) > :nth-child(1), #detail .conteneur > article:nth-child(odd) > :nth-child(2), #detail .conteneur > article:nth-child(even) > :nth-child(2) {
   display: flex;
   flex-direction: row; }
 
@@ -23,8 +23,11 @@ body #index #hero, #index body #hero, body #index #presentation, #index body #pr
   flex-direction: row;
   justify-content: center; }
 
-#article-001 .conteneur .article .info, #article-001 .conteneur .article .info div:last-child .buttonIcon, #article-001 .conteneur .article .like, #article-001 .conteneur .article .like > div:last-child .buttonIcon {
+#partenaire #scheme .conteneur > div article, #article-001 .conteneur .article .info, #article-001 .conteneur .article .info div:last-child .buttonIcon, #article-001 .conteneur .article .like, #article-001 .conteneur .article .like > div:last-child .buttonIcon {
   border: solid #00012E 4px; }
+
+#partenaire #scheme {
+  border-bottom: dashed #00012E 4px; }
 
 /* Resetk */
 * {
@@ -250,21 +253,30 @@ body {
 #partenaire #scheme {
   padding: 80px 0px; }
   #partenaire #scheme .conteneur {
+    position: relative;
     align-items: center;
     text-align: center; }
     #partenaire #scheme .conteneur h2 {
       margin-bottom: 24px; }
     #partenaire #scheme .conteneur p {
       padding: 16px 0; }
+    #partenaire #scheme .conteneur .toggleHover {
+      fill: #00012E; }
+    #partenaire #scheme .conteneur .toggleHover .hover-text {
+      fill: white; }
     #partenaire #scheme .conteneur > div {
-      background: blue; }
-      #partenaire #scheme .conteneur > div .hidden {
-        visibility: hidden; }
-      #partenaire #scheme .conteneur > div p {
-        width: 350px;
-        padding: 0; }
+      position: absolute;
+      top: 550px; }
+      #partenaire #scheme .conteneur > div article {
+        padding: 24px 24px;
+        min-height: 150px; }
+        #partenaire #scheme .conteneur > div article p {
+          width: 300px;
+          padding: 0;
+          margin: 0; }
 #partenaire #valeurs {
-  padding: 80px 0px; }
+  padding: 0px 0px;
+  padding-bottom: 80px; }
   #partenaire #valeurs .conteneur {
     align-items: center;
     width: 1000px; }
@@ -307,10 +319,8 @@ body {
         border-left: solid #00012E 4px;
         height: 500px;
         background: center/cover no-repeat url("../img/shop.png"); }
-    #partenaire #valeurs .conteneur .capsule-left .action {
-      width: 100%;
-      height: 80px;
-      justify-content: flex-end; }
+    #partenaire #valeurs .conteneur .capsule-left:last-of-type {
+      padding-left: 200px; }
 #partenaire #service {
   padding: 80px 0px;
   background: #FFDCC9;
