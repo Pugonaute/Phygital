@@ -58,7 +58,8 @@
         </div>
     </section>
 </main>
-
+<script src="<?= $root ?>js/jquery.js"></script>
+<script src="<?= $root ?>js/menu.js"></script>
     <?php   
         include '../php/inc/footer.inc.php';
     ?>

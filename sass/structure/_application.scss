@@ -165,6 +165,7 @@
                             width: 36%;
                             padding: 0 16px;
                             box-sizing: border-box;
+                            
                             // img {
                             //     height: 100%;
                             // }
@@ -210,8 +211,9 @@
                     @extend %flex-row;
                     width: 32%;
                     transition: ease 0.3s;
+                    
                     img {
-                        max-width: 100%;
+                        max-width: 80%;
                         margin: auto;
                         transform: rotate(2deg);
                     }

@@ -52,7 +52,7 @@ include $root.'php/inc/header.inc.php';
 					</div>
 				</div>
 				<div>
-					<a href="" class="button2">En savoir plus</a>
+					<a href="pages/application.php" class="button2" title="En savoir plus">En savoir plus</a>
 				</div>
 			</article>
 
@@ -72,7 +72,7 @@ include $root.'php/inc/header.inc.php';
 					</div>
 				</div>
 				<div>
-					<a href="" class="button2">En savoir plus</a>
+					<a href="pages/application.php" class="button2" title="En savoir plus">En savoir plus</a>
 				</div>
 			</article>
 
@@ -91,7 +91,7 @@ include $root.'php/inc/header.inc.php';
 					</div>
 				</div>
 				<div>
-					<a href="" class="button2">En savoir plus</a>
+					<a href="pages/partenaire.php" class="button2" title="En savoir plus">En savoir plus</a>
 				</div>
 			</article>
 
@@ -192,10 +192,10 @@ include $root.'php/inc/header.inc.php';
 				<p>Vous êtes un commerçant de vêtement indépendant et vous êtes interessé par notre projet ? Découvrez les nombreux avantages dont vous bénéficierez en faisant partie de notre réseau éthique.</p>
 			</article>
 			<div>
-				<a href="" class="button1">
+				<a href="pages/a-propos.php" class="button1" title="A propos">
 					<div><span>En savoir plus</div></span>
 				</a>
-				<a href="" class="button1">
+				<a href="pages/contact.php" class="button1" title="Contactez-nous">
 					<div><span>Contactez-nous</div></span>
 				</a>
 			</div>

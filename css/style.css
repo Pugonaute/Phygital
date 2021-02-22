@@ -891,7 +891,7 @@ body {
         width: 32%;
         transition: ease 0.3s; }
         #application #fonctionnalité .conteneur article .capture-app img {
-          max-width: 100%;
+          max-width: 80%;
           margin: auto;
           transform: rotate(2deg); }
       #application #fonctionnalité .conteneur article .content {
@@ -1177,9 +1177,9 @@ header {
     color: #FFFFFF; }
     header nav > a {
       align-items: center;
-      max-width: 250px; }
+      min-width: 250px; }
       header nav > a img {
-        width: 100%;
+        min-width: 100%;
         display: block; }
     header nav hr {
       color: #FFFFFF;
@@ -1197,7 +1197,8 @@ header {
         header nav ul li a:hover {
           text-decoration: underline; }
         header nav ul li a.active {
-          font-weight: 600; }
+          font-weight: 600;
+          text-decoration: underline; }
   @media (max-width: 1200px) {
     header nav ul {
       width: 60%; } }
@@ -1232,7 +1233,7 @@ header {
         transition: ease 0.3s; }
         header nav > a {
           margin: 32px;
-          max-width: 400px; }
+          min-width: 500px; }
         header nav hr {
           width: 100%; }
         header nav ul {
@@ -1243,9 +1244,14 @@ header {
           width: 100%; }
           header nav ul li {
             text-align: center;
-            font-size: 24px; }
+            font-size: 32px; }
       header nav.active {
         top: 0px; } }
+  @media (max-width: 800px) {
+    header nav > a {
+      min-width: 80%; }
+    header nav ul li {
+      font-size: 28px; } }
 
 /* Footer */
 footer {
