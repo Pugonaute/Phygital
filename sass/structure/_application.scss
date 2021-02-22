@@ -1,30 +1,31 @@
-#application{
-    #hero{
+#application {
+    #hero {
         @extend %section;
-        padding: $margin_max 0px;
-        .conteneur{
+        padding: $margin_max 0;
+        .conteneur {
             position: relative;
             @extend %flex-row;
-            >div{
+            > div {
                 width: 50%;
             }
-            >:nth-child(1){
-                h4{
+            >:nth-child(1) {
+                h4 {
                     margin-top: $margin_2;
                 }
-                p{
+                p {
                     margin-top: $margin_2;
                 }
             }
-            >:nth-child(2){
+            >:nth-child(2) {
                 @extend %flex-row;
                 justify-content: flex-end;
-                img{
-                    height: 32rem;
+                img {
+                    max-width: 80%;
+                    margin: auto;
                 }
             }
 
-            .fond-coloré{
+            .fond-coloré {
                 position: absolute;
                 top: 64px;
                 right: -6rem;
@@ -37,44 +38,46 @@
         }
 
 
-        
     }
 
-    #étapes{
+    #étapes {
         @extend %section;
-        padding: $margin_max 0px;
-        border-top:$blue dashed 4px;
-        .conteneur{
+        padding: $margin_max 0;
+        border-top: $blue dashed 4px;
+        .conteneur {
             @extend %flex-column;
             align-items: center;
-            #progress-bar{
+            h2 {
+                text-align: center;
+            }
+            #progress-bar {
                 text-align: center;
                 margin-top: $margin_3;
                 @extend %flex-row;
                 justify-content: center;
 
-                .step{
+                .step {
                     @extend %flex-column;
                     align-items: center;
                     text-align: center;
                     width: 100%;
                     position: relative;
-                    margin:0px $margin_4 ;
+                    margin: 0 $margin_4;
                     cursor: pointer;
 
-                    h3{
+                    h3 {
                         font-family: 'Gilroy-Light', 'Gilroy', sans-serif;
                         font-weight: 500;
                         margin-bottom: 8px;
                     }
 
 
-                    h3.active{
+                    h3.active {
                         font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
                         transition: 0.2s linear;
                     }
 
-                    .bullet{ 
+                    .bullet {
                         width: 28px;
                         height: 28px;
                         border: solid 4px $blue;
@@ -83,12 +86,12 @@
                         transition: 0.2s;
                         background: white;
                     }
-                    .bullet.active{ 
+                    .bullet.active {
                         border: solid 4px $blue;
                         background-color: $blue;
                     }
 
-                    .bullet.active:after{ 
+                    .bullet.active:after {
                         border: solid 2px $blue;
                         background-color: $blue;
                         transform: scaleX(0);
@@ -97,13 +100,13 @@
                     }
 
                     @keyframes animate {
-                        100%{
-                          transform: scaleX(1);
+                        100% {
+                            transform: scaleX(1);
                         }
                     }
 
                     .bullet:before,
-                    .bullet:after{
+                    .bullet:after {
                         position: absolute;
                         content: '';
                         bottom: 12px;
@@ -116,58 +119,66 @@
 
                 }
                 .step:first-child .bullet:before,
-                .step:first-child .bullet:after{
-                display: none;
+                .step:first-child .bullet:after {
+                    display: none;
                 }
 
             }
-            #parts{
+            #parts {
                 @extend %flex-row;
                 width: 800px;
                 overflow: hidden;
-                
-                
-                .part{
+
+
+                .part {
                     @extend %flex-column;
                     align-items: space-between;
                     margin-top: $margin_3;
-                    width: 100%;
+              
                     transition: margin-left 0.3s ease-in-out;
-                    
-                    .content{
-                        @extend %flex-row;     
+                    min-width: 100%;
+                    .content {
+                        @extend %flex-row;
                         width: 100%;
-                        height: 440px;
                         
-                        .detail{
+                        box-sizing: border-box;
+                        // height: 440px;
+
+                        .detail {
                             border: 4px solid $blue;
-                            width:64%;
-                            h5{
+                            width: 64%;
+                            h5 {
                                 font-family: 'Recoleta-SemiBold', 'Recoleta', serif;
                                 font-size: $titre3;
-                                color:$blue;
+                                color: $blue;
                                 border-bottom: 4px solid $blue;
                                 padding: 24px 40px;
                                 font-weight: 100;
                             }
-                            p{
+                            p {
                                 padding: 24px 32px;
                             }
                         }
-                        .capture-app{
+                        .capture-app {
                             @extend %flex-row;
                             justify-content: flex-end;
                             width: 36%;
+                            padding: 0 16px;
+                            box-sizing: border-box;
+                            // img {
+                            //     height: 100%;
+                            // }
                             img{
-                                height:  100%;
+                                max-width: 100%;
+                                margin: auto;
                             }
                         }
                     }
-                    .action{
+                    .action {
                         margin-top: $margin_2;
-                        @extend %flex-row; 
+                        @extend %flex-row;
                         justify-content: space-between;
-                        a{
+                        a {
                             display: block;
                         }
                     }
@@ -176,38 +187,38 @@
         }
     }
 
-    #fonctionnalité{
+    #fonctionnalité {
         @extend %section;
-        padding: $margin_max 0px;
-        border-top:$blue dashed 4px;
-        .conteneur{
+        padding: $margin_max 0;
+        border-top: $blue dashed 4px;
+        .conteneur {
             @extend %flex-column;
             align-items: center;
-            h2{
+            h2 {
                 text-align: center;
             }
-            h4{
+            h4 {
                 margin-top: $margin_1;
                 text-align: center;
             }
-            article{
+            article {
                 margin-top: $margin_4;
-                width: 1000px;
+                width: 100%;
                 @extend %flex-row;
-                
-                .capture-app{
+
+                .capture-app {
                     @extend %flex-row;
                     width: 32%;
                     transition: ease 0.3s;
-                    img{    
-                        width: 80%;
+                    img {
+                        max-width: 100%;
                         margin: auto;
                         transform: rotate(2deg);
                     }
                 }
-                .content{
+                .content {
                     width: 68%;
-                    >div{
+                    > div {
                         @extend %flex-row;
                         align-items: center;
                         justify-content: center;
@@ -217,38 +228,271 @@
                         transition: ease 0.3s;
                         border: 4px solid white;
                         cursor: pointer;
-                        img{
+                        img {
                             width: 64px;
                             margin-right: $margin_2;
                         }
-                        >div{
-                           p{
-                               font-size: $paragraphe1;
-                           }   
+                        > div {
+                            p {
+                                font-size: $paragraphe1;
+                            }
                         }
                     }
-                    >div.active{
+                    > div.active {
                         opacity: 1;
-                    
+
                         border: 4px solid $blue;
-                        
+
                     }
                 }
             }
         }
     }
 
-    #en-savoir-plus{
+    #en-savoir-plus {
         @extend %section;
-        padding: $margin_max 0px;
+        padding: $margin_max 0;
         background-color: $pink;
         border-top: 4px dashed $blue;
-        .conteneur{
+        .conteneur {
             @extend %flex-column;
-			align-items: center;
+            align-items: center;
             text-align: center;
-            a{
+            a {
+                margin-top: $margin_2;
                 z-index: 1;
+            }
+        }
+    }
+
+    @media(max-width: $widthTablet) {
+        .conteneur {
+            width: 80%;
+        }
+
+        #hero .conteneur {
+            flex-direction: column;
+            >:nth-child(1) {
+                text-align: center;
+                width: 100%;
+                .vignettes-stores {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    a {
+                        width: 250px;
+                        margin: 0;
+                    }
+                }
+            }
+            >:nth-child(2) {
+                margin-top: $margin_6;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                // background-color: $pink;
+                img{
+                    max-width: 80%;
+                }
+            }
+            .fond-coloré {
+                bottom: 5%;
+                right: inherit;
+                top: inherit;
+                left: inherit;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                height: 600px;
+            }
+
+        }
+
+        #étapes .conteneur{
+            #parts{
+                width: 100%;
+                .part{
+                    width: 100%;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    
+                    .action{
+                        margin-bottom: $margin_2;
+                        margin-top: 0;
+                        width: 80%;
+                        
+                        box-sizing: border-box;
+                    }
+                   .content{
+                        flex-direction: column;
+                        align-items: center;
+                        height: auto;
+                        padding: 0px;
+                        .detail{
+                            width: 80%;
+                            
+                        }
+                        .capture-app{
+                            
+                            padding: 16px 0;
+                            width: 40%;
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+        #fonctionnalité .conteneur{
+            width: 80%;
+            article{
+                flex-direction: column-reverse;
+                align-items: center;
+                
+                .capture-app{
+                    margin-top: $margin_2;
+                    width: 40%;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+
+                .content{
+                    width: 100%;
+                }
+            }
+        }
+
+
+    }
+
+    @media(max-width: $widthPhone) {
+        .conteneur {
+            width: 90%;
+        }
+
+        #hero .conteneur{
+            >:nth-child(1){
+
+                .vignettes-stores{
+                        flex-direction: column;
+                        align-items: center;
+                }
+            }
+
+            .fond-coloré {
+
+                height: 450px;
+            }
+
+        }
+        
+
+
+
+        #étapes .conteneur{
+            #progress-bar{
+                .step{
+                    margin: 0 20px;
+                    
+                    .bullet:before,
+                    .bullet:after {
+                        width: 130px;
+                    }
+                }
+            }
+            #parts{
+                .part{
+                    width: 100%;
+                    flex-direction: column-reverse;
+                    justify-content: flex-end;
+                    .action{
+                        width: 100%;
+                    }
+                   .content{
+ 
+                        .detail{
+                            width: 98%;  
+                        }
+                        .capture-app{
+                            width: 64%;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        #fonctionnalité .conteneur{
+            width: 80%;
+            article{
+                .content{
+                    text-align: center;
+                    >div{
+                        flex-direction: column;
+                        img{
+                            margin: inherit;
+                            margin-bottom: $margin_0;
+                        }
+                    }
+
+                }
+                .capture-app{
+                    width: 64%;
+                }
+
+                
+
+            }
+        }
+
+    }
+
+    @media(max-width: 500px) {
+
+        #hero .conteneur{
+            .fond-coloré {
+                height:350px ;
+            }
+        }
+
+
+        #étapes .conteneur{
+            #progress-bar{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                .step{
+                    margin: 0;
+                    h3{
+                        font-size: 18px;
+                    }
+
+                    .bullet:before,
+                    .bullet:after {
+                        width: 80px;
+                    }
+                }
+            }
+
+            #parts .part .action{
+                .button2{
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 400px) {
+
+        #hero .conteneur{
+            .fond-coloré {
+                height:200px ;
+                bottom: 5%;
             }
         }
     }

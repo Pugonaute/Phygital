@@ -29,7 +29,9 @@ include $root.'php/inc/header.inc.php';
 	<section id="presentation">
 		<div class="conteneur">
 			<h2>Découvrez notre application</h2>
-			<div class="video"></div>
+			<div class="video">
+			<iframe src="https://www.youtube.com/embed/kVh4E0Qd390" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		</div>
 	</section>
 	<section id="detail">
@@ -174,7 +176,6 @@ include $root.'php/inc/header.inc.php';
 							<li class="splide__slide">
 								<img src="img/logo-wilo.png">
 							</li>
-
 						</ul>
 					</div>
 				</div>

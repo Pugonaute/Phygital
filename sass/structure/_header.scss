@@ -83,7 +83,13 @@ header{
         }
     }
 
-    @media (max-width: $widthPhone){
+    @media (max-width: 1200px){
+        nav ul {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: $widthTablet){
         padding: 0;
         a{
            display: flex;

@@ -167,6 +167,7 @@
 	</section>
 </main>
 <script src="../js/jquery.js"></script>
+<script src="../js/menu.js"></script>
 <script src="../js/step.js"></script>
 <script src="../js/feature.js"></script>
 <?php

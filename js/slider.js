@@ -13,11 +13,30 @@ document.addEventListener( 'DOMContentLoaded', function () {
         // height     : 70,
         gap     : 80,
         breakpoints : {
-            '600': {
+
+            '1100': {
+                focus    : 4,
+                perPage: 4,
+                perMove: 4,
+                width: '72vw',
+            },
+
+
+            '800': {
+                focus    : 3,
                 perPage: 3,
                 perMove: 3,
-                gap     : 10,
+                width: '72vw',
+            },
+
+
+            '600': {
+                focus    : 2,
+                perPage: 2,
+                perMove: 2,
                 
+                width: '72vw',
+                gap     : 48,
             }
         },
         autoplay:'play',
