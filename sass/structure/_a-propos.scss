@@ -2,6 +2,10 @@
 
 #a-propos{
 
+	@include responsive(small){
+		display: flex;
+		flex-direction: column;
+	}
 	.en-tete{
 		//	@extend %section;
 		//	background-color: $green;
@@ -26,29 +30,61 @@
 		//			width: 65%;
 		//		}
 		//	}
+		@include responsive(small){
+			order:0;
+		}
 	}
 
 	#chiffre{
 		@extend %section;
-		padding: $margin_max 0px;
+		padding: $margin_max 0px
+			0px 0px;
+
+		@include responsive(small){
+			order: 2;
+			padding-top: $margin_2;
+		}
 
 		.conteneur{
 			@extend %flex-column;
 			align-items: center;
+
+			@include responsive(small){
+				min-width: 75vw;
+				max-width: 85vw;
+			}
 			h2{
 				margin-bottom: $margin_2;
+
+				@include responsive(small){
+					text-align: center;
+				}
 			}
 			.row{
 				margin-bottom: $margin_4;
 				@extend %flex-row;
 				align-items: center;  
 				justify-content: center;
+
+				@include responsive(small){
+					display: flex;
+					flex-direction: column;
+				}
+
 				h3{
 					width:25%;
+
+					@include responsive(small){
+						width: 100%;
+						margin-top: $margin_2;
+						text-align: center;
+					}
 				}
+
 				img{
 					margin:0px $margin_4
 				}
+
 				span{
 					background: $green;
 				}
@@ -58,9 +94,29 @@
 				@extend %flex-row;
 				justify-content:space-between;
 				width: 80%;
+
+				@include responsive(small){
+					flex-direction: column;
+					justify-content: center;
+
+					width: 100%;				
+				}
+
 				article{
 					text-align:  center;
 					width: calc((100% - 160px) / 3);
+
+					@include responsive(small){
+						width: auto;
+
+						border: solid $blue 4px;
+						margin-bottom: -4px;
+						padding: $margin_1;
+
+						&:last-of-type{
+							margin-bottom: 0px;
+						}
+					}
 
 					h3{
 						background-color: $green;
@@ -69,32 +125,80 @@
 					p{
 						font-size: $paragraphe1;
 						line-height: 1.5em;
+
+						@include responsive(small){
+							font-size: 18px;
+						}
 					}
 				}
 			}
 		}
 	}
 
-	#manifest{
+	.manifest{
 		@extend %section;
-		padding-bottom: $margin_max;
+		padding: 0px;
+
+		//		&:first-of-type{
+		//			padding-top: $margin_max;
+		//		}
+		//		&:last-of-type{
+		//			padding-bottom: $margin_max;
+		//		}
+		.conteneur {
+			@include responsive(small){
+				min-width: 75vw;
+				max-width: 85vw;
+			}
+		}
+
 		h4{
 			margin-top: $margin_1;
 		}
 		p{
-			margin-top: $margin_1;
+			margin-bottom: $margin_1;
+
+			&:last-of-type{
+				margin-bottom: 0px;
+			}
+			&:first-of-type{
+				margin-top: $margin_1;
+			}
 		}
 		span{
 			font-weight: bold;
 		}
 	}
 
+	div.manifest{
+		padding-top: $margin_max;
+
+		@include responsive(small){
+			order:1;
+			padding-top: $margin_6;
+		}
+	}
+	section.manifest{
+		padding-bottom: $margin_max;
+
+		@include responsive(small){
+			order:2;
+			padding-top: $margin_2;
+		}
+	}
+
 	#equipe{
 		@extend %section;
-		padding: $margin_max 0px;
+
 		background: $pink;
+
 		border-top: dashed $blue 4px;
 		border-bottom: dashed $blue 4px;
+		padding: $margin_max 0px;
+
+		@include responsive(small){
+			order:2;
+		}
 		.conteneur{
 			@extend %flex-column;
 			align-items: center;
@@ -115,13 +219,23 @@
 			}
 			.row1{
 				@extend %flex-row;
-				justify-content: space-between;
+				
+				justify-content: space-around;
 				width: 80%;
+				flex-flow: wrap;
+				@include responsive(small){
+					
+				}
+
 			}
 			.row2{
 				@extend %flex-row;
-				justify-content: space-between;
-				width: 50%;
+				justify-content: space-around;
+				width: 70%;
+
+				@include responsive(small){
+					flex-flow: wrap;
+				}
 			}
 		}
 	}
@@ -129,6 +243,10 @@
 	#methode{
 		@extend %section;
 		padding: $margin_max 0px;
+
+		@include responsive(small){
+			order:2;
+		}
 		.conteneur{
 			@extend %flex-column;
 			align-items: center;
@@ -143,8 +261,6 @@
 				margin-top: $margin_1;
 				border: solid $blue 4px;
 			}
-
 		}
 	}
-
 }

@@ -1,19 +1,19 @@
 <?php
-	$root = '../'; 
+$root = '../'; 
 
-	// Title à remplir
-	$title = 'A propos';
+// Title à remplir
+$title = 'A propos';
 
-	// TO DO : description à faire
-	$desc = '';
+// TO DO : description à faire
+$desc = '';
 
-	include $root."/php/inc/header.inc.php";
+include $root."/php/inc/header.inc.php";
 ?>
 <main id="a-propos">
 	<section class="en-tete">
 		<div class="conteneur">
 			<h1>Un mouvement éthique <br> et solidaire</h1>
-			<p>L’objectif de l’éthiquette est d’améliorer l’impact de nos vêtement sur la planète et de revenir à une mode plus ethique et locale.</p>
+			<p class=subtitles>L’objectif de l’éthiquette est d’améliorer l’impact de nos vêtement sur la planète et de revenir à une mode plus ethique et locale.</p>
 		</div>
 	</section>
 
@@ -41,17 +41,25 @@
 		</div>
 	</section>
 
-	<section id="manifest"> 
+	<div class=manifest> 
 		<div class="conteneur">
 			<h2>Nos motivations sont fortes</h2>
 			<h4>Manifest</h4>
-			<p>Lorsqu’on parle de mode, on pense toujours à la fashion-week, aux marques, aux influenceurs, aux modèles de vêtements que l’on dévore des yeux depuis quelques semaines, mais on ignore l’impact de notre confort. En effet, la mode est le second pollueur mondial, derrière le pétrole.
-				<br><br>
+			<p>
+				Lorsqu’on parle de mode, on pense toujours à la fashion-week, aux marques, aux influenceurs, aux modèles de vêtements que l’on dévore des yeux depuis quelques semaines, mais on ignore l’impact de notre confort. En effet, la mode est le second pollueur mondial, derrière le pétrole.
+			</p>
+		</div>
+	</div>
+	<section class=manifest>
+		<div class=conteneur>
+			<p>
 				<span>Et aujourd’hui ?</span> Les commerces de  prêt-à-porter indépendants, déjà mis à mal par la présence de grands groupes et de marques, sont frappés de plein fouet par la pandémie.
-				<br><br>
+			</p>
+			<p>
 				<span>
 					Une question s’est donc posée à nous : comment donner envie aux gens de consommer de manière plus respectueuse de l’environnement et l’humain tout en aidant les commerces indépendants en péril ?</span>
-				<br><br>
+			</p>
+			<p>
 				Notre mission est donc d'inspirer et de donner le pouvoir à chacun de lutter contre le réchauffement climatique. Pour ce faire, nous avons élaboré une application qui montre l’impact du vêtement et qui facilite l’accès à des alternatives plus éthiques et locales.
 			</p>
 		</div>
@@ -61,7 +69,7 @@
 		<div class="conteneur">
 			<div class="presentation-equipe">
 				<h2>Rencontrez notre équipe</h2>
-				<p>Derrière L’éthiquette se trouve une petite équipe de 5 personnes entreprenneuses et engagées pour améliorer le secteur du prêt-à-porter.</p>
+				<p class=subtitles>Derrière L’éthiquette se trouve une petite équipe de 5 personnes entreprenneuses et engagées pour améliorer le secteur du prêt-à-porter.</p>
 			</div>
 			<div class="row1">
 				<article>
@@ -79,18 +87,18 @@
 					<h3>Johannes</h3>
 					<p>Developpeur Front</p>
 				</article>
-			</div>
-			<div class="row2">
-				<article>
-					<img src="../img/alex.png" alt="Alex notre Developpeur Back">
-					<h3>Alex</h3>
-					<p>Developpeur Back</p>
-				</article>
-				<article>
-					<img src="../img/mascotte.png" alt="Frolic notre Happyness Manager">
-					<h3>Frolic</h3>
-					<p>Happyness Manager</p>
-				</article>
+				<div class="row2">
+					<article>
+						<img src="../img/alex.png" alt="Alex notre Developpeur Back">
+						<h3>Alex</h3>
+						<p>Developpeur Back</p>
+					</article>
+					<article>
+						<img src="../img/mascotte.png" alt="Frolic notre Happyness Manager">
+						<h3>Frolic</h3>
+						<p>Happyness Manager</p>
+					</article>
+				</div>
 			</div>
 		</div>
 	</section>

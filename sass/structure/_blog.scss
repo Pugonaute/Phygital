@@ -30,23 +30,40 @@
 	#articles{
 		@extend %section;
 		padding: $margin_max 0px;
+
 		.conteneur{
 			@extend %flex-column;
 			align-items: center;
 			width: 900px;
-			#article1 .image{
-				background-image: url(../img/article1.png);
+			
+			@include responsive(small){
+				min-width: 75vw;
+				max-width: 85vw;
 			}
-			#article2 .image{
-				background-image: url(../img/article2.png);
+
+			#article1{
+				.image{
+					background-image: url(../img/article1.png);
+				}
 			}
-			#article3 .image{
-				background-image: url(../img/article3.png);
+
+			#article2{
+				.image{
+					background-image: url(../img/article2.png);
+				}
 			}
-			#article4 .image{
-				background-image: url(../img/article4.png);
+
+			#article3{
+				.image{
+					background-image: url(../img/article3.png);
+				}
 			}
+
+			#article4{
+				.image{
+					background-image: url(../img/article4.png);
+				}
+			} 
 		}
 	}
-
 }

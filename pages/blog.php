@@ -52,7 +52,7 @@
 				</div>
 			</article>
 			<a href="" class="button1">
-				<div><span>Voir plus</div></span>
+				<div><span>Voir plus</span></div>
 			</a>
 		</div>
 	</section>
