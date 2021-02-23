@@ -153,10 +153,11 @@
                                 color: $blue;
                                 border-bottom: 4px solid $blue;
                                 padding: 24px 40px;
-                                font-weight: 100;
+                                font-weight: 300;
                             }
                             p {
                                 padding: 24px 32px;
+								line-height: 1.6em;
                             }
                         }
                         .capture-app {
