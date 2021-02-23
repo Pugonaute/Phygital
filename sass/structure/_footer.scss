@@ -15,6 +15,7 @@ footer{
 
 
 	>div:first-child{
+
 		@extend %flex-row;
 		justify-content: space-around;
 
@@ -43,7 +44,9 @@ footer{
 		}
 
 		>div{
-			//			background: green;
+//			background: green;
+
+
 			@extend %flex-column;
 			align-items: flex-start;
 			width: 100%;
@@ -51,6 +54,7 @@ footer{
 			max-height: 200px;
 
 			margin: 0 30px;
+
 
 			div:first-child{
 				width: 100%;
@@ -89,6 +93,26 @@ footer{
 						max-width: 100%;
 					}
 				}
+
+				div:last-child{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-around;
+
+					width: 100%;
+
+					a{
+						margin: 0;
+					}
+
+					img{
+						max-width: 100%;
+					}
+
+				}
+
+
 			}
 
 		}
@@ -148,7 +172,7 @@ footer{
 
 			@include responsive(small){
 				//			background: red;
-//								@extend %flex-row;
+				//								@extend %flex-row;
 				display: flex;
 				flex-direction: column;
 				//				justify-content: center;
@@ -167,7 +191,7 @@ footer{
 					border: 1px auto;
 					width: 70%;
 					margin-top: 30px;
-//					min-width: 370px;
+					//					min-width: 370px;
 				}
 
 				//				hr:last-of-type{
@@ -191,7 +215,7 @@ footer{
 
 				>ul{
 					//					background: yellow;
-//					padding-top: $margin_3;
+					//					padding-top: $margin_3;
 					//					width: 100%;
 					display: flex;
 					flex-direction: column;
