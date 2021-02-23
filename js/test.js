@@ -33,17 +33,40 @@
 
 $(document).ready(function(){
 
-	$('[id^=text-]').hide();
-	var id = "01";
-	$('[id=text-'+id+']').show();
-	
-	$('.hover').hover(function(){
-		var id = $(this).attr("id");
-//		$(this).toggle('toggleHover');
-		
-//		$('button').html("text-"+id);
-		$('[id^=text-]').hide();
-		$('[id=text-'+id+']').show();
-		});
+	if($('.svg').css('display') == 'none'){
 
-	});
+	}
+	else{
+		$('[id^=text-]').hide();
+		var id = "01";
+		$('[id=text-'+id+']').show();
+
+		$('.ellipse').hover(function(){
+			var id = $(this).attr("id");
+			//		$(this).toggle('toggleHover');
+
+			//		$('button').html("text-"+id);
+			$('[id^=text-]').hide();
+			$('[id=text-'+id+']').show();
+
+			//mousein
+			if($(this).hasClass('hover')){
+				$('button').removeClass('clicked');
+
+				var grow = 'GRAND';
+				$('button').html(grow);
+
+				$('.carre').removeClass('grow');	
+			}
+			//mouseout
+			else{
+				$(this).addClass('hover');
+				var grow = 'PETIT';
+				$('button').html(grow);
+
+				$('.carre').addClass('grow');
+			}
+		});
+	}
+
+});
