@@ -37,7 +37,7 @@ include $root.'php/inc/header.inc.php';
 	<section id="detail">
 		<div class="conteneur buttonCard">
 
-			<article class="scannez">
+			<article>
 				<div>
 					<div>
 						<div>
@@ -56,7 +56,7 @@ include $root.'php/inc/header.inc.php';
 				</div>
 			</article>
 
-			<article class="comparez">
+			<article>
 				<div>
 					<div>
 						<div>
@@ -76,7 +76,7 @@ include $root.'php/inc/header.inc.php';
 				</div>
 			</article>
 
-			<article class="participez">
+			<article>
 				<div>
 					<div>
 						<div>
