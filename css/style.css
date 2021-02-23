@@ -1474,16 +1474,20 @@ footer {
   background: #00012E;
   width: 100%;
   color: #FFFFFF; }
+  @media (max-width: 800px) {
+    footer {
+      box-sizing: border-box;
+      padding-top: 40px; } }
   footer > div:first-child {
     justify-content: space-around;
-    margin: 64px 0px; }
+    margin: 64px 0; }
     @media (max-width: 800px) {
       footer > div:first-child {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 24px 0px; } }
+        margin: 0; } }
     footer > div:first-child > div {
       align-items: flex-start;
       width: 100%;
@@ -1493,7 +1497,10 @@ footer {
       footer > div:first-child > div div:first-child {
         width: 100%; }
         footer > div:first-child > div div:first-child img {
+          display: block;
           max-width: 350px; }
+      footer > div:first-child > div div:last-child a img {
+        height: 50px; }
       @media (max-width: 800px) {
         footer > div:first-child > div {
           display: flex;
@@ -1502,21 +1509,22 @@ footer {
           justify-content: center;
           max-width: 90%;
           max-height: auto;
-          margin: 16px 32px; }
+          margin: 0; }
           footer > div:first-child > div div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 100%; }
             footer > div:first-child > div div:first-child img {
-              max-width: 100%; }
+              max-width: 400px; }
           footer > div:first-child > div div:last-child {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            width: 100%; }
+            flex-direction: column;
+            margin-bottom: 8px; }
             footer > div:first-child > div div:last-child a {
-              margin: 0; }
-            footer > div:first-child > div div:last-child img {
-              max-width: 100%; } }
+              margin-bottom: 8px; }
+              footer > div:first-child > div div:last-child a img {
+                height: 60px; } }
     footer > div:first-child nav {
       justify-content: space-around;
       width: 100%;
@@ -1551,7 +1559,7 @@ footer {
           justify-content: center;
           width: 100%;
           max-width: 100%;
-          margin: 0 32px; }
+          margin: 0; }
           footer > div:first-child nav hr {
             color: #FFFFFF;
             border: 1px auto;
