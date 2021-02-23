@@ -7,6 +7,9 @@
 			@extend %flex-column;
 			align-items: center;
 			text-align: center;
+
+
+
 			h4{
 				margin-top: $margin_1;
 			}
@@ -24,7 +27,25 @@
 					border-right: solid $blue 4px;
 				}
 
+				@include responsive(small){
+					border-left: none;
+					border-bottom: none;
+					margin-top: $margin_4;
+
+					max-width: 85vw;
+					background: $pink;
+
+					li{
+						list-style: none;
+						padding: 24px;
+						border: solid $blue 4px;
+						margin: -4px;
+						background: white;
+					}
+				}
+
 				>:nth-child(1){
+					//					background: red;
 					@extend %flex-row;
 					li{
 						width: calc(100% / 3);
@@ -40,23 +61,66 @@
 						background-color: $blue;
 						color: white;
 					}
+					@include responsive(small){
+						//						@extend %flex-column;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+
+						ul:first-of-type{
+							background: $pink;
+
+						}
+
+						li{
+							padding: 35px;
+							width: 70vw;
+
+							display: block;
+							font-weight: 700;
+							font-size: $titre4;
+
+							text-decoration: none;
+							transition: 0.3s ease;
+
+							cursor: pointer;
+							margin: 10px 0px;
+
+							border: solid $blue 4px;
+						}
+
+						li:hover{
+							background-color: auto;
+							color: auto;
+						}
+
+					}
 				}
 
 				>:nth-child(2){
+					//					background: red;
+
 					@extend %flex-row;
-					border-top: solid $blue 4px;
-					border-right: solid $blue 4px;
+
 					align-items: center;
 					justify-content: space-between;
 					cursor: pointer;
 
+					border-top: solid $blue 4px;
+					border-right: solid $blue 4px;
+
 					>li{
+						//						background: blue;
+
 						text-align: left;
 						position: relative;
 						font-size: $titre4;
 						font-weight: 600;
 						border: 0px;
+
 						ul{
+							//							background: blue;
 							display: none;
 							box-shadow: 0px 1px 2px #CCC;
 							background-color: white;
@@ -75,6 +139,71 @@
 							}
 						}
 					}
+					@include responsive(small){
+						//						background: red;
+
+						//						@extend %flex-row;
+						align-items: center;
+						justify-content: space-between;
+
+						border: solid $blue 4px;
+
+						//						border: none;
+
+						cursor: pointer;
+
+						width: 100%;
+						background: white;
+
+						margin-top: $margin_2;
+						margin-left: -4px;
+
+
+
+						>li{
+							//							background: blue;
+
+							text-align: left;
+							position: relative;
+							font-size: $titre4;
+							font-weight: 600;
+							border: none;
+
+							&:first-of-type{
+								//								background: red;
+
+								margin: 1px;
+								padding: none;
+							}
+
+							&:hover{
+								background-color: $blue;
+								color: auto;
+							}
+
+
+							ul{
+								//							background: blue;
+								display: none;
+								box-shadow: 0px 1px 2px #CCC;
+								background-color: none;
+								position: absolute;
+								width: auto;
+								border: none;
+
+								li{
+									color: $blue;
+									padding: 18px;
+									font-size: 18px;
+								}
+								li:hover{
+									background-color: auto;
+									color: auto;
+								}
+							}
+						}
+					}
+
 					div{
 						margin: 24px;
 						width: 16px;
@@ -92,8 +221,25 @@
 						border-right: solid white 4px;
 						border-bottom: solid white 4px;
 					}
-					ul{display: block;}
+					ul{
+						display: block;	
+					}
+
+					@include responsive(small){
+
+						background-color: auto;
+						color: auto;
+
+						div{
+							border-right: solid white 4px;
+							border-bottom: solid white 4px;
+						}
+						ul{
+							display: block;	
+						}
+					}
 				}
+
 				>:nth-child(3){
 					@extend %flex-row;
 					li{
@@ -141,8 +287,67 @@
 						background-color: $blue;
 						opacity: 0.8;
 						color: white;
+					}
+
+					@include responsive(small){
+						//					@extend %flex-row;
+
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						
+						width: 100%;
+						max-width: 85vw;
+						
+						margin:0 0;
+
+						>:nth-child(1){
+//							background: red;
+							
+							width: 75vw;
+							min-width: 75vw;
+							
+							
+
+							background-color: $blue;
+							color: white;
+
+							font-size: $titre4;
+							font-weight: 600;
+
+							text-decoration: underline;
+							
+							transition: 0.3s ease;
+							cursor: pointer;
+							
+							margin:0 0;
+						}
+						
+						>:nth-child(2){
+//							background: green;
+							
+							width: 75vw;
+							min-width: 75vw;
+							text-align: left;
+							
+							margin:0 0;
+						}
+						
+						>:nth-child(1):hover{
+							background-color: $blue;
+							opacity: 0.8;
+							color: white;
+						}
 
 					}
+
+				}
+			}
+			
+			@include responsive(small){
+				a{
+					margin-top: $margin_4;
 				}
 			}
 		}
