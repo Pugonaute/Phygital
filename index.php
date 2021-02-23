@@ -33,7 +33,7 @@ include $root.'php/inc/header.inc.php';
 		</div>
 	</section>
 	<section id="detail">
-		<div class="conteneur">
+		<div class="conteneur buttonCard">
 
 			<article class="scannez">
 				<div>
@@ -199,16 +199,15 @@ include $root.'php/inc/header.inc.php';
 				</a>
 			</div>
 
-			
-
+		
 
 		</div>
 	</section>
 </main>
-<script src="js/jquery.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/splide.min.js"></script>
-<script src="js/slider.js"></script>
+<script src="<?= $root ?>js/jquery.js"></script>
+<script src="<?= $root ?>js/menu.js"></script>
+<script src="<?= $root ?>js/splide.min.js"></script>
+<script src="<?= $root ?>js/slider.js"></script>
 
 <?php
 	include $root.'php/inc/footer.inc.php';

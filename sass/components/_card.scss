@@ -1,6 +1,6 @@
 /* Card */
 
-#detail .conteneur{
+.buttonCard{
     >article:nth-child(odd){
         >:nth-child(1){
             border: solid $blue 4px;
