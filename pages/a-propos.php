@@ -105,6 +105,8 @@
 		</div>
 	</section>
 </main>
+<script src="<?= $root ?>js/jquery.js"></script>
+<script src="<?= $root ?>js/menu.js"></script>
 <?php
 	include $root.'/php/inc/footer.inc.php';
 ?>

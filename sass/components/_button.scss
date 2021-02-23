@@ -104,4 +104,10 @@ button {
         height: 50px;
     }
 
+    @media (max-width: $widthTablet){
+        img{
+            height: 68px;
+        }
+    }
+
 }

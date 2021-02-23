@@ -235,6 +235,7 @@ include $root."php/inc/header.inc.php";
 		</div>
 	</section>
 	<script src="<?= $root ?>js/jquery.js"></script>
+	<script src="<?= $root ?>js/menu.js"></script>
 	<script src="<?= $root ?>js/test.js"></script>
 	<script src="<?= $root ?>js/splide.min.js"></script>
 	<script src="<?= $root ?>js/menu.js"></script>

@@ -58,7 +58,7 @@
 							Dans le cas où ton vêtement n’est pas reconnu, l’application te permet d’ajouter manuellement les détails de composition de tes vêtements afin de pouvoir les scorer.</p>
 						</div>
 						<div class="capture-app">
-							<img src="../img/test-app.png" alt="Capture de la page scan">
+							<img src="../img/app-scan.png" alt="Capture de la page scan">
 						</div>
 					</div>	
 					<div class="action">
@@ -73,7 +73,7 @@
 							<p>L'éthiquette recueille les informations de tes vêtements ainsi que de ceux que tu peux trouver dans les commerces de prêt-à-porter afin d'évaluer leur empreinte éthique. Ce calcul se base sur des critères d'évaluation dont nos experts vérifient chaque jour la conformité ( ADEME ) ainsi que l'indépendance.</p>
 						</div>
 						<div class="capture-app">
-							<img src="../img/test-app.png" alt="Capture de la page évaluation">
+							<img src="../img/app-evalue.png" alt="Capture de la page évaluation">
 						</div>
 					</div>	
 					<div class="action">
@@ -88,7 +88,7 @@
 							<p>L'éthiquette compare les vêtements scannés par l'utilisateur avec les ceux déjà évalués dans notre base donnée afin de recommander un vêtement identique provenant d'une production local et plus respectueuse de la planète. </p>
 						</div>
 						<div class="capture-app">
-							<img src="../img/test-app.png" alt="Capture de la page recommandation">
+							<img src="../img/app-recommandation.png" alt="Capture de la page recommandation">
 						</div>
 					</div>
 					<div class="action">
@@ -104,7 +104,7 @@
 							<p>L'éthiquette propose l'achat de vêtements éthique avec une solution de click&collect permettant aux utilisateurs de récupérer leurs vêtements chez les commerçants de prêt-à-porter éthiques et de proximité.</p>
 						</div>
 						<div class="capture-app">
-							<img src="../img/test-app.png" alt="Capture de la page shop">
+							<img src="../img/app-shop.png" alt="Capture de la page shop">
 						</div>
 					</div>	
 					<div class="action">
@@ -122,10 +122,10 @@
 			<h4>Pour un meilleur confort</h4>
 			<article>
 				<div class="capture-app">
-					<img src="../img/app-historique.png" alt="">
+					<img src="../img/app-mes-scans.png" alt="">
 				</div>
 				<div class="content">
-					<div class="active" data-src="../img/app-historique.png"  data-alt="Capture de la page historique">
+					<div class="active" data-src="../img/app-mes-scans.png"  data-alt="Capture de la page historique">
 						<img src="../img/historique.svg" alt="icon historique">
 						<div>
 							<h3>Historique</h3>
@@ -146,7 +146,7 @@
 							<p>L’éthiquette présente les dernières actualités liées à la mode : dons, trocs, association, écologies, initiatives des marques, pétitions ...</p>
 						</div>
 					</div>
-					<div data-src="../img/app-analyse.png"  data-alt="Capture de la page analyse">
+					<div data-src="../img/app-note.png"  data-alt="Capture de la page analyse">
 						<img src="../img/analyse.svg" alt="icon analyse">
 						<div>
 							<h3>Analyse</h3>
@@ -160,15 +160,16 @@
 	<section id="en-savoir-plus">
 		<div class="conteneur">
 			<h2>Vous souhaitez en savoir plus sur notre méthode<br>de notation de marque et de vêtement ?</h2>
-			<a href="" class="button1">
+			<a href="a-propos.php" class="button1" title="En savoir plus">
                 <div><span>En savoir plus</div></span>
             </a>
 		</div>
 	</section>
 </main>
-<script src="../js/jquery.js"></script>
-<script src="../js/step.js"></script>
-<script src="../js/feature.js"></script>
+<script src="<?= $root ?>js/jquery.js"></script>
+<script src="<?= $root ?>js/menu.js"></script>
+<script src="<?= $root ?>js/step.js"></script>
+<script src="<?= $root ?>js/feature.js"></script>
 <?php
 include $root.'php/inc/footer.inc.php';
 ?>

@@ -49,9 +49,9 @@ header{
         >a{
             @extend %flex-row;
             align-items: center;
-            max-width: 250px;
+            min-width: 250px;
             img{
-                width: 100%;
+                min-width: 100%;
                 display: block;
             }
         }
@@ -78,12 +78,19 @@ header{
                 }
 				a.active{
                     font-weight: 600;
+                    text-decoration: underline;
                 }	
             }
         }
     }
 
-    @media (max-width: $widthPhone){
+    @media (max-width: 1200px){
+        nav ul {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: $widthTablet){
         padding: 0;
         a{
            display: flex;
@@ -120,7 +127,8 @@ header{
             transition: ease 0.3s;
             >a{
                 margin: $margin_3;
-                max-width: 400px;
+                min-width: 500px;
+                
             }
             hr{
                 width: 100%;
@@ -133,7 +141,7 @@ header{
                 width: 100%;
                 li{
                     text-align: center;
-                    font-size: 24px;
+                    font-size: 32px;
                    
                     a{
                         // width: 100%;
@@ -143,6 +151,17 @@ header{
         }
         nav.active{
             top: 0px;
+        }
+    }
+
+    @media (max-width: $widthPhone){
+        nav{
+            >a{
+                min-width: 80%;
+            }
+            ul li{
+                font-size: 28px;
+            }
         }
     }
 }
