@@ -22,7 +22,7 @@ include $root.'php/inc/header.inc.php';
 			<h2>Il vous suffit de scanner !</h2>
 			<p>L’ethiquette, l’application mobile qui vous permet de décrypter la composition de vos vêtements pour évaluer leur impact sur la planète et ainsi agir pour une mode plus responsable et locale.</p>
 			<a href="" title="Voir la vidéo de présentation de l'application" class="button1">
-                <div><span>Voir la vidéo</div></span>
+                <div><span>Voir la vidéo</span></div>
             </a>
 		</div>
 	</section>
@@ -193,10 +193,10 @@ include $root.'php/inc/header.inc.php';
 			</article>
 			<div>
 				<a href="pages/a-propos.php" class="button1" title="A propos">
-					<div><span>En savoir plus</div></span>
+					<div><span>En savoir plus</span></div>
 				</a>
 				<a href="pages/contact.php" class="button1" title="Contactez-nous">
-					<div><span>Contactez-nous</div></span>
+					<div><span>Contactez-nous</span></div>
 				</a>
 			</div>
 

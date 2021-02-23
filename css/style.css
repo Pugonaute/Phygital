@@ -1087,8 +1087,12 @@ body {
         #application #étapes .conteneur #parts .part .action {
           margin-top: 24px;
           justify-content: space-between; }
-          #application #étapes .conteneur #parts .part .action a {
-            display: block; }
+          #application #étapes .conteneur #parts .part .action button {
+            font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
+            display: block;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600; }
 #application #fonctionnalité {
   padding: 80px 0;
   border-top: #00012E dashed 4px; }
