@@ -79,6 +79,13 @@ h1{
 	font-weight: 700;
 	font-size: $titre1;
 	color:$blue;
+
+	@include responsive(small){ 
+		font-family: 'Recoleta-Bold', 'Recoleta', serif;
+		font-weight: 700;
+		font-size: $titre1_small;
+		color:$blue;
+	}
 }
 
 h2{
@@ -105,8 +112,7 @@ h4{
 
 p{
 	font-size: $courant;
-	line-height: 2em;
+	line-height: 1.5em;
 	font-weight: 300;
 	color:$blue;
-	
 }
