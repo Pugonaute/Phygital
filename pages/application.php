@@ -161,7 +161,7 @@
 		<div class="conteneur">
 			<h2>Vous souhaitez en savoir plus sur notre méthode<br>de notation de marque et de vêtement ?</h2>
 			<a href="a-propos.php" class="button1" title="En savoir plus">
-                <div><span>En savoir plus</div></span>
+                <div><span>En savoir plus</span></div>
             </a>
 		</div>
 	</section>

@@ -179,8 +179,12 @@
                         margin-top: $margin_2;
                         @extend %flex-row;
                         justify-content: space-between;
-                        a {
+                        button {
+                            font-family: 'Gilroy-Semibold', 'Gilroy', sans-serif;
                             display: block;
+                            cursor: pointer;
+                            font-size: $titre4;
+                            font-weight: 600;
                         }
                     }
                 }
