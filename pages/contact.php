@@ -50,13 +50,14 @@
 					<li>Aucune pièce-jointe</li>
 				</ul>
 			</article>
-			<a href="" class="button1">
+			<div class="button1">
 				<div><span>Envoyer le message</span></div>
-			</a>
+			</div>
 		</div>
 	</section>
 </main>
 <script src="<?= $root ?>js/jquery.js"></script>
+<script src="<?= $root ?>js/contact.js"></script>
 <script src="<?= $root ?>js/menu.js"></script>
     <?php   
         include '../php/inc/footer.inc.php';

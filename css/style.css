@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center; }
 
-#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1), #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), #application #hero .conteneur, #application #hero .conteneur > :nth-child(2), #application #étapes .conteneur #progress-bar, #application #étapes .conteneur #parts, #application #étapes .conteneur #parts .part .content, #application #étapes .conteneur #parts .part .content .capture-app, #application #étapes .conteneur #parts .part .action, #application #fonctionnalité .conteneur article, #application #fonctionnalité .conteneur article .capture-app, #application #fonctionnalité .conteneur article .content > div, #article-001 .conteneur .article .info, #article-001 .conteneur .article .info div:last-child, #article-001 .conteneur .article .like, #article-001 .conteneur .article .like > div:last-child, header, header nav, header nav > a, header nav ul, footer > div:first-child, footer > div:first-child nav, .vignettes-stores, .buttonCard > article:nth-child(odd) > :nth-child(1), .buttonCard > article:nth-child(odd) > :nth-child(2), .buttonCard > article:nth-child(even) > :nth-child(2) {
+#index #valeur .conteneur, #index #rejoignez-nous .conteneur > div, #a-propos #chiffre .conteneur .row, #a-propos #chiffre .conteneur .column, #a-propos #equipe .conteneur .row1, #a-propos #equipe .conteneur .row2, #contact #formulaire .conteneur article > :nth-child(1), #contact #formulaire .conteneur article > :nth-child(2), #contact #formulaire .conteneur article > :nth-child(3), #contact #formulaire .conteneur article > :nth-child(6), #application #hero .conteneur, #application #hero .conteneur > :nth-child(2), #application #étapes .conteneur #progress-bar, #application #étapes .conteneur #parts, #application #étapes .conteneur #parts .part .content, #application #étapes .conteneur #parts .part .content .capture-app, #application #étapes .conteneur #parts .part .action, #application #fonctionnalité .conteneur article, #application #fonctionnalité .conteneur article .capture-app, #application #fonctionnalité .conteneur article .content > div, #article-001 .conteneur .article .info, #article-001 .conteneur .article .info div:last-child, #article-001 .conteneur .article .like, #article-001 .conteneur .article .like > div:last-child, header, header nav, header nav > a, header nav ul, footer > div:first-child, footer > div:first-child nav, .vignettes-stores, .buttonCard > article:nth-child(odd) > :nth-child(1), .buttonCard > article:nth-child(odd) > :nth-child(2), .buttonCard > article:nth-child(even) > :nth-child(2) {
   display: flex;
   flex-direction: row; }
 
@@ -85,7 +85,7 @@ a {
 body {
   font-family: 'Gilroy-Regular', 'Gilroy', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
   color: #00012E; }
 
 strong {
@@ -126,9 +126,15 @@ h4 {
   color: #00012E; }
 
 p {
-  font-size: 18px;
-  line-height: 1.5em;
+  font-size: 19px;
+  line-height: 1.4em;
   font-weight: 300;
+  color: #00012E; }
+
+.subtitles {
+  font-size: 21px;
+  line-height: 1.4em;
+  font-weight: 400;
   color: #00012E; }
 
 /* STRUCTURE */
@@ -388,8 +394,15 @@ body {
     position: relative;
     align-items: center;
     text-align: center; }
+    @media (max-width: 800px) {
+      #partenaire #scheme .conteneur {
+        min-width: 75vw;
+        max-width: 85vw; } }
     #partenaire #scheme .conteneur h2 {
       margin-bottom: 24px; }
+      @media (max-width: 800px) {
+        #partenaire #scheme .conteneur h2 {
+          font-size: 30px; } }
     #partenaire #scheme .conteneur p {
       padding: 16px 0; }
     #partenaire #scheme .conteneur .toggleHover {
@@ -399,105 +412,72 @@ body {
     #partenaire #scheme .conteneur > div {
       position: absolute;
       top: 550px; }
-      #partenaire #scheme .conteneur > div article {
-        padding: 24px 24px;
-        min-height: 150px; }
-        #partenaire #scheme .conteneur > div article p {
-          width: 300px;
-          padding: 0;
-          margin: 0; }
-  @media (max-width: 800px) {
-    #partenaire #scheme {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 80px 0px;
-      border-bottom: dashed #00012E 4px; }
-      #partenaire #scheme .conteneur {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        min-width: 75vw;
-        max-width: 85vw; }
-        #partenaire #scheme .conteneur h2 {
-          margin-bottom: 24px; }
-        #partenaire #scheme .conteneur p {
-          padding: 16px 0; }
-        #partenaire #scheme .conteneur .toggleHover {
-          fill: #00012E; }
-        #partenaire #scheme .conteneur .toggleHover .hover-text {
-          fill: white; }
+      @media (max-width: 800px) {
         #partenaire #scheme .conteneur > div {
           position: relative;
           top: inherit;
-          padding: 24px 0; }
+          padding: 24px 0; } }
+      #partenaire #scheme .conteneur > div article {
+        padding: 24px 24px;
+        min-height: 150px; }
+        @media (max-width: 800px) {
           #partenaire #scheme .conteneur > div article {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: solid #00012E 4px;
-            padding: 24px 24px;
-            min-height: 150px;
             margin: -4px 0px -4px 0px; }
-            #partenaire #scheme .conteneur > div article p {
-              width: 300px;
-              padding: 0;
-              margin: 0; }
             #partenaire #scheme .conteneur > div article:nth-of-type(even) {
               background: #00012E;
               color: white; }
               #partenaire #scheme .conteneur > div article:nth-of-type(even) p {
-                color: white;
-                width: 300px;
-                padding: 0;
-                margin: 0; }
-        #partenaire #scheme .conteneur svg {
-          display: none; } }
+                color: white; } }
+        #partenaire #scheme .conteneur > div article p {
+          width: 300px;
+          padding: 0;
+          margin: 0; }
+@inclue responsive(small) {
+  #partenaire #scheme .conteneur > div article p {
+    font-size: 21px;
+    font-weight: 400; } }
+    @media (max-width: 800px) {
+      #partenaire #scheme .conteneur svg {
+        display: none; } }
 #partenaire #valeurs {
   padding: 0px 0px;
   padding-bottom: 80px; }
   #partenaire #valeurs .conteneur {
     align-items: center;
     width: 1100px; }
+    @media (max-width: 800px) {
+      #partenaire #valeurs .conteneur {
+        max-width: 85vw; } }
     #partenaire #valeurs .conteneur > h2 {
       text-align: center;
-      padding: 80px 0; }
-  @media (max-width: 800px) {
-    #partenaire #valeurs {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 0px 0px;
-      padding-bottom: 80px; }
-      #partenaire #valeurs .conteneur {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 85vw; }
+      padding: 80px 0px 40px 0px; }
+      @media (max-width: 800px) {
         #partenaire #valeurs .conteneur > h2 {
-          text-align: center;
-          padding: 80px 0; } }
-  #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) {
-    border: solid #00012E 4px; }
-    #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(2) {
-      width: 60%;
-      border-left: solid #00012E 4px;
-      height: inherit;
-      background: center/cover no-repeat url("../img/shop.png"); }
-  #partenaire #valeurs .buttonCard > article:nth-child(even) {
-    margin: 40px 0px; }
-    #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(2) {
-      width: 60%;
-      border-right: solid #00012E 4px;
-      height: inherit;
-      background: center/cover no-repeat url("../img/shop.png"); }
+          font-size: 30px; } }
+  #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(2) {
+    width: 60%;
+    height: inherit;
+    background: center/cover no-repeat url("../img/shop.png"); }
+  #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(2) {
+    width: 60%;
+    height: inherit;
+    background: center/cover no-repeat url("../img/shop.png"); }
   @media (max-width: 800px) {
     #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) {
       flex-direction: column; }
       #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(1) {
         width: 100%; }
+        #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(1) h2 {
+          text-align: center; }
+        #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(1) div:last-of-type {
+          padding: 24px 24px; }
+          #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(1) div:last-of-type p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0 0 16px; }
+            #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(1) div:last-of-type p:last-of-type {
+              margin-bottom: 0px; }
       #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(2) {
         width: 100%;
         border-top: solid #00012E 4px;
@@ -509,6 +489,18 @@ body {
       flex-direction: column; }
       #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(1) {
         width: 100%; }
+        #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(1) h2 {
+          text-align: center;
+          font-size: 28px; }
+        #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(1) div:last-of-type {
+          padding: 24px 24px; }
+          #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(1) div:last-of-type p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0 0 16px; }
+            #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(1) div:last-of-type p:last-of-type {
+              margin-bottom: 0px; }
       #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(2) {
         width: 100%;
         border-top: solid #00012E 4px;
@@ -525,112 +517,82 @@ body {
     justify-content: flex-start;
     align-items: center;
     text-align: center; }
+    @media (max-width: 800px) {
+      #partenaire #service .conteneur {
+        width-min: 75vw;
+        widht-max: 85vw; } }
     #partenaire #service .conteneur > div:first-child {
       align-items: center;
       text-align: center;
       width: 90%;
       margin-bottom: 32px; }
+      @media (max-width: 800px) {
+        #partenaire #service .conteneur > div:first-child {
+          width: 80vw; } }
       #partenaire #service .conteneur > div:first-child p {
         margin-top: 16px; }
+        @media (max-width: 800px) {
+          #partenaire #service .conteneur > div:first-child p {
+            margin: 32px 0 24px 0; } }
     #partenaire #service .conteneur > div:last-child {
-      width: 90%;
-      align-items: flex-start; }
+      align-items: flex-start;
+      width: 90%; }
+      @media (max-width: 800px) {
+        #partenaire #service .conteneur > div:last-child {
+          align-items: center; } }
       #partenaire #service .conteneur > div:last-child .capsule-left {
         width: 500px; }
+        @media (max-width: 800px) {
+          #partenaire #service .conteneur > div:last-child .capsule-left {
+            width: 80vw;
+            margin: -4px 0; } }
         #partenaire #service .conteneur > div:last-child .capsule-left .mosaique {
           width: inherit;
           border: solid #00012E 4px; }
-          #partenaire #service .conteneur > div:last-child .capsule-left .mosaique .texte {
-            background: white;
-            width: inherit; }
-            #partenaire #service .conteneur > div:last-child .capsule-left .mosaique .texte .h2 {
-              border-bottom: solid #00012E 4px; }
-            #partenaire #service .conteneur > div:last-child .capsule-left .mosaique .texte div {
-              padding: 32px 40px; }
+      @media (max-width: 800px) {
+        #partenaire #service .conteneur > div:last-child .capsule-left:last-child {
+          margin-left: 0px; } }
       #partenaire #service .conteneur > div:last-child .capsule-right {
         width: 500px;
         margin: 40px 0px;
         margin-right: 100px;
         align-self: flex-end; }
+        @media (max-width: 800px) {
+          #partenaire #service .conteneur > div:last-child .capsule-right {
+            width: 80vw;
+            margin: 0px 0px;
+            margin-right: 0px;
+            align-self: auto; } }
         #partenaire #service .conteneur > div:last-child .capsule-right .mosaique {
           border: solid #00012E 4px;
           width: inherit; }
-          #partenaire #service .conteneur > div:last-child .capsule-right .mosaique .texte {
-            width: 100%;
-            background: white; }
-            #partenaire #service .conteneur > div:last-child .capsule-right .mosaique .texte .h2 {
-              border-bottom: solid #00012E 4px; }
-            #partenaire #service .conteneur > div:last-child .capsule-right .mosaique .texte div {
-              padding: 32px 40px; }
-  @media (max-width: 800px) {
-    #partenaire #service {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 80px 0px;
-      background: #FFDCC9;
-      border-top: dashed #00012E 4px;
-      border-bottom: dashed #00012E 4px; }
-      #partenaire #service .conteneur {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        width-min: 75vw;
-        widht-max: 85vw; }
-        #partenaire #service .conteneur > div:first-child {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          width: 80vw;
-          margin-bottom: 32px; }
-          #partenaire #service .conteneur > div:first-child p {
-            margin-top: 16px; }
-        #partenaire #service .conteneur > div:last-child {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          max-width: 85vw; }
-          #partenaire #service .conteneur > div:last-child .capsule-left {
-            background: red;
-            width: 80vw;
-            margin: -4px 0; }
-            #partenaire #service .conteneur > div:last-child .capsule-left .mosaique {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              width: inherit;
-              border: solid #00012E 4px; }
-              #partenaire #service .conteneur > div:last-child .capsule-left .mosaique .texte {
-                background: white;
-                width: inherit; }
-                #partenaire #service .conteneur > div:last-child .capsule-left .mosaique .texte .h2 {
-                  border-bottom: solid #00012E 4px; }
-                #partenaire #service .conteneur > div:last-child .capsule-left .mosaique .texte div {
-                  padding: 0 0; }
-          #partenaire #service .conteneur > div:last-child .capsule-left:last-child {
-            margin-left: 0px; }
-          #partenaire #service .conteneur > div:last-child .capsule-right {
-            width: 80vw;
-            margin-right: 0;
-            margin: 0 0;
-            align-self: flex-end; }
+          @media (max-width: 800px) {
             #partenaire #service .conteneur > div:last-child .capsule-right .mosaique {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              border: solid #00012E 4px;
-              width: inherit; }
-              #partenaire #service .conteneur > div:last-child .capsule-right .mosaique .texte {
-                width: 100%;
-                background: white; }
-                #partenaire #service .conteneur > div:last-child .capsule-right .mosaique .texte .h2 {
-                  border-bottom: solid #00012E 4px; }
-                #partenaire #service .conteneur > div:last-child .capsule-right .mosaique .texte div {
-                  padding: 32px 40px; } }
+              margin: 32px 0; } }
+        #partenaire #service .conteneur > div:last-child .capsule-right .texte {
+          background: white; }
+          @media (max-width: 800px) {
+            #partenaire #service .conteneur > div:last-child .capsule-right .texte .h2 {
+              background: #00012E; }
+              #partenaire #service .conteneur > div:last-child .capsule-right .texte .h2 h2 {
+                color: white; } }
+      #partenaire #service .conteneur > div:last-child .texte {
+        background: white;
+        width: inherit; }
+        #partenaire #service .conteneur > div:last-child .texte .h2 {
+          border-bottom: solid #00012E 4px; }
+          @media (max-width: 800px) {
+            #partenaire #service .conteneur > div:last-child .texte .h2 {
+              padding: 24px; }
+              #partenaire #service .conteneur > div:last-child .texte .h2 h2 {
+                font-size: 28px; } }
+        #partenaire #service .conteneur > div:last-child .texte div {
+          padding: 32px 40px; }
+          @media (max-width: 800px) {
+            #partenaire #service .conteneur > div:last-child .texte div {
+              padding: 32px 24px; }
+              #partenaire #service .conteneur > div:last-child .texte div p {
+                font-weight: 400; } }
 #partenaire #manifest {
   padding-bottom: 80px; }
   #partenaire #manifest h4 {
@@ -795,10 +757,11 @@ body {
         display: block;
         font-size: 20px;
         font-weight: 600;
-        text-decoration: underline;
         transition: 0.3s ease;
         cursor: pointer; }
       #contact #formulaire .conteneur article > :nth-child(1) li:hover {
+        text-decoration: underline; }
+      #contact #formulaire .conteneur article > :nth-child(1) li.active {
         background-color: #00012E;
         color: white; }
       @media (max-width: 800px) {
@@ -894,21 +857,26 @@ body {
           border-right: solid #00012E 4px;
           border-bottom: solid #00012E 4px; }
       #contact #formulaire .conteneur article > :nth-child(2):hover {
+        text-decoration: underline; }
+      #contact #formulaire .conteneur article > :nth-child(2).active {
         background-color: #00012E;
         color: white; }
-        #contact #formulaire .conteneur article > :nth-child(2):hover div {
+        #contact #formulaire .conteneur article > :nth-child(2).active div {
           border-right: solid white 4px;
           border-bottom: solid white 4px; }
-        #contact #formulaire .conteneur article > :nth-child(2):hover ul {
-          display: block; }
+        #contact #formulaire .conteneur article > :nth-child(2).active > li {
+          background-color: #00012E;
+          color: white; }
+          #contact #formulaire .conteneur article > :nth-child(2).active > li ul {
+            display: block; }
         @media (max-width: 800px) {
-          #contact #formulaire .conteneur article > :nth-child(2):hover {
+          #contact #formulaire .conteneur article > :nth-child(2).active {
             background-color: auto;
             color: auto; }
-            #contact #formulaire .conteneur article > :nth-child(2):hover div {
+            #contact #formulaire .conteneur article > :nth-child(2).active div {
               border-right: solid white 4px;
               border-bottom: solid white 4px; }
-            #contact #formulaire .conteneur article > :nth-child(2):hover ul {
+            #contact #formulaire .conteneur article > :nth-child(2).active ul {
               display: block; } }
       #contact #formulaire .conteneur article > :nth-child(3) li {
         width: calc(100% / 2);
@@ -968,8 +936,10 @@ body {
             background-color: #00012E;
             opacity: 0.8;
             color: white; } }
+    #contact #formulaire .conteneur .button1 {
+      margin-top: 24px; }
     @media (max-width: 800px) {
-      #contact #formulaire .conteneur a {
+      #contact #formulaire .conteneur .button1 {
         margin-top: 40px; } }
 
 #application #hero {
@@ -1073,9 +1043,10 @@ body {
               color: #00012E;
               border-bottom: 4px solid #00012E;
               padding: 24px 40px;
-              font-weight: 100; }
+              font-weight: 300; }
             #application #étapes .conteneur #parts .part .content .detail p {
-              padding: 24px 32px; }
+              padding: 24px 32px;
+              line-height: 1.6em; }
           #application #étapes .conteneur #parts .part .content .capture-app {
             justify-content: flex-end;
             width: 36%;

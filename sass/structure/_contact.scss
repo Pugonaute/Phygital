@@ -53,11 +53,13 @@
 						display: block;
 						font-size: $titre4;
 						font-weight: 600;
-						text-decoration: underline;
 						transition: 0.3s ease;
 						cursor: pointer;
 					}
 					li:hover{
+						text-decoration: underline;
+					}
+					li.active{
 						background-color: $blue;
 						color: white;
 					}
@@ -110,6 +112,8 @@
 					border-top: solid $blue 4px;
 					border-right: solid $blue 4px;
 
+
+
 					>li{
 						//						background: blue;
 
@@ -137,7 +141,10 @@
 								background-color: $blue;
 								color: white;
 							}
+
+
 						}
+
 					}
 					@include responsive(small){
 						//						background: red;
@@ -215,15 +222,25 @@
 				}
 
 				>:nth-child(2):hover{
+					text-decoration: underline;
+				}
+
+				>:nth-child(2).active{
 					background-color: $blue;
 					color: white;
 					div{
 						border-right: solid white 4px;
 						border-bottom: solid white 4px;
 					}
-					ul{
-						display: block;	
+					>li{
+						background-color: $blue;
+						color: white;
+
+						ul{
+							display: block;	
+						}
 					}
+
 
 					@include responsive(small){
 
@@ -239,6 +256,7 @@
 						}
 					}
 				}
+
 
 				>:nth-child(3){
 					@extend %flex-row;
@@ -344,9 +362,13 @@
 
 				}
 			}
+
+			.button1{
+				margin-top: $margin_2;
+			}
 			
 			@include responsive(small){
-				a{
+				.button1{
 					margin-top: $margin_4;
 				}
 			}
