@@ -18,7 +18,7 @@ include $root."php/inc/header.inc.php";
 
 	<section id="scheme">
 		<div class="conteneur">
-			<h2>Qu’est ce qu’un commerce de vêtements<br> indépendant et éthique ?</h2>
+			<h2>Qu’est ce qu’un commerce de vêtements<br> indépendant et éthique ?</h2>
 			<p class=subtitles>Notre système de notation se base sur 5 catégories principales</p>
 			<svg class=svg width="1153" height="933" viewBox="0 0 1153 933" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<ellipse id='05' class='ellipse' cx="189" cy="375" rx="174" ry="131" fill="#C0FFE7"/>
@@ -55,7 +55,7 @@ include $root."php/inc/header.inc.php";
 					<p>La traçabilité et l'origine des matériaux.</p>
 				</article>
 			</div>
-			<p>
+			<p class=subtitles>
 				Un commerce de vêtements éthique est engagé dans ces démarches, et le prouve par la transparence dont il fait preuve à propos des produit qu'il vend.
 			</p>
 		</div>
@@ -111,7 +111,8 @@ include $root."php/inc/header.inc.php";
 			<div>
 				<h2>Envie de vous lancer dans l’aventure ?<br>
 					Notre service “Éthique First” est là pour vous !</h2>
-				<p>L'Éthiquette, ce n'est pas qu'une appli, c'est aussi une agence web et une équipe de consulting prête à vous accompagner dans votre projet de transformation vers l'équitable, ou pour la création d’une nouvelle boutique.</p>
+					
+				<p class=subtitles>L'Éthiquette, ce n'est pas qu'une appli, c'est aussi une agence web et une équipe de consulting prête à vous accompagner dans votre projet de transformation vers l'équitable, ou pour la création d’une nouvelle boutique.</p>
 			</div>
 
 			<div>
