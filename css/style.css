@@ -329,6 +329,9 @@ body {
       flex-direction: column; }
       #index #rejoignez-nous .conteneur > div a {
         margin: 16px; } }
+@media (max-width: 3000px) and (min-width: 1700px) {
+  #index #hero {
+    background-image: url("../img/fond-hero-big.svg"); } }
 @media (max-width: 800px) {
   #index #hero .conteneur {
     width: 80%; }

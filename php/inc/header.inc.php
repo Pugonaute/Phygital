@@ -9,6 +9,8 @@
 		<title><?= $title ?> | L'Éthiquette</title>
 		<meta name="description" content="<?= $descr ?>"/>
 		<link rel="icon" type="image/png" href="<?= $root ?>img/favicon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="<?= $root ?>img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16"  href="<?= $root ?>img/favicon-16x16.png">	
 	</head>
 	<body>
 		<header>

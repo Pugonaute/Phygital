@@ -296,7 +296,11 @@
 		}
 	}
 
-	
+	@media (max-width: 3000px) and (min-width: 1700px){
+		#hero{
+			background-image:url("../img/fond-hero-big.svg");
+		}
+	}
 
 	@media (max-width: $widthPhone){
 		#hero{
