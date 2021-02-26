@@ -5,7 +5,7 @@
 	$title = 'Contact';
 
 	// TO DO : description à faire
-	$desc = '';
+	$desc = 'Contactez l\'Éthiquette';
 
 	include $root."/php/inc/header.inc.php";
 ?>

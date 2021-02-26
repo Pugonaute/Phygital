@@ -30,24 +30,24 @@ $(document).ready(function(){
 //		var id = "01";
 //		$('[id=text-'+id+']').show();
 //
-//		$('.ellipse').hover(function(){
+////		$('.ellipse').hover(function(){
+////			var id = $(this).attr("id");
+////			//		$(this).toggle('toggleHover');
+////
+////			//		$('button').html("text-"+id);
+////			$('[id^=text-]').hide();
+////			$('[id=text-'+id+']').show();
+////		});
+//
+//		$('.ellipse').mousein(function(){
 //			var id = $(this).attr("id");
-//			//		$(this).toggle('toggleHover');
-//
-//			//		$('button').html("text-"+id);
-//			$('[id^=text-]').hide();
-//			$('[id=text-'+id+']').show();
-//
-//			//mousein
-//			if($(this).hasClass('hover')){
-//				$(this).removeClass('hover');
-//	
-//			}
-//			//mouseout
-//			else{
-//				$(this).addClass('hover');
-//				
-//			}
+//			$(this).addClass('hover');
+//			$('[id=titre-'+id+']').addClass('hover');
+//		});
+//		$('.ellipse').mouseout(function(){
+//			var id = $(this).attr("id");
+//			$(this).removeClass('hover');
+//			$('[id=titre-'+id+']').removeClass('hover');
 //		});
 //	}
 //

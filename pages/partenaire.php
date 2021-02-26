@@ -5,7 +5,7 @@ $root = '../';
 $title = 'Devenir partenaire';
 
 // TO DO : description à faire
-$desc = '';
+$desc = 'L\'éthiquette s\'engage pour supporter les commerces de vêtments éthiques et solidaires. Rejoignez le réseau Éthiquette.';
 
 include $root."php/inc/header.inc.php";
 ?>

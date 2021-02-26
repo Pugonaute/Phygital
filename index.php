@@ -7,7 +7,7 @@ $root = '';
 $title = 'Accueil';
 
 // TO DO : description à faire
-$desc = '';
+$desc = 'L\'éthiquette est une application mobile qui permet de scanner les vêtements et d’obtenir une information claire sur l’impact du produit sur l\'environnement !';
 
 include $root.'php/inc/header.inc.php';
 ?>

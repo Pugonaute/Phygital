@@ -5,7 +5,7 @@
 	$title = 'Découvrir l\'application';
 
 	// TO DO : description à faire
-    $desc = '';
+    $desc = 'Scannez les étiquettes de vos vêtements. L\'Éthiquette analyse vos vêtements et vous donne des informations sur leur provenance et leur impact environnementaux.' ;
 
 	include $root."php/inc/header.inc.php";
 ?>
