@@ -30,7 +30,7 @@ include $root.'php/inc/header.inc.php';
 		<div class="conteneur">
 			<h2>Découvrez notre application</h2>
 			<div class="video">
-			<iframe src="https://www.youtube.com/embed/kVh4E0Qd390" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/cG5M8C8MIw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</section>
