@@ -169,6 +169,7 @@ include $root."php/inc/header.inc.php";
 			</div>
 		</div>
 	</section>
+<!--
 	<section id="marques">
 		<div class="conteneur">
 			<h2>Ces commerces nous on fait confiance</h2>
@@ -235,11 +236,11 @@ include $root."php/inc/header.inc.php";
 			</div>
 		</div>
 	</section>
+-->
 	<script src="<?= $root ?>js/jquery.js"></script>
-	<script src="<?= $root ?>js/test.js"></script>
+	<script src="<?= $root ?>js/scheme.js"></script>
 	<script src="<?= $root ?>js/scroll.js"></script>
 	<script src="<?= $root ?>js/menu.js"></script>
-	<script src="<?= $root ?>js/splide.min.js"></script>
 </main>
 <?php
 	include $root.'php/inc/footer.inc.php';
