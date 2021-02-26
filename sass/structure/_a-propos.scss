@@ -198,6 +198,7 @@
 
 		@include responsive(small){
 			order:2;
+			padding: $margin_5 0px;
 		}
 		.conteneur{
 			@extend %flex-column;
@@ -219,12 +220,12 @@
 			}
 			.row1{
 				@extend %flex-row;
-				
+
 				justify-content: space-around;
 				width: 80%;
 				flex-flow: wrap;
 				@include responsive(small){
-					
+
 				}
 
 			}
@@ -236,6 +237,11 @@
 				@include responsive(small){
 					flex-flow: wrap;
 				}
+				
+				@media screen and (max-width: 780px) {
+					width: 100%;
+					
+				}
 			}
 		}
 	}
@@ -246,20 +252,60 @@
 
 		@include responsive(small){
 			order:2;
+			padding: $margin_5 0px;
 		}
 		.conteneur{
 			@extend %flex-column;
 			align-items: center;
 			text-align: center;
 
+			@include responsive(small){
+				min-width: 75vw;
+				max-width: 90vw;
+
+				h2{
+					order: 1;
+					//					display: block;
+				}
+				p{
+					order : 1;
+				}
+				img{
+					order: 0;
+				}
+			}
+
 			p{
 				width: 80%;
 				margin-top: $margin_1;
+				margin-bottom: $margin_2;
+				@include responsive (small){
+					width: auto;
+				}
 			}
 
+			div{
+				@include responsive(small){
+					width: 100%;
+					border: 0px;
+					margin: 0px;
+				}
+			}
 			img{
 				margin-top: $margin_1;
 				border: solid $blue 4px;
+
+				@include responsive(small){
+					width: 100%;
+					margin: 0px
+						0 $margin_1 -4px;
+				}
+				@include responsive(medium){
+					width: 100%;
+					margin: 0px
+						0 $margin_1 -4px;
+				}
+
 			}
 		}
 	}

@@ -109,7 +109,7 @@ include $root."/php/inc/header.inc.php";
 				Cette évaluation se veut impartiale, transparente et basée sur des études scientifiques.
 				<br><br>
 				Elle est contrôlée par une equipe d’experts indépendants qui vérifient la pertinence des points essentiels de notre notation tout en prennant en compte l’actualité et les nouvelles mesures / normes de l’ADEME.</p>
-			<img src="../img/methode.png" alt="méthode">
+			<div><img src="../img/methode.png" alt="méthode"></div>
 		</div>
 	</section>
 </main>

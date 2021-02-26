@@ -29,20 +29,29 @@
 
 			text-align: center;
 
-			@include responsive(small){
+			@include responsive(medium){
 				min-width: 75vw;
 				max-width: 85vw;
 			}
 
 			h2{
 				margin-bottom: $margin_2;
-				
-				@include responsive(small){
+
+				@include responsive(medium){
 					font-size: $titre2_small;
 				}
 			}
 			p{
 				padding: $margin_1 0;
+			}
+
+			.subtitles{
+				&:first-of-type{
+					margin-bottom: $margin_1;
+				}
+				&:last-of-type{
+					margin-top: $margin_1;
+				}
 			}
 
 			.toggleHover{
@@ -55,13 +64,15 @@
 			>div{
 				//				background: blue;
 				position: absolute;
-				top:550px;
+				top:460px;
+				margin-left: 18px;
 
-				@include responsive(small){
+				@include responsive(medium){
 					position: relative;
 					top: inherit;
 
 					padding: $margin_2 0;
+					margin-left: 0px;
 				}
 
 				article{
@@ -70,10 +81,10 @@
 
 					padding: $margin_2 $margin_2;
 					min-height: 150px;
+					height: auto;
 
-					@include responsive(small){
+					@include responsive(medium){
 						margin: -4px 0px -4px 0px;
-
 
 						&:nth-of-type(even){
 
@@ -86,22 +97,33 @@
 						}
 					}
 
+					@inclue responsive(small){
+						padding: $margin_0 $margin_0;
+						width: auto;
+						height: auto;
+					}
+
 					p{
 						width: 300px;
 
 						padding: 0;
 						margin: 0;
 
-						@inclue responsive(small){
+						@inclue responsive(medium){
 							font-size: $emphase;
 							font-weight: 400;
+						}
+						@inclue responsive(small){
+							
+							width: auto;
+							max-width: 200px;
 						}
 					}
 				}
 			}
 
 			svg{
-				@include responsive(small){
+				@include responsive(medium){
 					display: none;
 				}
 			}
@@ -143,7 +165,8 @@
 						//						border-left: solid $blue 4px;
 						height: inherit;
 
-						background: center / cover no-repeat url("../img/shop.png");
+						background: center / cover no-repeat url("../img/click&collect_tissus.jpg");
+						//						background: center / cover no-repeat url("../img/click&collect1.jpg");
 					}
 				}
 			}
@@ -248,21 +271,35 @@
 
 	#service{
 		@extend %flex-row-justify-center;
-		padding: $margin_max 0px;
 		background: $pink;
 		border-top: dashed $blue 4px;
 		border-bottom: dashed $blue 4px;
 
 		.conteneur{
 			@extend %flex-column;
-			justify-content: flex-start;
+			padding: $margin_max 150px;
+			justify-content: center;
 			align-items: center;
 			text-align: center;
+
+			max-width: 60vw;
+
+			border-left: dashed $blue 4px;
+			border-right: dashed $blue 4px;
+			margin: 0 -4px;
 			//			background: blue;
 
 			@include responsive(small){
 				width-min: 75vw;
 				widht-max: 85vw;
+			}
+			@include responsive(medium){
+				//				width-min: 75vw;
+				//				widht-max: 85vw;
+				border: none;
+				margin: 0 0;
+				max-width: 80vw;
+				padding: $margin_max 0px;
 			}
 
 			>div:first-child{
@@ -288,7 +325,7 @@
 
 			>div:last-child{
 				@extend %flex-column-center;
-				align-items: flex-start;
+				align-items: center;;
 
 				width: 90%;
 
@@ -299,9 +336,14 @@
 				.capsule-left {
 					width: 500px;
 
+					align-self: flex-start;
+
+
 					@include responsive(small){
 						width: 80vw;
 						margin: -4px 0;
+
+						align-self: auto;
 					}
 
 					.mosaique{
@@ -325,7 +367,7 @@
 					width: 500px;
 
 					margin:  $margin_4 0px;
-					margin-right: 100px;
+					//					margin-right: 100px;
 
 					align-self: flex-end;
 

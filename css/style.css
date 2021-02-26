@@ -394,33 +394,40 @@ body {
     position: relative;
     align-items: center;
     text-align: center; }
-    @media (max-width: 800px) {
+    @media (max-width: 1100px) {
       #partenaire #scheme .conteneur {
         min-width: 75vw;
         max-width: 85vw; } }
     #partenaire #scheme .conteneur h2 {
       margin-bottom: 24px; }
-      @media (max-width: 800px) {
+      @media (max-width: 1100px) {
         #partenaire #scheme .conteneur h2 {
           font-size: 30px; } }
     #partenaire #scheme .conteneur p {
       padding: 16px 0; }
+    #partenaire #scheme .conteneur .subtitles:first-of-type {
+      margin-bottom: 16px; }
+    #partenaire #scheme .conteneur .subtitles:last-of-type {
+      margin-top: 16px; }
     #partenaire #scheme .conteneur .toggleHover {
       fill: #00012E; }
     #partenaire #scheme .conteneur .toggleHover .hover-text {
       fill: white; }
     #partenaire #scheme .conteneur > div {
       position: absolute;
-      top: 550px; }
-      @media (max-width: 800px) {
+      top: 460px;
+      margin-left: 18px; }
+      @media (max-width: 1100px) {
         #partenaire #scheme .conteneur > div {
           position: relative;
           top: inherit;
-          padding: 24px 0; } }
+          padding: 24px 0;
+          margin-left: 0px; } }
       #partenaire #scheme .conteneur > div article {
         padding: 24px 24px;
-        min-height: 150px; }
-        @media (max-width: 800px) {
+        min-height: 150px;
+        height: auto; }
+        @media (max-width: 1100px) {
           #partenaire #scheme .conteneur > div article {
             margin: -4px 0px -4px 0px; }
             #partenaire #scheme .conteneur > div article:nth-of-type(even) {
@@ -428,15 +435,24 @@ body {
               color: white; }
               #partenaire #scheme .conteneur > div article:nth-of-type(even) p {
                 color: white; } }
+@inclue responsive(small) {
+  #partenaire #scheme .conteneur > div article {
+    padding: 8px 8px;
+    width: auto;
+    height: auto; } }
         #partenaire #scheme .conteneur > div article p {
           width: 300px;
           padding: 0;
           margin: 0; }
-@inclue responsive(small) {
+@inclue responsive(medium) {
   #partenaire #scheme .conteneur > div article p {
     font-size: 21px;
     font-weight: 400; } }
-    @media (max-width: 800px) {
+@inclue responsive(small) {
+  #partenaire #scheme .conteneur > div article p {
+    width: auto;
+    max-width: 200px; } }
+    @media (max-width: 1100px) {
       #partenaire #scheme .conteneur svg {
         display: none; } }
 #partenaire #valeurs {
@@ -457,7 +473,7 @@ body {
   #partenaire #valeurs .buttonCard > article:nth-child(odd) > :nth-child(1) > :nth-child(2) {
     width: 60%;
     height: inherit;
-    background: center/cover no-repeat url("../img/shop.png"); }
+    background: center/cover no-repeat url("../img/click&collect_tissus.jpg"); }
   #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(1) > :nth-child(2) {
     width: 60%;
     height: inherit;
@@ -509,18 +525,28 @@ body {
     #partenaire #valeurs .buttonCard > article:nth-child(even) > :nth-child(2) a {
       width: 100%; } }
 #partenaire #service {
-  padding: 80px 0px;
   background: #FFDCC9;
   border-top: dashed #00012E 4px;
   border-bottom: dashed #00012E 4px; }
   #partenaire #service .conteneur {
-    justify-content: flex-start;
+    padding: 80px 150px;
+    justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    max-width: 60vw;
+    border-left: dashed #00012E 4px;
+    border-right: dashed #00012E 4px;
+    margin: 0 -4px; }
     @media (max-width: 800px) {
       #partenaire #service .conteneur {
         width-min: 75vw;
         widht-max: 85vw; } }
+    @media (max-width: 1100px) {
+      #partenaire #service .conteneur {
+        border: none;
+        margin: 0 0;
+        max-width: 80vw;
+        padding: 80px 0px; } }
     #partenaire #service .conteneur > div:first-child {
       align-items: center;
       text-align: center;
@@ -535,17 +561,19 @@ body {
           #partenaire #service .conteneur > div:first-child p {
             margin: 32px 0 24px 0; } }
     #partenaire #service .conteneur > div:last-child {
-      align-items: flex-start;
+      align-items: center;
       width: 90%; }
       @media (max-width: 800px) {
         #partenaire #service .conteneur > div:last-child {
           align-items: center; } }
       #partenaire #service .conteneur > div:last-child .capsule-left {
-        width: 500px; }
+        width: 500px;
+        align-self: flex-start; }
         @media (max-width: 800px) {
           #partenaire #service .conteneur > div:last-child .capsule-left {
             width: 80vw;
-            margin: -4px 0; } }
+            margin: -4px 0;
+            align-self: auto; } }
         #partenaire #service .conteneur > div:last-child .capsule-left .mosaique {
           width: inherit;
           border: solid #00012E 4px; }
@@ -555,7 +583,6 @@ body {
       #partenaire #service .conteneur > div:last-child .capsule-right {
         width: 500px;
         margin: 40px 0px;
-        margin-right: 100px;
         align-self: flex-end; }
         @media (max-width: 800px) {
           #partenaire #service .conteneur > div:last-child .capsule-right {
@@ -738,7 +765,8 @@ body {
   padding: 80px 0px; }
   @media (max-width: 800px) {
     #a-propos #equipe {
-      order: 2; } }
+      order: 2;
+      padding: 48px 0px; } }
   #a-propos #equipe .conteneur {
     align-items: center;
     text-align: center; }
@@ -762,20 +790,51 @@ body {
       @media (max-width: 800px) {
         #a-propos #equipe .conteneur .row2 {
           flex-flow: wrap; } }
+      @media screen and (max-width: 780px) {
+        #a-propos #equipe .conteneur .row2 {
+          width: 100%; } }
 #a-propos #methode {
   padding: 80px 0px; }
   @media (max-width: 800px) {
     #a-propos #methode {
-      order: 2; } }
+      order: 2;
+      padding: 48px 0px; } }
   #a-propos #methode .conteneur {
     align-items: center;
     text-align: center; }
+    @media (max-width: 800px) {
+      #a-propos #methode .conteneur {
+        min-width: 75vw;
+        max-width: 90vw; }
+        #a-propos #methode .conteneur h2 {
+          order: 1; }
+        #a-propos #methode .conteneur p {
+          order: 1; }
+        #a-propos #methode .conteneur img {
+          order:  0; } }
     #a-propos #methode .conteneur p {
       width: 80%;
-      margin-top: 16px; }
+      margin-top: 16px;
+      margin-bottom: 24px; }
+      @media (max-width: 800px) {
+        #a-propos #methode .conteneur p {
+          width: auto; } }
+    @media (max-width: 800px) {
+      #a-propos #methode .conteneur div {
+        width: 100%;
+        border:  0px;
+        margin: 0px; } }
     #a-propos #methode .conteneur img {
       margin-top: 16px;
       border: solid #00012E 4px; }
+      @media (max-width: 800px) {
+        #a-propos #methode .conteneur img {
+          width: 100%;
+          margin: 0px 0 16px -4px; } }
+      @media (max-width: 1100px) {
+        #a-propos #methode .conteneur img {
+          width: 100%;
+          margin: 0px 0 16px -4px; } }
 
 /* Blog */
 #blog #articles {
@@ -1769,6 +1828,8 @@ button {
     justify-content: flex-start; }
     .buttonCard > article:nth-child(even) > :nth-child(2) a {
       width: 40%; }
+.buttonCard > article:nth-child(1) > :nth-child(1) > :nth-child(2) {
+  background: center/cover no-repeat url("../img/scannez.png"); }
 @media (max-width: 800px) {
   .buttonCard > article:nth-child(odd) > :nth-child(1) {
     flex-direction: column; }
